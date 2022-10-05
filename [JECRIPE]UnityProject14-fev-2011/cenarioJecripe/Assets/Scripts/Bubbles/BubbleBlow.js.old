@@ -1,0 +1,111 @@
+var explosionParticles: ParticleEmitter;
+var explosionSound: AudioClip[];
+var minSpeed: float = 0;
+var maxSpeed: float = 0;
+var minScale: float = 1;
+var maxScale: float = 1;
+var lifeTime: float = 10;
+
+private var toy: GameObject;
+private var elapsedTime: float = 0;
+private var bubbleBlowerScript: BubbleBlowerBehaviour;
+//private var speed: float;
+
+function Explode() {
+	BubbleBlowerBehaviour.curNumOfBubbles--;
+	if (this.transform.childCount > 0) {
+		bubbleBlowerScript.bubblesWithToyPopped++;
+	}	
+	var t : ParticleEmitter = Instantiate(explosionParticles, this.transform.position, this.transform.rotation);
+	//t.Emit();
+	//var sound = Instantiate(explosionSound, this.transform.position, this.transform.rotation);
+	//explosionSound[Random.Range(0,explosionSound.length)].Play();
+	gameObject.BroadcastMessage("SetRigidbody", true, SendMessageOptions.DontRequireReceiver);
+	transform.DetachChildren();
+	Destroy(this.gameObject);	
+}
+
+function setLifeTime(t : int) {
+	lifeTime = t;
+}
+
+function Start() {
+	//speed = Random.Range(minSpeed, maxSpeed);	
+	ResizeScale(Random.Range(minScale, maxScale));
+/*	print("Current Scene: "+EditorApplication.currentScene);
+//	var path : String [] = EditorApplication.currentScene.Split(char.Parse("/"));
+//    print("path[path.Length -1] = "+path[path.Length -1]);
+/    if (path[path.Length -1] == "BolhasInterna.unity") Retirado para gerar o BUILD */
+    	bubbleBlowerScript = GameObject.Find("BubbleBlowerDevice").GetComponent("BubbleBlowerBehaviour");
+	//bubbleBlowerScript = GameObject.Find("BubbleBlowerDevice").GetComponent("BubbleBlowerBehaviour");		
+	//var bubble_brothers = GameObject.FindGameObjectsWithTag("Bubble");
+	//foreach(bubble_brother in bubble_brothers){
+	//	Physics.IgnoreCollision(GetComponent.<Collider>(), bubble_brother.GetComponent.<Collider>());
+	//}
+}
+
+function FixedUpdate() {
+	if (elapsedTime < lifeTime) 
+		elapsedTime += Time.deltaTime;
+	else 
+	{ 
+		//Debug.Log("Bubble parent name is :"+transform.parent.name);
+		BubbleBlowerBehaviour.curNumOfBubbles--;
+		if (this.transform.childCount > 0) {
+			bubbleBlowerScript.bubblesWithToyPopped++;
+		}		
+		var t : ParticleEmitter = Instantiate(explosionParticles, this.transform.position, this.transform.rotation);
+		explosionSound[Random.Range(0,explosionSound.length)].Play();
+		//var sound = Instantiate(explosionSound[Random.Range(0,explosionSound.length)], this.transform.position, this.transform.rotation);
+		//t.transform.parent = sound.transform;
+		t.Emit();		
+		//sound.transform.parent = this.transform;
+		gameObject.BroadcastMessage("SetRigidbody", true, SendMessageOptions.DontRequireReceiver);
+		transform.DetachChildren();
+		Destroy(this.gameObject);			
+	}	
+}
+
+function OnMouseOver() {
+	if (Application.isPlaying) {
+		if (explosionParticles){
+			BubbleBlowerBehaviour.curNumOfBubbles--;
+			if (this.transform.childCount > 0) {
+				bubbleBlowerScript.bubblesWithToyPopped++;
+			}			
+			var t : ParticleEmitter = Instantiate(explosionParticles, this.transform.position, this.transform.rotation);
+			//t.Emit();
+			//explosionSound[Random.Range(0,explosionSound.length)].Play();
+			gameObject.BroadcastMessage("SetRigidbody", true, SendMessageOptions.DontRequireReceiver);
+			transform.DetachChildren();
+			Destroy(this.gameObject);				
+		}	
+	}
+}
+
+//function OnTriggerExit(other : Collider) {
+//	speed *= -1;
+	/*	
+	if (Application.isPlaying) {
+		if (explosionParticles) {
+			var t : ParticleEmitter = Instantiate(explosionParticles, this.transform.position, this.transform.rotation);
+			t.Emit();
+		}
+		Destroy(this.gameObject);
+		BubbleActivitieController.curNumOfBubbles--;
+	}
+	*/
+//}
+
+/*function FixedUpdate() {
+	transform.position.x += speed;
+	transform.position.y += speed;
+}*/
+
+public function ResizeScale(newScale : float) {
+	this.transform.localScale.x += newScale;
+	this.transform.localScale.y += newScale;
+	this.transform.localScale.z += newScale;
+}	
+
+	

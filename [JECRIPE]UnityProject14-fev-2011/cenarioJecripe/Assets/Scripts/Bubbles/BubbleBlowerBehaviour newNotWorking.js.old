@@ -1,0 +1,105 @@
+var bubble: Transform;
+var wallColliders: GameObject;
+//var toy: GameObject;
+var toys: Transform[];
+var maxNumOfBubbles: int = 10;
+var intervalTime: float = 1.0;
+var minVelocity: int = 100;
+var maxVelocity: int = 150;
+var targetNumber: int = 8;
+static var curNumOfBubbles: int = 0;
+private var bubblesWithToyPopped: int = 0;
+private var bubblesArray: Array;
+private var isBlowing: boolean = true;
+private var count: int = 0;
+private var numToys: int = 0;
+private var elapsedTime: float = 0.0;
+
+ 
+function Start() {
+	//vetor que armazena as bolhas
+	bubblesArray = new Array();	
+}
+
+function SetBubblesWithToyPopped() {
+	bubblesWithToyPopped++;
+	if (bubblesWithToyPopped >= targetNumber) {
+		enabled = false;
+		BlowAllRemainingBubbles();
+		StartOrganizationActivitie();
+	}
+}
+
+function FixedUpdate() {
+	if (elapsedTime < intervalTime) {
+		elapsedTime += Time.deltaTime;
+	}
+	else //time to blow one more bubble
+	{
+		elapsedTime = 0.0;
+		if ((enabled) && (count <= maxNumOfBubbles)) {
+			var clone = Instantiate(bubble, this.transform.position, Quaternion.identity);
+			if (count != 0) {		
+				if (count % 10 == 0) {
+					clone.GetComponent(BubbleBlow).ResizeScale(2.5);
+					var toyclone = Instantiate(toys[numToys], Vector3(clone.transform.position.x, clone.transform.position.y, clone.transform.position.z), Quaternion.identity);
+					numToys++;
+					Debug.Log("toyclone.name == "+ toyclone.name);
+//					switch (toyclone.name) {
+//						case "barquinho verde(Clone)":					
+//							toyclone.transform.Rotate(Vector3(270,0,0));
+//						break;
+//						case "carrinho azul(Clone)":					
+//							toyclone.transform.Rotate(Vector3(270,0,0));
+//						break;
+//						default:					
+//						break;
+//					}		
+					toyclone.transform.parent = clone.transform;			
+				}
+			}	
+			bubblesArray.push(clone);
+			for (var i: int = 0; i < bubblesArray.length - 1; i++) {
+				if (bubblesArray[i] != null)
+				Physics.IgnoreCollision(bubblesArray[i].collider, clone.GetComponent.<Collider>());
+			}		
+			clone.GetComponent(Rigidbody).AddForce(-Random.Range(minVelocity,maxVelocity), Random.Range(minVelocity,maxVelocity), -Random.Range(minVelocity,maxVelocity));
+			curNumOfBubbles++;
+			count++;
+		}
+	}
+}
+
+function StartOrganizationActivitie() {
+	//Disable the wall colliders to avoid problems at the organization activitie
+	wallColliders.SetActiveRecursively(false);
+	
+	//Start the Camera Spline to activitie position
+	var cam = GameObject.Find("Main Camera");
+	cam.GetComponent(SplineController).SplineParent = GameObject.Find("CameraPosBeforeOrganization");
+	cam.GetComponent(SplineController).Start();
+	cam.GetComponent(SplineController).FollowSpline();			
+	
+	//Wait a second and place the boxes and toys at the correct position
+	yield WaitForSeconds(1.0);
+	GameObject.Find("CasaDasBolhas").GetComponent(OrganizationActivitie).enabled = true;
+	
+	//Destroy this, since it is no longer needed
+	Destroy(this.gameObject);
+}	
+
+function BlowAllRemainingBubbles() {
+	for (var i: int = 0; i < bubblesArray.length; i++) {
+		if ( bubblesArray[i] != null )
+			bubblesArray[i].GetComponent(BubbleBlow).Explode();
+	}	
+}
+
+/** ************* DEBUG ***************** */
+function OnGUI() {
+	GUI.Label (Rect (10, 30, 200, 40), "isBlowing: "+ isBlowing);
+	GUI.Label (Rect (10, 40, 200, 50), "curNumOfBubbles: "+ curNumOfBubbles);
+	GUI.Label (Rect (10, 50, 200, 60), "Bubbles Blowed: "+ count);
+	GUI.Label (Rect (10, 60, 200, 70), "bubblesWithToyPopped: "+ bubblesWithToyPopped);
+}
+/** *********** END DEBUG ***************** */

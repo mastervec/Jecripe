@@ -1,0 +1,44 @@
+private var mainCamera: Camera;
+private var organizationScript: OrganizationActivitie;
+
+/*private var redFallingPos: Vector3;
+private var yellowFallingPos: Vector3;
+private var blueFallingPos: Vector3;
+private var greenFallingPos: Vector3;*/
+
+function Start() {
+	mainCamera = FindCamera();
+	organizationScript = GameObject.Find("CasaDasBolhas").GetComponent(OrganizationActivitie);
+	/*redFallingPos     = GameObject.Find("FallingPosition1").transform.position;
+	yellowFallingPos = GameObject.Find("FallingPosition2").transform.position;
+	blueFallingPos    = GameObject.Find("FallingPosition3").transform.position;
+	greenFallingPos  = GameObject.Find("FallingPosition4").transform.position;*/
+}
+
+function CheckCollision(other: Collider) {
+	if ((this.tag == "RedBox") && (other.tag == "RedToy")) {	
+		mainCamera.GetComponent(DragOn2D).ReleaseObject(other.name, organizationScript.GetFallingPosition(1));
+		organizationScript.IncreaseCount();		
+	}
+	if ((this.tag == "YellowBox") && (other.tag == "YellowToy")) {	
+		mainCamera.GetComponent(DragOn2D).ReleaseObject(other.name, organizationScript.GetFallingPosition(2));
+		organizationScript.IncreaseCount();		
+	}
+	if ((this.tag == "BlueBox") && (other.tag == "BlueToy")) {	
+		mainCamera.GetComponent(DragOn2D).ReleaseObject(other.name, organizationScript.GetFallingPosition(3));
+		organizationScript.IncreaseCount();		
+	}
+	if ((this.tag == "GreenBox") && (other.tag == "GreenToy")) {
+		mainCamera.GetComponent(DragOn2D).ReleaseObject(other.name, organizationScript.GetFallingPosition(4));
+		organizationScript.IncreaseCount();	
+	}	
+}
+
+function FindCamera ()
+{
+	if (GetComponent.<Camera>())
+		return GetComponent.<Camera>();
+	else
+		return Camera.main;
+}
+

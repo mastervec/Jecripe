@@ -1,0 +1,42 @@
+var ChorandoAudio:AudioClip;
+var BeijoAudio:AudioClip;
+var ContrariedadeAudio:AudioClip;
+var LambendoAudio:AudioClip;
+var PalmasAudio:AudioClip;
+var BalbuciandoAudio:AudioClip;
+
+function ChangeToChorando()
+{
+	GetComponent.<AudioSource>().clip = ChorandoAudio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function ChangeToBeijo()
+{
+	GetComponent.<AudioSource>().clip = BeijoAudio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function ChangeToContrariedade()
+{
+	GetComponent.<AudioSource>().clip = ContrariedadeAudio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function ChangeToLambendo()
+{
+	GetComponent.<AudioSource>().clip = LambendoAudio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function ChangeToPalmas()
+{
+	GetComponent.<AudioSource>().clip = PalmasAudio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function ChangeToBalbuciando()
+{
+	GetComponent.<AudioSource>().clip = BalbuciandoAudio;
+	GetComponent.<AudioSource>().Play();
+}

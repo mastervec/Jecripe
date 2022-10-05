@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: 4edd3635c59b2094e86fafd86426b484
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: ' 1'
+    100002: ' 2'
+    100004: armario
+    100006: berco01
+    100008: berco02
+    100010: Box01
+    100012: Box02
+    100014: Box03
+    100016: cadeira de comer
+    100018: cadeira de comer01
+    100020: caixa de brinquedo
+    100022: caixas dadinho02
+    100024: carrinho de golf
+    100026: comoda
+    100028: //RootNode
+    100030: estante
+    100032: gaveta
+    100034: interruptor
+    100036: janela
+    100038: "len\xE7o umidecido"
+    100040: Macaneta01
+    100042: Macaneta_Base01
+    100044: "porta algod\xE3o"
+    100046: prateleira
+    100048: Quadro
+    100050: "REL\xD3GIO"
+    100052: "sentop\xE9ia"
+    100054: trenzinho
+    100056: ventilador01
+    400000: ' 1'
+    400002: ' 2'
+    400004: armario
+    400006: berco01
+    400008: berco02
+    400010: Box01
+    400012: Box02
+    400014: Box03
+    400016: cadeira de comer
+    400018: cadeira de comer01
+    400020: caixa de brinquedo
+    400022: caixas dadinho02
+    400024: carrinho de golf
+    400026: comoda
+    400028: //RootNode
+    400030: estante
+    400032: gaveta
+    400034: interruptor
+    400036: janela
+    400038: "len\xE7o umidecido"
+    400040: Macaneta01
+    400042: Macaneta_Base01
+    400044: "porta algod\xE3o"
+    400046: prateleira
+    400048: Quadro
+    400050: "REL\xD3GIO"
+    400052: "sentop\xE9ia"
+    400054: trenzinho
+    400056: ventilador01
+    2100000: Base do ventilador
+    2100002: cupula
+    2100004: Ventilador
+    2100006: armario, berco
+    2100008: wood
+    2100010: 'Material #2214'
+    2100012: verde
+    2100014: laranja
+    2100016: amarelo
+    2100018: vermelho
+    2100020: azul_
+    2100022: 'Material #2213'
+    2100024: 'Material #2212'
+    2100026: 'Material #2315'
+    2100028: 'Material #2314'
+    2100030: 'Material #2313'
+    2100032: 'Material #2316'
+    2100034: potes
+    2100036: Teto
+    2100038: pe da cadeira
+    2100040: Parede baixo
+    2100042: "rodap\xE9s, porta, janela"
+    2100044: dadinho
+    2100046: 'Material #27'
+    2100048: Standard_1
+    2100050: 'Material #30'
+    2100052: 'Material #28'
+    2100054: 'Material #31'
+    2100056: 'Material #335'
+    2100058: Pega bolhas
+    2100060: 'Material #172'
+    2100062: "rel\xF3gio"
+    2100064: 'Material #277'
+    2100066: 'Material #29'
+    2100068: Standard_23
+    2100070: Standard_24
+    2100072: bege
+    2100074: ceu
+    2100076: Madeira da parede
+    2100078: Standard_21
+    2100080: cromado
+    2300000: armario
+    2300002: berco01
+    2300004: berco02
+    2300006: Box01
+    2300008: Box02
+    2300010: Box03
+    2300012: cadeira de comer
+    2300014: cadeira de comer01
+    2300016: caixa de brinquedo
+    2300018: caixas dadinho02
+    2300020: carrinho de golf
+    2300022: comoda
+    2300024: estante
+    2300026: gaveta
+    2300028: interruptor
+    2300030: janela
+    2300032: "len\xE7o umidecido"
+    2300034: Macaneta01
+    2300036: Macaneta_Base01
+    2300038: "porta algod\xE3o"
+    2300040: prateleira
+    2300042: Quadro
+    2300044: "REL\xD3GIO"
+    2300046: "sentop\xE9ia"
+    2300048: trenzinho
+    2300050: ventilador01
+    3300000: armario
+    3300002: berco01
+    3300004: berco02
+    3300006: Box01
+    3300008: Box02
+    3300010: Box03
+    3300012: cadeira de comer
+    3300014: cadeira de comer01
+    3300016: caixa de brinquedo
+    3300018: caixas dadinho02
+    3300020: carrinho de golf
+    3300022: comoda
+    3300024: estante
+    3300026: gaveta
+    3300028: interruptor
+    3300030: janela
+    3300032: "len\xE7o umidecido"
+    3300034: Macaneta01
+    3300036: Macaneta_Base01
+    3300038: "porta algod\xE3o"
+    3300040: prateleira
+    3300042: Quadro
+    3300044: "REL\xD3GIO"
+    3300046: "sentop\xE9ia"
+    3300048: trenzinho
+    3300050: ventilador01
+    4300000: ventilador01
+    4300002: prateleira
+    4300004: estante
+    4300006: gaveta
+    4300008: armario
+    4300010: comoda
+    4300012: "porta algod\xE3o"
+    4300014: "len\xE7o umidecido"
+    4300016: cadeira de comer
+    4300018: janela
+    4300020: berco01
+    4300022: cadeira de comer01
+    4300024: caixas dadinho02
+    4300026: caixa de brinquedo
+    4300028: "sentop\xE9ia"
+    4300030: "REL\xD3GIO"
+    4300032: trenzinho
+    4300034: carrinho de golf
+    4300036: Box01
+    4300038: Box02
+    4300040: berco02
+    4300042: Box03
+    4300044: Quadro
+    4300046: interruptor
+    4300048: Macaneta01
+    4300050: Macaneta_Base01
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

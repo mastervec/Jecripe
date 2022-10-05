@@ -1,0 +1,111 @@
+var bubble: Transform;
+var wallColliders: GameObject;
+//var toy: GameObject;
+var toys: Transform[];
+var maxNumOfBubbles: int = 10;
+var intervalTime: float = 1.0;
+var minVelocity: int = 100;
+var maxVelocity: int = 150;
+private var targetNumber: int = 0;
+static var curNumOfBubbles: int = 0;
+static var bubblesWithToyPopped: int = 0;
+private var bubblesArray: Array;
+private var isBlowing: boolean = true;
+private var count: int = 0;
+private var numToys: int = 0;
+
+ 
+function Start() {
+	yield WaitForSeconds(0.5);
+	bubblesArray = new Array();
+	targetNumber = Mathf.Floor(maxNumOfBubbles / 10 + 1);
+	//Screen.showCursor = false;
+	//Screen.lockCursor = true;
+	while ((count < maxNumOfBubbles) && (enabled)) {
+		var clone = Instantiate(bubble, this.transform.position, Quaternion.identity);
+		//clone.transform.parent = this.transform; 		
+		clone.transform.Rotate(Vector3(0,0,180));
+		if (count % 10 == 0) {
+			clone.GetComponent(BubbleBlow).ResizeScale(2.5);
+			//var toyclone = Instantiate(toys[numToys], Vector3(clone.transform.position.x, clone.transform.position.y, clone.transform.position.z - 0.11), Quaternion.identity);
+			var toyclone = Instantiate(toys[numToys], Vector3(clone.transform.position.x, clone.transform.position.y, clone.transform.position.z), Quaternion.identity);
+			Debug.Log("toyclone.name == "+ toyclone.name);
+			switch (toyclone.name) {
+				case "barquinho verde(Clone)":					
+					toyclone.transform.Rotate(Vector3(270,0,0));
+				break;
+				case "carrinho azul(Clone)":					
+					toyclone.transform.Rotate(Vector3(270,0,0));
+				break;
+				case "piao vermelho(Clone)":					
+					toyclone.transform.Rotate(Vector3(270,0,0));
+				break;
+				case "peteca amarela(Clone)":					
+					toyclone.transform.Rotate(Vector3(270,0,0));
+				break;
+				case "carrinho vermelho(Clone)":					
+					toyclone.transform.Rotate(Vector3(265,0,0));
+				break;
+				default:					
+				break;
+			}		
+			toyclone.transform.parent = clone.transform;
+			numToys++;			
+		}
+		bubblesArray.push(clone);
+		for (var i: int = 0; i < bubblesArray.length - 1; i++) {
+			if ( bubblesArray[i] != null )
+			var collider :Collider;
+			//Physics.IgnoreCollision(bubblesArray[i].collider, clone.GetComponent.<Collider>());
+			//collider = bubblesArray[i].getComponent.<Collider>();
+		//	Physics.IgnoreCollision(collider, clone.GetComponent.<Collider>());
+		}		
+		clone.GetComponent(Rigidbody).AddForce(-Random.Range(minVelocity,maxVelocity), Random.Range(minVelocity,maxVelocity), -Random.Range(minVelocity,maxVelocity));
+		curNumOfBubbles++;
+		count++;
+        yield WaitForSeconds(intervalTime);
+		if (bubblesWithToyPopped == targetNumber) {
+			BlowAllRemainingBubbles();
+			break;
+		}
+	}
+	while (bubblesWithToyPopped < targetNumber) {	
+		yield WaitForSeconds(0.2);
+	}
+	isBlowing = false;
+	BlowAllRemainingBubbles();
+	StartOrganizationActivitie();
+	bubblesWithToyPopped = 0;
+    //StartCoroutine("BlowBubbles");	
+	//Screen.showCursor = true;
+	//Screen.lockCursor = false;
+}
+
+/** ************** DEBUG ************* */
+//function OnGUI() {
+//	GUI.Label (Rect (10, 30, 200, 40), "isBlowing: "+ isBlowing);
+//	GUI.Label (Rect (10, 40, 200, 50), "curNumOfBubbles: "+ curNumOfBubbles);
+//	GUI.Label (Rect (10, 50, 200, 60), "Bubbles Blowed: "+ count);
+//	GUI.Label (Rect (10, 60, 200, 70), "bubblesWithToyPopped: "+ bubblesWithToyPopped);
+//}
+/** ************ END DEBUG ************* */
+
+function StartOrganizationActivitie() {
+	wallColliders.SetActiveRecursively(false);
+	var cam = GameObject.Find("Main Camera");
+	cam.GetComponent(SplineController).SplineParent = GameObject.Find("CameraPosBeforeOrganization");
+	cam.GetComponent(SplineController).Start();
+	cam.GetComponent(SplineController).FollowSpline();			
+	//yield WaitForSeconds(cam.GetComponent(SplineController).Duration);
+	yield WaitForSeconds(1.0);
+	GameObject.Find("CasaDasBolhas").GetComponent(OrganizationActivitie).enabled = true;
+	//cam.GetComponent(DragOn2D).enabled = true;
+	Destroy(this.gameObject);
+}	
+
+function BlowAllRemainingBubbles() {
+	for (var i: int = 0; i < bubblesArray.length; i++) {
+		if ( bubblesArray[i] != null )
+			bubblesArray[i].GetComponent(BubbleBlow).Explode();
+	}	
+}

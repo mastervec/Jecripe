@@ -1,0 +1,38 @@
+var mc:MusicaInsideController;
+var mac:MusicaAudioController;
+
+private var enabledButton:boolean = false;
+
+function OnMouseDown()
+{
+	if(enabledButton)
+	{
+		mac.ResetAndStopPlay();
+		switch(this.name)
+		{
+			case "Janela1Button":
+			mc.Janela1Clicked();
+			break;
+			case "Janela2Button":
+			mc.Janela2Clicked();
+			break;
+			case "Janela3Button":
+			mc.Janela3Clicked();
+			break;
+			case "Janela4Button":
+			mc.Janela4Clicked();
+			break;
+			case "Janela5Button":
+			mc.Janela5Clicked();
+			break;
+			case "Janela6Button":
+			mc.Janela6Clicked();
+			break;
+		}
+	}
+}
+
+function EnableButton( _state:boolean )
+{
+	enabledButton = _state;
+}

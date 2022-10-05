@@ -1,0 +1,5 @@
+var isActive : boolean;
+
+function Update () {
+	gameObject.SetActiveRecursively(isActive);
+}

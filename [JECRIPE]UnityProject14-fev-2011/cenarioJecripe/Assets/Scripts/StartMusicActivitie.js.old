@@ -1,0 +1,9 @@
+ 
+
+function Start() {
+		
+}
+
+function TurnOff() {
+	gameObject.SetActiveRecursively(false);
+}

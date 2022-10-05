@@ -1,0 +1,70 @@
+var FPSController: Transform;
+
+function Start() {
+	var cam = GameObject.Find("/Player/Main Camera");
+	
+	Debug.Log("SplineInterpolator Duration"+cam.GetComponent(SplineController).Duration);
+	
+	cam.GetComponent(SmoothFollow).enabled = false;
+	cam.GetComponent(MouseLook).enabled = false;	
+	FPSController.GetComponent(FPSWalker).enabled = false;
+	FPSController.GetComponent(MouseLook).enabled = false;
+	
+	//DESABILITAR OS BUBBLEBLOWERS	
+	var obj: GameObject = GameObject.Find("BubbleBlowerDeviceLeft");	
+	obj.GetComponent(BubbleBlowerBehaviourLeft).enabled= false;
+	obj = GameObject.Find("BubbleBlowerDeviceRight");
+	obj.GetComponent(BubbleBlowerBehaviourRight).enabled = false;
+	
+	cam.GetComponent(SplineController).enabled = true;	
+	this.GetComponent(BubbleActivitieController).enabled = true;
+}
+
+/*var target2: Transform;
+//var target: Transform;
+var damping = 3.0;
+//var CamPosArray = new Array ();
+var FPSController: Transform;
+var CamPosArray: Transform[];
+private var i: int = 0;
+
+function Start() {
+	Debug.Log("BubbleActivitieStarted");
+	//FPSController.GetComponent(SmoothFollow).enabled = false;	
+	FPSController.GetComponent(FPSWalker).enabled = false;
+	if (i == 0)
+		StartCoroutine("Lerp",damping);				
+}
+
+function Lerp (time : float) {
+  var pos = transform.position;
+  var rot = transform.rotation;
+  var originalTime = time; 
+  
+   while (i < 3)
+   {
+		while (time > 0.0)
+		{
+			time -= Time.deltaTime;
+			Debug.Log("Time: "+time);
+			//transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime * damping);   
+			//transform.rotation = Quaternion.Slerp(transform.rotation, target.rotation, Time.deltaTime * damping);
+			transform.position = Vector3.Lerp(CamPosArray[i].position, pos, time / originalTime);
+			transform.rotation = Quaternion.Slerp(CamPosArray[i].rotation, rot, time / originalTime);
+			yield;				  
+		}
+	time = originalTime;
+	pos = CamPosArray[i].position;
+	rot = CamPosArray[i].rotation;
+	FPSController.GetComponent(Transform).position = CamPosArray[i].position;
+     FPSController.GetComponent(Transform).rotation = CamPosArray[i].rotation;
+	i++;		
+   }
+      	
+}*/ 
+
+/*function Update () {
+   transform.position = Vector3.Lerp(transform.position, target2.position, Time.deltaTime * damping);   
+   transform.rotation = Quaternion.Slerp(transform.rotation, target2.rotation, Time.deltaTime * damping);   
+}*/
+

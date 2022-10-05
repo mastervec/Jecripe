@@ -1,0 +1,6 @@
+var pos : Transform;
+
+function Update () {
+	this.transform.position = pos.position;
+	this.transform.rotation = pos.rotation;
+}

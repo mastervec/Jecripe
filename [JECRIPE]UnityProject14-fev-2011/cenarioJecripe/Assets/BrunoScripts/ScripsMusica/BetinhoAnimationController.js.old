@@ -1,0 +1,19 @@
+var animatedMesh : Animation;
+
+function Start()
+{
+	animatedMesh["idle"].wrapMode = WrapMode.Loop;
+	animatedMesh["saisai"].wrapMode = WrapMode.Once;
+	animatedMesh["janelinha"].wrapMode = WrapMode.Once;
+	animatedMesh["chove"].wrapMode = WrapMode.Once;
+	animatedMesh["robozinho"].wrapMode = WrapMode.Once;
+	animatedMesh["campainha"].wrapMode = WrapMode.Once;
+	animatedMesh["lojadomestre"].wrapMode = WrapMode.Once;
+}
+
+function Update () 
+{
+	if(animatedMesh.IsPlaying("saisai") && animatedMesh["saisai"].time > 0.9)
+	{
+	}
+}

@@ -1,0 +1,146 @@
+var TargetPos: Transform;
+var animationPosition: Transform;
+var wallColliders: GameObject;
+var DingSound: AudioClip;
+var agoraVouMostrar: AudioClip;
+var facaJuntoComigo: AudioClip;
+var olheBemDentro: AudioClip;
+var otimoVcEstaConseguindo: AudioClip;
+var soprandoMuitoBem: AudioClip;
+var aguaMisturando: AudioClip;
+var sabaoMisturando: AudioClip;
+var tampaFechando: AudioClip;
+var passeAMaoNaTampa: AudioClip;
+var SpeechDeltaTime: float = 2.0;
+var aguaGrabber: Grabber;
+var sabaoGrabber: Grabber;
+var tampaGrabber: Grabber;
+
+private var count: int = 0;
+private var delay: float = 0.5;
+private var mAudio: AudioSource;
+
+private var gc:GameObject;
+
+function Start() {	
+	mAudio = this.GetComponent(AudioSource);
+	// Para testes
+	//this.transform.position = TargetPos.transform.position;
+	//this.GetComponent(BubbleBlowerBehaviour).enabled = true;	
+	// FIM Para Testes
+}
+
+function OnTriggerEnter(other) {
+	switch (other.tag) {
+		case "WaterBottle": 
+			//Destroy(other.rigidbody);
+			BBPiecesController.isDraggingWater = false;
+			other.transform.position = animationPosition.transform.position;
+			other.GetComponent(Animation).Play();			
+			mAudio.clip = aguaMisturando;
+			mAudio.Play();
+			yield WaitForSeconds(other.GetComponent(Animation).clip.length+delay);
+			Destroy(other.gameObject);			
+			count++;
+		break;
+		case "SoapBottle":
+			Debug.Log("switch");
+			//Destroy(other.rigidbody);
+			BBPiecesController.isDraggingSoap = false;
+			other.transform.position = animationPosition.position;
+			other.GetComponent(Animation).Play();
+			mAudio.clip = sabaoMisturando;
+			mAudio.Play();
+			yield WaitForSeconds(other.GetComponent(Animation).clip.length+delay);
+			Destroy(other.gameObject);
+			mAudio.clip = passeAMaoNaTampa;
+			mAudio.Play();
+			yield WaitForSeconds(other.GetComponent(Animation).clip.length);
+			count++;
+		break;
+		case "LastPiece":
+			//Destroy(other.rigidbody);
+			BBPiecesController.isDraggingLastPiece = false;
+			other.transform.position = animationPosition.position;
+			other.GetComponent(Animation).Play();
+			mAudio.clip = tampaFechando;
+			mAudio.Play();
+			yield WaitForSeconds(other.GetComponent(Animation).clip.length+delay);
+			count++;
+		break;	
+	}	
+}
+
+/*function OnGUI() {
+	GUI.Label(Rect(10, 10, 200, 30), "count: "+count);
+}*/
+
+function Update() {
+StartCoroutine("StartBlowingBubbles");
+			 this.enabled = false;
+	if (enabled) {
+		if (aguaGrabber) {
+			aguaGrabber.enabled = true;
+		}
+		if (sabaoGrabber) {
+			sabaoGrabber.enabled = true;
+		}
+		if (tampaGrabber) {
+			tampaGrabber.enabled = true;
+		}		
+	}
+	
+	if (count == 1)
+		BBPiecesController.canDragSoapBottle = true;
+	else	if (count == 2)
+		BBPiecesController.canDragLastPiece = true;
+	else if (count == 3)  {	
+			 StartCoroutine("StartBlowingBubbles");
+			 this.enabled = false;
+		   }
+}
+
+function StartBlowingBubbles() {
+	
+	yield WaitForSeconds(1.0);
+	var cam = GameObject.Find("Main Camera");
+	cam.GetComponent(SplineController).SplineParent = GameObject.Find("CameraPosAfterAssemble");
+	wallColliders.SetActiveRecursively(true);
+	
+	//mAudio.Play();
+	//yield WaitForSeconds(mAudio.clip.length);
+	mAudio.clip = DingSound;
+	mAudio.Play();
+	
+	cam.GetComponent(SplineController).Start();
+	cam.GetComponent(SplineController).FollowSpline();			
+	
+	this.transform.position = TargetPos.transform.position;
+	yield WaitForSeconds(cam.GetComponent(SplineController).Duration);
+	
+	mAudio.clip = agoraVouMostrar;
+	mAudio.Play();
+	yield WaitForSeconds(mAudio.clip.length);
+	mAudio.clip = facaJuntoComigo;
+	mAudio.Play();
+	
+	yield WaitForSeconds(mAudio.clip.length/2);
+	this.GetComponent(BubbleBlowerBehaviour).enabled = true;
+	yield WaitForSeconds(mAudio.clip.length/2);
+    
+	yield WaitForSeconds(SpeechDeltaTime);
+	mAudio.clip = olheBemDentro;
+	mAudio.Play();
+	yield WaitForSeconds(mAudio.clip.length);
+	
+	yield WaitForSeconds(SpeechDeltaTime);
+	mAudio.clip = otimoVcEstaConseguindo;
+	mAudio.Play();
+	yield WaitForSeconds(mAudio.clip.length);
+	
+	yield WaitForSeconds(SpeechDeltaTime);
+	mAudio.clip = soprandoMuitoBem;
+	mAudio.Play();
+	yield WaitForSeconds(mAudio.clip.length);
+	
+}	

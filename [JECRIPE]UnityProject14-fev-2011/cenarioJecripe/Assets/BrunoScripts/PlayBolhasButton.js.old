@@ -1,0 +1,52 @@
+var lightMusica:Light;
+var lightBolhas:Light;
+var lightCreche:Light;
+
+var disabledButton:boolean = false;
+
+var narracaoClip:AudioClip;
+var mapAudio:AudioSource;
+
+var mAC: MapaAudioController;
+
+function OnMouseDown () 
+{
+	if(!disabledButton)
+	Application.LoadLevel ("Bolhas");
+}
+
+function OnMouseEnter()
+{
+	if(!disabledButton)
+	{
+		if(mapAudio.clip.name != narracaoClip.name) 
+		{
+			
+			mapAudio.clip = narracaoClip;
+			mapAudio.Play();
+		}
+		else if(!mapAudio.isPlaying) 
+		{
+			mapAudio.Play();
+		}
+		mAC.ResetTimer();
+	}
+}
+
+function OnMouseOver()
+{
+	if(!disabledButton)
+	{
+		lightCreche.enabled = false;
+		lightMusica.enabled = false;
+	}
+}
+
+function OnMouseExit()
+{
+	if(!disabledButton)
+	{
+		lightCreche.enabled = true;
+		lightMusica.enabled = true;
+	}
+}

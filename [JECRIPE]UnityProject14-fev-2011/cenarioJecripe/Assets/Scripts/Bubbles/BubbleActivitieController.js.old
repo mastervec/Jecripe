@@ -1,0 +1,31 @@
+var BGSound: AudioSource;
+var vamosAchar: AudioClip;
+var passeAMaoNasGarrafas: AudioClip;
+var bubbleBlowerAssemble: BubbleBlowerAssemble;
+
+public static var curNumOfBubbles: int;
+
+private var mAudio: AudioSource;
+private var delay: float = 1.0;
+
+function Start() {	
+	//Bruno 
+	gc = GameObject.Find("GameController");
+	if( gc)	{
+	gc.GetComponent("GUIFader").GUIFaderOut(0.2,1);
+	gc.GetComponent("AudioSource").Stop();
+	}
+	
+	BGSound.Play();
+	mAudio = this.GetComponent(AudioSource);
+	if (mAudio) {
+		mAudio.clip = vamosAchar;
+		mAudio.Play();
+		yield WaitForSeconds(mAudio.clip.length+delay);		
+		
+		mAudio.clip = passeAMaoNasGarrafas;
+		mAudio.Play();
+		yield WaitForSeconds(mAudio.clip.length);
+	}	
+	bubbleBlowerAssemble.enabled = true;
+}

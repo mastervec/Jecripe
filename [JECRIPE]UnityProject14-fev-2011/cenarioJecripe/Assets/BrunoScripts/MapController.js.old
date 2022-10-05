@@ -1,0 +1,70 @@
+var cam:Transform;
+var finalPosition:Transform;
+
+var playCrecheButton:PlayCrecheButton;
+var playBolhasButton:PlayBolhasButton;
+var playMusicaButton:PlayMusicaButton;
+
+var cityIluminator:GameObject;
+private var lightTurnOff:boolean = false;
+
+private var gc:GameObject;
+
+var travelSound:AudioSource;
+var travelNarrationSound:AudioSource;
+
+function Start()
+{
+	gc = GameObject.Find("GameController");
+	if( !gc.GetComponent("AudioSource").isPlaying )  gc.GetComponent("AudioSource").Play();
+	gc.GetComponent("GUIFader").GUIFaderOut(0.3,1);
+	
+	if ( gc.GetComponent("GameController").checkFirstLoadMap() )
+	{
+		PlaySpline();
+		travelSound.Play();
+		travelNarrationSound.Play();
+		//cam.GetComponent("SplineControllerBruno").PlayIt();
+		gc.GetComponent("GameController").firstLoadMapOff();
+	}
+	else
+	{
+		cam.position = finalPosition.transform.position;
+		cam.rotation = finalPosition.transform.rotation;
+		Destroy(cityIluminator);
+	}
+	
+}
+
+function PlaySpline()
+{
+	playCrecheButton.disabledButton = true;
+	playBolhasButton.disabledButton = true;
+	playMusicaButton.disabledButton = true;
+	yield WaitForSeconds(1);
+	cam.GetComponent("SplineControllerBruno").PlayIt();
+	
+	while(  (cam.position - finalPosition.position).sqrMagnitude > 0.3 )
+	{
+		yield WaitForSeconds(0.2);
+	}
+	
+	playCrecheButton.disabledButton = false;
+	playBolhasButton.disabledButton = false;
+	playMusicaButton.disabledButton = false;
+	lightTurnOff = true;
+
+}
+
+function Update()
+{
+	if(lightTurnOff)
+	{
+		cityIluminator.GetComponent("Light").intensity -= Time.deltaTime;
+		if( cityIluminator.GetComponent("Light").intensity  <= 0 )
+		{
+			lightTurnOff = false;
+			Destroy(cityIluminator);
+		}
+	}
+}

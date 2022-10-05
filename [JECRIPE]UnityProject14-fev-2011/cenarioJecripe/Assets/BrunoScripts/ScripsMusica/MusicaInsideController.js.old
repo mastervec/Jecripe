@@ -1,0 +1,378 @@
+var sc:SplineControllerBruno;
+
+var danceIgual: AudioClip;
+var dancaramBem: AudioClip;
+var narracaoFinal:AudioClip;
+var volteSempre:AudioClip;
+
+var jb1:JanelaButton;
+var jb2:JanelaButton;
+var jb3:JanelaButton;
+var jb4:JanelaButton;
+var jb5:JanelaButton;
+var jb6:JanelaButton;
+
+var jAnimation1:Animation;
+var jAnimation2:Motion;
+var jAnimation3:Animation;
+var jAnimation4:Animation;
+var jAnimation5:Animation;
+var jAnimation6:Animation;
+
+var Musica1:AudioClip;
+var Musica2:AudioClip;
+var Musica3:AudioClip;
+var Musica4:AudioClip;
+var Musica5:AudioClip;
+var Musica6:AudioClip;
+
+var jTravelIda1:GameObject;
+var jTravelVolta1:GameObject;
+
+var jTravelIda2:GameObject;
+var jTravelVolta2:GameObject;
+
+var jTravelIda3:GameObject;
+var jTravelVolta3:GameObject;
+
+var jTravelIda4:GameObject;
+var jTravelVolta4:GameObject;
+
+var jTravelIda5:GameObject;
+var jTravelVolta5:GameObject;
+
+var jTravelIda6:GameObject;
+var jTravelVolta6:GameObject;
+
+var windowsController:Windows;
+
+var animator1:Animator;
+var animator2:Animator;
+var animator3:Animator;
+var animator4:Animator;
+var animator5:Animator;
+var animator6:Animator;
+
+/*private var janela1Feita:boolean = false;
+private var janela2Feita:boolean = false;
+private var janela3Feita:boolean = false;
+private var janela4Feita:boolean = false;
+private var janela5Feita:boolean = false;
+private var janela6Feita:boolean = false;*/
+
+var janela1Feita:boolean = false;
+var janela2Feita:boolean = false;
+var janela3Feita:boolean = false;
+var janela4Feita:boolean = false;
+var janela5Feita:boolean = false;
+var janela6Feita:boolean = false;
+
+private var gc:GameObject;
+
+function Start()
+{
+	gc = GameObject.Find("GameController");
+	if (gc) if( !gc.GetComponent("AudioSource").isPlaying )  gc.GetComponent("AudioSource").Play();
+}
+
+function CampainhaFinished()
+{
+	if (gc) if( gc.GetComponent("AudioSource").isPlaying )  gc.GetComponent("AudioSource").Stop();
+	//Nesse Momento entra a trilha sonora da casa da musica quer sera parada sempre que entrar em alguma musica
+	sc.PlayIt();
+	//Isso dever� ser abilitado na verdade depois do fim do spline apos a narra�ao
+	Wait(5);
+	JanelasButtonState(true);
+}
+
+function Wait(seconds){
+	yield WaitForSeconds(seconds);
+}
+
+function JanelasButtonState(_state:boolean)
+{
+	jb1.EnableButton(_state);
+	jb2.EnableButton(_state);
+	jb3.EnableButton(_state);
+	jb4.EnableButton(_state);
+	jb5.EnableButton(_state);
+	jb6.EnableButton(_state);
+}
+
+function Janela1Clicked()
+{
+	sc.changePath(jTravelIda1);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = danceIgual; /// Isso � feito para tocar o som "Agora dance igual ao betinho" enquanto � dado o travel ate a janela
+	GetComponent.<AudioSource>().Play();
+	JanelasButtonState(false);
+	// Abrir janela e depois startar anima�ao de musica. Quando acabar anima�ao dizer ao gamecontroller que fez atividade e fechar janela e abilitar o clique denovo depois de um tempo de travel
+	windowsController.Open(1);
+	yield WaitForSeconds( GetComponent.<AudioSource>().clip.length-0.2 ); // esse tempo devera ser o tempo de travel
+	//Startar anima�ao e musica correspondente junto
+	animator1.SetBool("saisai",true);
+	jAnimation1.CrossFade("saisai", 0.2 , PlayMode.StopSameLayer); // Make sure te animation is ONCE
+	GetComponent.<AudioSource>().clip = Musica1;
+	GetComponent.<AudioSource>().Play();
+	yield WaitForSeconds( GetComponent.<AudioSource>().clip.length-0.5);
+	//yield WaitForSeconds( jAnimation1["saisai"].length-0.2 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	animator1.SetBool("saisai",false);
+	jAnimation1.CrossFade("idle");
+	yield WaitForSeconds( 1 );
+	//Alterar essa parte pra todas
+	//audio.clip = Musica1;
+	//audio.Play();
+	//jAnimation1.Rewind(); 
+	//jAnimation1.CrossFade("saisai", 0.2 , PlayMode.StopSameLayer); // Make sure te animation is ONCE
+	//yield WaitForSeconds( audio.clip.length+1 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	// Indicar a booleana correspondente a essa anima�ao q ela foi feita
+	janela1Feita = true;
+	if (gc) gc.GetComponent("GameController").CasaMusicaCompleta = true;
+	windowsController.Close(1);
+	sc.changePath(jTravelVolta1);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = dancaramBem; /// Isso � feito para tocar o som "Parabens vc e o betinho dancaram mto bem" enquanto � dado o travel de volta janela
+	GetComponent.<AudioSource>().Play();
+	GetComponent("MusicaAudioController").PositionCheck();
+	yield WaitForSeconds( 7 ); //Esse deve ser o tempo de travel para habilitar os botoes so depois
+	//Conferir apos chegar na posicao de camera inicial se todas as musicas foram cantadas, se sim pular a funcao de habilitar os botoes e narrar o fim da atividade e voltar ao mapa.
+	checkIfFinished();
+	if( !finished ) JanelasButtonState(true);
+}
+
+function Janela2Clicked()
+{
+	sc.changePath(jTravelIda2);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = danceIgual; /// Isso � feito para tocar o som "Agora dance igual ao betinho" enquanto � dado o travel ate a janela
+	GetComponent.<AudioSource>().Play();
+	JanelasButtonState(false);
+	// Abrir janela e depois startar anima�ao de musica. Quando acabar anima�ao dizer ao gamecontroller que fez atividade e fechar janela e abilitar o clique denovo depois de um tempo de travel
+	windowsController.Open(2);
+	yield WaitForSeconds( 5 ); // esse tempo devera ser o tempo de travel
+	//Startar anima�ao e musica correspondente junto
+	animator2.SetBool("janelinha",true);
+	//jAnimation2.CrossFade("janelinha", 0.2 , PlayMode.StopSameLayer); // Make sure te animation is ONCE
+	GetComponent.<AudioSource>().clip = Musica2;
+	GetComponent.<AudioSource>().Play();
+	//Debug.Log(Janimation2.length-0.2);
+	//yield WaitForSeconds( Janimation2.length-0.2 );
+	yield WaitForSeconds( GetComponent.<AudioSource>().clip.length-0.5);
+	// esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	animator2.SetBool("janelinha",false);
+	//jAnimation2.CrossFade("idle");
+	yield WaitForSeconds( 1 );
+	//Alterar essa parte pra todas
+	//audio.clip = Musica2;
+	//audio.Play();
+	//jAnimation2.Rewind(); 
+	//jAnimation2.Play(); // Make sure te animation is ONCE
+	//yield WaitForSeconds( audio.clip.length+1 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	// Indicar a booleana correspondente a essa anima�ao q ela foi feita
+	janela2Feita = true;
+	if (gc) gc.GetComponent("GameController").CasaMusicaCompleta = true;
+	windowsController.Close(2);
+	sc.changePath(jTravelVolta2);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = dancaramBem; /// Isso � feito para tocar o som "Parabens vc e o betinho dancaram mto bem" enquanto � dado o travel de volta janela
+	GetComponent.<AudioSource>().Play();
+	GetComponent("MusicaAudioController").PositionCheck(); // Fazer o som de clique na janela voltar a tocar
+	yield WaitForSeconds( 7 ); //Esse deve ser o tempo de travel para habilitar os botoes so depois
+	//Conferir apos chegar na posicao de camera inicial se todas as musicas foram cantadas, se sim pular a funcao de habilitar os botoes e narrar o fim da atividade e voltar ao mapa.
+	checkIfFinished();
+	if( !finished ) JanelasButtonState(true);
+}
+
+function Janela3Clicked()
+{
+	sc.changePath(jTravelIda3);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = danceIgual; /// Isso � feito para tocar o som "Agora dance igual ao betinho" enquanto � dado o travel ate a janela
+	GetComponent.<AudioSource>().Play();
+	JanelasButtonState(false);
+	// Abrir janela e depois startar anima�ao de musica. Quando acabar anima�ao dizer ao gamecontroller que fez atividade e fechar janela e abilitar o clique denovo depois de um tempo de travel
+	windowsController.Open(3);
+	yield WaitForSeconds( 5 ); // esse tempo devera ser o tempo de travel
+	//Startar anima�ao e musica correspondente junto
+	animator3.SetBool("chove",true);
+	jAnimation3.CrossFade("chove", 0.2 , PlayMode.StopSameLayer); // Make sure te animation is ONCE
+	GetComponent.<AudioSource>().clip = Musica3;
+	GetComponent.<AudioSource>().Play();
+	yield WaitForSeconds( GetComponent.<AudioSource>().clip.length-0.5);
+	//yield WaitForSeconds( jAnimation3["chove"].length-0.2 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	animator3.SetBool("chove",false);
+	jAnimation3.CrossFade("idle");
+	yield WaitForSeconds( 1 );
+	//Alterar essa parte pra todas
+	//audio.clip = Musica3;
+	//audio.Play();
+	//jAnimation3.Rewind(); 
+	//jAnimation3.Play(); // Make sure te animation is ONCE
+	//yield WaitForSeconds( audio.clip.length+1 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	// Indicar a booleana correspondente a essa anima�ao q ela foi feita
+	janela3Feita = true;
+	if (gc) gc.GetComponent("GameController").CasaMusicaCompleta = true;
+	windowsController.Close(3);
+	sc.changePath(jTravelVolta3);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = dancaramBem; /// Isso � feito para tocar o som "Parabens vc e o betinho dancaram mto bem" enquanto � dado o travel de volta janela
+	GetComponent.<AudioSource>().Play();
+	GetComponent("MusicaAudioController").PositionCheck(); // Fazer o som de clique na janela voltar a tocar
+	yield WaitForSeconds( 7 ); //Esse deve ser o tempo de travel para habilitar os botoes so depois
+	//Conferir apos chegar na posicao de camera inicial se todas as musicas foram cantadas, se sim pular a funcao de habilitar os botoes e narrar o fim da atividade e voltar ao mapa.
+	checkIfFinished();
+	if( !finished ) JanelasButtonState(true);
+}
+
+function Janela4Clicked()
+{
+	sc.changePath(jTravelIda4);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = danceIgual; /// Isso � feito para tocar o som "Agora dance igual ao betinho" enquanto � dado o travel ate a janela
+	GetComponent.<AudioSource>().Play();
+	JanelasButtonState(false);
+	// Abrir janela e depois startar anima�ao de musica. Quando acabar anima�ao dizer ao gamecontroller que fez atividade e fechar janela e abilitar o clique denovo depois de um tempo de travel
+	windowsController.Open(4);
+	yield WaitForSeconds( 5 ); // esse tempo devera ser o tempo de travel
+	//Startar anima�ao e musica correspondente junto
+	animator4.SetBool("robozinho",true);
+	jAnimation4.CrossFade("robozinho", 0.2 , PlayMode.StopSameLayer); // Make sure te animation is ONCE
+	GetComponent.<AudioSource>().clip = Musica4;
+	GetComponent.<AudioSource>().Play();
+	yield WaitForSeconds( GetComponent.<AudioSource>().clip.length-0.5);
+	//yield WaitForSeconds( jAnimation4["robozinho"].length-0.2 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	animator4.SetBool("robozinho",false);
+	jAnimation4.CrossFade("idle");
+	yield WaitForSeconds( 1 );
+	//Alterar essa parte pra todas
+	//audio.clip = Musica4;
+	//audio.Play();
+	//jAnimation4.Rewind(); 
+	//jAnimation4.Play(); // Make sure te animation is ONCE
+	//yield WaitForSeconds( audio.clip.length+1 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	// Indicar a booleana correspondente a essa anima�ao q ela foi feita
+	janela4Feita = true;
+	if (gc) gc.GetComponent("GameController").CasaMusicaCompleta = true;
+	windowsController.Close(4);
+	sc.changePath(jTravelVolta4);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = dancaramBem; /// Isso � feito para tocar o som "Parabens vc e o betinho dancaram mto bem" enquanto � dado o travel de volta janela
+	GetComponent.<AudioSource>().Play();
+	GetComponent("MusicaAudioController").PositionCheck(); // Fazer o som de clique na janela voltar a tocar
+	yield WaitForSeconds( 7 ); //Esse deve ser o tempo de travel para habilitar os botoes so depois
+	//Conferir apos chegar na posicao de camera inicial se todas as musicas foram cantadas, se sim pular a funcao de habilitar os botoes e narrar o fim da atividade e voltar ao mapa.
+	checkIfFinished();
+	if( !finished ) JanelasButtonState(true);
+}
+
+function Janela5Clicked()
+{
+	sc.changePath(jTravelIda5);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = danceIgual; /// Isso � feito para tocar o som "Agora dance igual ao betinho" enquanto � dado o travel ate a janela
+	GetComponent.<AudioSource>().Play();
+	JanelasButtonState(false);
+	// Abrir janela e depois startar anima�ao de musica. Quando acabar anima�ao dizer ao gamecontroller que fez atividade e fechar janela e abilitar o clique denovo depois de um tempo de travel
+	windowsController.Open(5);
+	yield WaitForSeconds( 5 ); // esse tempo devera ser o tempo de travel
+	//Startar anima�ao e musica correspondente junto
+	animator5.SetBool("campainha",true);
+	jAnimation5.CrossFade("campainha", 0.2 , PlayMode.StopSameLayer); // Make sure te animation is ONCE
+	GetComponent.<AudioSource>().clip = Musica5;
+	GetComponent.<AudioSource>().Play();
+	yield WaitForSeconds( GetComponent.<AudioSource>().clip.length-0.5);
+	//yield WaitForSeconds( jAnimation5["campainha"].length-0.2 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	animator5.SetBool("campainha",false);
+	jAnimation5.CrossFade("idle");
+	yield WaitForSeconds( 1 );
+	//Alterar essa parte pra todas
+	//audio.clip = Musica5;
+	//audio.Play();
+	//jAnimation5.Rewind(); 
+	//jAnimation5.Play(); // Make sure te animation is ONCE
+	//yield WaitForSeconds( audio.clip.length+1 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	// Indicar a booleana correspondente a essa anima�ao q ela foi feita
+	janela5Feita = true;
+	if (gc) gc.GetComponent("GameController").CasaMusicaCompleta = true;
+	windowsController.Close(5);
+	sc.changePath(jTravelVolta5);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = dancaramBem; /// Isso � feito para tocar o som "Parabens vc e o betinho dancaram mto bem" enquanto � dado o travel de volta janela
+	GetComponent.<AudioSource>().Play();
+	GetComponent("MusicaAudioController").PositionCheck(); // Fazer o som de clique na janela voltar a tocar
+	yield WaitForSeconds( 7 ); //Esse deve ser o tempo de travel para habilitar os botoes so depois
+	//Conferir apos chegar na posicao de camera inicial se todas as musicas foram cantadas, se sim pular a funcao de habilitar os botoes e narrar o fim da atividade e voltar ao mapa.
+	checkIfFinished();
+	if( !finished ) JanelasButtonState(true);
+}
+
+function Janela6Clicked()
+{
+	sc.changePath(jTravelIda6);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = danceIgual; /// Isso � feito para tocar o som "Agora dance igual ao betinho" enquanto � dado o travel ate a janela
+	GetComponent.<AudioSource>().Play();
+	JanelasButtonState(false);
+	// Abrir janela e depois startar anima�ao de musica. Quando acabar anima�ao dizer ao gamecontroller que fez atividade e fechar janela e abilitar o clique denovo depois de um tempo de travel
+	windowsController.Open(6);
+	yield WaitForSeconds( 5 ); // esse tempo devera ser o tempo de travel
+	//Startar anima�ao e musica correspondente junto
+	animator6.SetBool("lojadomestre",true);
+	jAnimation6.CrossFade("lojadomestre", 0.2 , PlayMode.StopSameLayer); // Make sure te animation is ONCE
+	GetComponent.<AudioSource>().clip = Musica6;
+	GetComponent.<AudioSource>().Play();
+	yield WaitForSeconds( GetComponent.<AudioSource>().clip.length-0.5);
+	//yield WaitForSeconds( jAnimation6["lojadomestre"].length-0.2 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	animator6.SetBool("lojadomestre",false);
+	jAnimation6.CrossFade("idle");
+	yield WaitForSeconds( 1 );
+	//Alterar essa parte pra todas
+	//audio.clip = Musica6;
+	//audio.Play();
+	//jAnimation6.Rewind(); 
+	//jAnimation6.Play(); // Make sure te animation is ONCE
+	//yield WaitForSeconds( audio.clip.length+1 ); // esse tempo devera ser o tempo da anima�ao da musica correspondente + um tempinho de espera
+	// Indicar a booleana correspondente a essa anima�ao q ela foi feita
+	janela6Feita = true;
+	if (gc) gc.GetComponent("GameController").CasaMusicaCompleta = true;
+	windowsController.Close(6);
+	sc.changePath(jTravelVolta6);
+	sc.PlayIt();
+	GetComponent.<AudioSource>().clip = dancaramBem; /// Isso � feito para tocar o som "Parabens vc e o betinho dancaram mto bem" enquanto � dado o travel de volta janela
+	GetComponent.<AudioSource>().Play();
+	GetComponent("MusicaAudioController").PositionCheck(); // Fazer o som de clique na janela voltar a tocar
+	yield WaitForSeconds( 7 ); //Esse deve ser o tempo de travel para habilitar os botoes so depois
+	//Conferir apos chegar na posicao de camera inicial se todas as musicas foram cantadas, se sim pular a funcao de habilitar os botoes e narrar o fim da atividade e voltar ao mapa.
+	checkIfFinished();
+	if( !finished ) JanelasButtonState(true);
+}
+
+private var finished:boolean = false;
+
+function checkIfFinished()
+{
+	if( janela1Feita && janela2Feita && janela3Feita && janela4Feita && janela5Feita && janela6Feita )
+	{
+		finished = true; // tem er no inicio pois senao o yield a seguir conflita com o codigo abaixo de onde a funcao eh chamada sendo executado
+		GetComponent("MusicaAudioController").ResetAndStopPlay();
+		while( GetComponent.<AudioSource>().isPlaying )
+		{
+			yield WaitForSeconds(0.2);
+		}
+		
+		GetComponent.<AudioSource>().clip = narracaoFinal;
+		GetComponent.<AudioSource>().Play();
+		yield WaitForSeconds(GetComponent.<AudioSource>().clip.length);
+		GetComponent.<AudioSource>().clip = volteSempre;
+		GetComponent.<AudioSource>().Play();
+		yield WaitForSeconds(GetComponent.<AudioSource>().clip.length);
+		if(gc) gc.GetComponent("GUIFader").GUIFaderIn(0.3,1);
+		LoadMenu();
+	}
+}
+
+function LoadMenu()
+{
+	yield WaitForSeconds(1.1);
+	Application.LoadLevel ("Mapa");
+}

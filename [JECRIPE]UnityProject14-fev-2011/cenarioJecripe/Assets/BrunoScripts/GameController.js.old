@@ -1,0 +1,36 @@
+var CasaMusicaCompleta : boolean = false;
+var CrecheVovoCompleta : boolean = false;
+var CasaBolhasCompleta : boolean = false;
+
+private var firstLoad :boolean = true;
+private var firstLoadMap :boolean = true;
+
+function Awake()
+{
+	DontDestroyOnLoad(this);
+}
+
+function firstLoadOff()
+{
+	firstLoad = false;
+}
+
+function firstLoadMapOff()
+{
+	firstLoadMap = false;
+}
+
+function firstLoadMapOn()
+{
+	firstLoadMap = true;
+}
+
+function checkFirstLoad():boolean
+{
+	return firstLoad;
+}
+
+function checkFirstLoadMap():boolean
+{
+	return firstLoadMap;
+}

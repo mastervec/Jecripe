@@ -1,0 +1,42 @@
+var maxClicks:int = 2;
+var offSetClickTime:float = 1;
+
+var mc:MusicaInsideController;
+
+private var offSetClickTimeAux:float;
+private var cliqueCount:int = 0;
+
+function Start()
+{
+	//offSetClickTimeAux = offSetClickTime;
+	offSetClickTimeAux = 6.3; // Primeiro momento proteger o clique enquanto rola a narra�ao 5seg de narra�ao ?
+}
+
+function OnMouseDown() 
+{
+	if( cliqueCount < maxClicks && offSetClickTimeAux < 0 )
+	{
+		GetComponent.<AudioSource>().Play();
+		cliqueCount +=1;
+		offSetClickTimeAux = offSetClickTime;
+		if ( cliqueCount == maxClicks )
+		{
+			ClickedEnough();
+		}
+	}
+}
+
+function ClickedEnough()
+{
+	mc.CampainhaFinished();
+	yield WaitForSeconds(GetComponent.<AudioSource>().clip.length);
+	Destroy(this.gameObject);
+}
+
+function Update()
+{
+	if(offSetClickTimeAux >= 0)
+	{
+		offSetClickTimeAux -= Time.deltaTime;
+	}
+}

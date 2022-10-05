@@ -1,0 +1,71 @@
+var cameraRef:Transform;
+var pathToTravel:GameObject;
+var secondsToChange:int = 2;
+
+var ExitButton:Transform;
+var CreditsButton:Transform;
+var Credits2Button:Transform;
+var PlayCollider:Transform;
+
+var EnrolaAClip: AudioClip;
+var DesenrolaAClip : AudioClip;
+
+
+private var gc:GameObject;
+private var playPressed:boolean = false;
+
+var narrationSound: AudioSource;
+
+function OnMouseDown() 
+{
+	narrationSound.Stop();
+	cameraRef.GetComponent("SplineControllerBruno").changePath(pathToTravel);
+	cameraRef.GetComponent("SplineControllerBruno").PlayIt();
+	Destroy(this.GetComponent.<Collider>());
+	Destroy(PlayCollider.GetComponent.<Collider>());
+	Destroy(ExitButton.GetComponent.<Collider>());
+	Destroy(CreditsButton.GetComponent.<Collider>());
+	Destroy(Credits2Button.GetComponent.<Collider>());
+	playPressed = true;
+	GetComponent.<Animation>().Rewind();
+	GetComponent.<Animation>().Stop();
+	//animation["Take 001"].time = 0;
+	LoadMap();
+}
+
+function OnMouseEnter() 
+{
+	GetComponent.<Animation>()["Take 001"].speed = 1;
+	//Debug.Log("time: "+animation["Take 001"].time+ "normalizedTime: "+animation["Take 001"].normalizedTime);
+	if( GetComponent.<Animation>()["Take 001"].normalizedTime < -1 )
+	{
+		GetComponent.<Animation>().Rewind();
+	}
+	GetComponent.<AudioSource>().Stop();
+	GetComponent.<AudioSource>().clip = EnrolaAClip;
+	GetComponent.<AudioSource>().Play();
+	GetComponent.<Animation>().Play();
+	increase = true;
+}
+
+function OnMouseExit() 
+{
+	
+	if(!GetComponent.<Animation>().isPlaying)
+	{
+		GetComponent.<Animation>().Play();
+		GetComponent.<Animation>()["Take 001"].normalizedTime = 1;
+	}
+	GetComponent.<Animation>()["Take 001"].speed = -1;
+	GetComponent.<AudioSource>().Stop();
+	GetComponent.<AudioSource>().clip = DesenrolaAClip;
+	GetComponent.<AudioSource>().Play();
+}
+
+function LoadMap()
+{
+	yield WaitForSeconds(secondsToChange-1);
+	GameObject.Find("GameController").GetComponent("GUIFader").GUIFaderIn(1,1);
+	yield WaitForSeconds(1);
+	Application.LoadLevel ("Mapa");
+}

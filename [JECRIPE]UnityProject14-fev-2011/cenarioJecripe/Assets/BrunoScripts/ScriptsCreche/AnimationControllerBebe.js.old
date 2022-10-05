@@ -1,0 +1,102 @@
+var animatedMesh : Animation;
+var ac:AtividadeCrecheController;
+
+function Start()
+{
+	animatedMesh["idle"].wrapMode = WrapMode.Loop;
+	animatedMesh["choro"].wrapMode = WrapMode.Once;
+	animatedMesh["Palmas"].wrapMode = WrapMode.Loop;
+	animatedMesh["Contrariedade"].wrapMode = WrapMode.Once;
+	animatedMesh["lambendo beico"].wrapMode = WrapMode.Once;
+	animatedMesh["beijo"].wrapMode = WrapMode.Once;
+	animatedMesh["apontando"].wrapMode = WrapMode.Loop;
+	animatedMesh["apontando_RU"].wrapMode = WrapMode.Loop;
+	animatedMesh["apontando_RD"].wrapMode = WrapMode.Loop;
+	animatedMesh["apontando_LU"].wrapMode = WrapMode.Loop;
+	animatedMesh["apontando_LD"].wrapMode = WrapMode.Loop;
+
+	var objetoDaVezEvent:AnimationEvent = new AnimationEvent();
+	objetoDaVezEvent.time = 0.2;
+	objetoDaVezEvent.functionName = "ChangeObjectRU";
+	objetoDaVezEvent.messageOptions = SendMessageOptions.DontRequireReceiver;
+	animatedMesh["apontando_RU"].clip.AddEvent(objetoDaVezEvent);
+	
+	objetoDaVezEvent.time = 0.2;
+	objetoDaVezEvent.functionName = "ChangeObjectRD";
+	objetoDaVezEvent.messageOptions = SendMessageOptions.DontRequireReceiver;
+	animatedMesh["apontando_RD"].clip.AddEvent(objetoDaVezEvent);
+	
+	objetoDaVezEvent.time = 0.2;
+	objetoDaVezEvent.functionName = "ChangeObjectLU";
+	objetoDaVezEvent.messageOptions = SendMessageOptions.DontRequireReceiver;
+	animatedMesh["apontando_LU"].clip.AddEvent(objetoDaVezEvent);
+	
+	objetoDaVezEvent.time = 0.2;
+	objetoDaVezEvent.functionName = "ChangeObjectLD";
+	objetoDaVezEvent.messageOptions = SendMessageOptions.DontRequireReceiver;
+	animatedMesh["apontando_LD"].clip.AddEvent(objetoDaVezEvent);
+	
+	/*animatedMesh["punch"].layer = 2;
+	animatedMesh["punch"].AddMixingTransform(upperBody, true);
+	
+	animatedMesh["arco_shot"].layer = 3;
+	animatedMesh["arco_shot"].AddMixingTransform(upperBody, true);
+	
+	animatedMesh["rock_shot"].layer = 3;
+	animatedMesh["rock_shot"].AddMixingTransform(upperBody, true);
+	
+	animatedMesh["arco_idle"].layer = 2;
+	animatedMesh["arco_idle"].AddMixingTransform(upperBody, true);
+	
+	animatedMesh["rock_idle"].layer = 2;
+	animatedMesh["rock_idle"].AddMixingTransform(upperBody, true);
+	animatedMesh["rock_idle"].blendMode = AnimationBlendMode.Additive;
+	
+	var arcoEvent:AnimationEvent = new AnimationEvent();
+	arcoEvent.time = timeToShotArrow;
+	arcoEvent.functionName = "FireEvent";
+	arcoEvent.messageOptions = SendMessageOptions.DontRequireReceiver;
+	animatedMesh["arco_shot"].clip.AddEvent(arcoEvent);
+	//Debug.Log(animatedMesh["arco_shot"].length);
+	arcoEvent.time = animatedMesh["arco_shot"].clip.length - 0.05;  /// When I put animatedMesh["arco_shot"].clip.legth that should be the right value... some times it dosent work
+	arcoEvent.functionName = "InstatiateNewBullet";
+	animatedMesh["arco_shot"].clip.AddEvent(arcoEvent);
+	
+	var grabEvent:AnimationEvent = new AnimationEvent();
+	grabEvent.time = timeToReallyGrab;
+	grabEvent.functionName = "GrabEvent";
+	grabEvent.messageOptions = SendMessageOptions.DontRequireReceiver;
+	animatedMesh["grab"].clip.AddEvent(grabEvent);
+	
+	animatedMesh["sneak_left"].AddMixingTransform(rightLeg,true);
+	animatedMesh["sneak_left"].AddMixingTransform(leftLeg,true);
+	
+	animatedMesh["sneak_right"].AddMixingTransform(rightLeg,true);
+	animatedMesh["sneak_right"].AddMixingTransform(leftLeg,true);
+	
+	animatedMesh["strafe_left"].AddMixingTransform(rightLeg,true);
+	animatedMesh["strafe_left"].AddMixingTransform(leftLeg,true);
+	
+	animatedMesh["strafe_right"].AddMixingTransform(rightLeg,true);
+	animatedMesh["strafe_right"].AddMixingTransform(leftLeg,true);*/
+}
+
+function ChangeObjectRU( _objetoDaVezEvent: AnimationEvent )
+{
+	ac.ChangeCurrentObject("Chocalho");
+}
+
+function ChangeObjectRD( _objetoDaVezEvent: AnimationEvent )
+{
+	ac.ChangeCurrentObject("Papinha");
+}
+
+function ChangeObjectLU( _objetoDaVezEvent: AnimationEvent )
+{
+	ac.ChangeCurrentObject("Chupeta");
+}
+
+function ChangeObjectLD( _objetoDaVezEvent: AnimationEvent )
+{
+	ac.ChangeCurrentObject("Mamadeira");
+}

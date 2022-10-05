@@ -1,0 +1,12 @@
+var rotationSpeed: float= 1;
+var leftGate: Transform;
+var rightGate: Transform;
+
+function Update() 
+{
+	leftGate.Rotate(0,-Time.deltaTime * rotationSpeed,0);
+	rightGate.Rotate(0,Time.deltaTime * rotationSpeed,0);	
+	if (leftGate.localEulerAngles.y <= -90 && rightGate.localEulerAngles.y >= 90) {
+		enabled = false;
+	}
+}

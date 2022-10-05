@@ -1,0 +1,312 @@
+// Controla toda a atividade a ser realizada na creche
+// Criaremos um vetor com os 4 objetos na ordem a serem realizados
+private var ordemObjetos:Array;
+
+// Definiremos os objetos da seguinte forma:
+// Chocalho = 0 ; Papinha = 1; Chupeta = 2; Mamadeira = 3;
+
+//Z ORIGINAL= -3,5
+//CLICOU NO OBJETO VAI PRO Z = 0.8
+
+var cam:Transform;
+var wayPointFinal:Transform;
+
+var bebeRef:Transform;
+var bebeColRef:Transform;
+
+var Chocalho:Transform;
+var Chupeta:Transform;
+var Papinha:Transform;
+var Mamadeira:Transform;
+
+var backToMapaButton:Transform;
+
+private var sound:NarradorCrecheSound;
+private var activityStarted:boolean = false;
+
+static var ObjetoDaVez:String = "";
+
+function Start()
+{
+	sound = GetComponent("NarradorCrecheSound");
+	if(GameObject.Find("GameController")) GameObject.Find("GameController").GetComponent("AudioSource").Stop();
+	ordemObjetos = new Array();
+	for ( var ind:int = 0 ; ind < 4 ; ind++ )
+	{
+		ordemObjetos.Push(ind);
+	}
+	ShuffleOrder();
+	CheckToBegin();
+}
+
+function CheckToBegin()
+{
+	//CHECAGEM PARA VER SE A CAMERA JA TA NA POSICAO CORRETA PARA COMECAR A ATIVIDADE
+	// Habilita os cliques nos objetos e inicia a atividade efetivamente
+
+	while(  (cam.position - wayPointFinal.position).sqrMagnitude > 0.3 )
+	{
+		yield;
+	}
+		
+	//ATIVAR SOM CORRESPONDENTE
+
+	sound.PlayInicioAtividade();
+	yield WaitForSeconds(10); // Esperar o tempo necessario para o narrador narrar a atividade e depois come�a-la
+	
+	StartActivity();
+}
+
+function StartActivity()
+{
+	Debug.Log('start');
+	activityStarted = true;
+	
+
+	Chocalho.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	Chupeta.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	Papinha.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	Mamadeira.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	
+	Debug.Log('pegou');
+	switch ( ordemObjetos.Pop() )
+	{
+		case 3:  
+		ObjetoDaVez = "Mamadeira";
+		bebeRef.GetComponent.<Animation>().CrossFade("apontando_LD"); // Apontar pro objeto escolhido
+		currentAnimation = "apontando_LD";
+		break;
+		case 0:
+		ObjetoDaVez = "Chocalho";
+		bebeRef.GetComponent.<Animation>().CrossFade("apontando_RU");
+		currentAnimation = "apontando_RU";
+		break;
+		case 2: 
+		ObjetoDaVez = "Chupeta";
+		bebeRef.GetComponent.<Animation>().CrossFade("apontando_LU");
+		currentAnimation = "apontando_LU";
+		break;
+		case 1:
+		ObjetoDaVez = "Papinha";
+		bebeRef.GetComponent.<Animation>().CrossFade("apontando_RD");
+		currentAnimation = "apontando_RD";
+		break;
+	}
+	Debug.Log(ObjetoDaVez);
+	//ATIVAR SOM CORRESPONDENTE
+	bebeRef.GetComponent("BebeSoundController").ChangeToBalbuciando();
+}
+
+function ShuffleOrder() // Embaralha o vetor que define a ordem dos objetos a serem pegos
+{
+	// Fazer aqui com que o OrdemDeObjetos seja embaralhado
+	var arrayAux:Array = new Array(); 
+	for ( var i:int = 0 ; i < 4 ; i++ )
+	{
+		arrayAux.Push(i);
+	}
+	
+	
+	for ( var ind:int = 0 ; ind < 3 ; ind++ )
+	{
+		var rand:int = Random.Range(0,4-ind);
+		//Debug.Log(rand);
+		ordemObjetos[ind] = arrayAux[rand];
+		var temp:int = arrayAux[arrayAux.length-1-ind];
+		arrayAux[arrayAux.length-1-ind] = arrayAux[rand];
+		arrayAux[rand] = temp;
+	}
+	ordemObjetos[3] = arrayAux[0];
+}
+
+function ObjectDropped()// Chamada qnd soltou o objeto
+{
+	// Checa se terminou a atividade   /// SE TERMINOU MANDAR AO GAME CONTROLLER QUE CONCLUIU COM SUCESSO
+
+	// Muda o objeto a ser pego
+	// Starta a anima�ao de apontar denovo se a atividade nao tiver completa
+	//Se nao acabou atividade play beijo e aponta ao proximo.... se acabou play palmas
+	if ( ordemObjetos.length > 0 )
+	{	
+		if(ObjetoDaVez == "Papinha") 
+		{
+			bebeRef.GetComponent.<Animation>().CrossFade("lambendo beico");
+			//ATIVAR SOM CORRESPONDENTE
+			bebeRef.GetComponent("BebeSoundController").ChangeToLambendo();
+		}
+		else
+		{
+			bebeRef.GetComponent.<Animation>().CrossFade("beijo");
+			//ATIVAR SOM CORRESPONDENTE
+			bebeRef.GetComponent("BebeSoundController").ChangeToBeijo();
+		}
+		//Assim que colocar no bebe e ele for fazer a anima�ao desabilitar o drag
+		if( Chocalho ) Chocalho.GetComponent("GrabberBruno").MakeGrabberActive(false);
+		if( Chupeta ) Chupeta.GetComponent("GrabberBruno").MakeGrabberActive(false);
+		if( Papinha ) Papinha.GetComponent("GrabberBruno").MakeGrabberActive(false);
+		if( Mamadeira ) Mamadeira.GetComponent("GrabberBruno").MakeGrabberActive(false);
+		NextObject();
+	}
+	else
+	{
+		bebeRef.GetComponent.<Animation>().CrossFade("Palmas");
+		//ATIVAR SOM CORRESPONDENTE
+		activityStarted = false;
+		bebeRef.GetComponent("BebeSoundController").ChangeToPalmas();
+		//ATIVAR NARRADOR FIM
+		yield WaitForSeconds( 1 );
+		sound.PlayFimAtividade();
+		yield WaitForSeconds( 10 );
+		// Avisar o GameController que ja fez a atividade
+		GameObject.Find("GameController").GetComponent("GameController").CrecheVovoCompleta = true;
+		//Esperar narra�ao final e voltar para o mapa
+		backToMapaButton.GetComponent("BackToMapButton").OnMouseDown();
+	}
+	
+}
+
+function Wait(seconds){
+	yield WaitForSeconds(seconds);
+}
+
+
+function ChangeCurrentObject(_nome:String)
+{
+	ObjetoDaVez = _nome;
+}
+
+private var isDragging:boolean = false;
+private var currentAnimation:String = "";
+
+function IsDragging(_state:boolean)
+{
+	isDragging = _state;
+	if( isDragging )
+	{
+		bebeRef.GetComponent.<Animation>().CrossFade("apontando"); 
+		bebeColRef.GetComponent("Look").LookOn(true);
+		switch ( ObjetoDaVez )
+		{
+			case "Mamadeira":  
+			bebeColRef.GetComponent("Look").SetTarget(Mamadeira);
+			break;
+			case "Chocalho":
+			bebeColRef.GetComponent("Look").SetTarget(Chocalho);
+			break;
+			case "Chupeta":
+			bebeColRef.GetComponent("Look").SetTarget(Chupeta);	
+			break;
+			case "Papinha":
+			bebeColRef.GetComponent("Look").SetTarget(Papinha);
+			break;
+		}
+		
+	}
+	else
+	{
+		bebeRef.GetComponent.<Animation>().CrossFade( currentAnimation );
+		bebeColRef.GetComponent("Look").LookOn(false);
+	}
+}
+
+function ActivateDindtLikedAnimation()
+{
+	bebeRef.GetComponent.<Animation>().CrossFade( "Contrariedade" );
+	/// ATIVAR SOM CORRESPONDENTE
+	bebeRef.GetComponent("BebeSoundController").ChangeToContrariedade();
+	
+	if( Chocalho ) Chocalho.GetComponent("GrabberBruno").MakeGrabberActive(false);
+	if( Chupeta ) Chupeta.GetComponent("GrabberBruno").MakeGrabberActive(false);
+	if( Papinha ) Papinha.GetComponent("GrabberBruno").MakeGrabberActive(false);
+	if( Mamadeira ) Mamadeira.GetComponent("GrabberBruno").MakeGrabberActive(false);
+	
+	yield WaitForSeconds (bebeRef.GetComponent.<Animation>()["Contrariedade"].length - 0.3);
+	//if( bebeRef.animation.IsPlaying( "Contrariedade" ) ) bebeRef.animation.CrossFade( currentAnimation );
+	 bebeRef.GetComponent.<Animation>().CrossFade( currentAnimation );
+	 //ATIVAR SOM CORRESPONDENTE
+	 bebeRef.GetComponent("BebeSoundController").ChangeToBalbuciando();
+	
+	yield WaitForSeconds( 0.3 ); // PARA CORRIGIR O BUG DE TRAVAR A ANIMACAO QUANDO CLICA NO OBJETO ERRADO LOGO ANTES DE TERMINAR A ANIMACAO DE CONTRARIEDADE
+	if( Chocalho ) Chocalho.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	if( Chupeta ) Chupeta.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	if( Papinha ) Papinha.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	if( Mamadeira ) Mamadeira.GetComponent("GrabberBruno").MakeGrabberActive(true);
+}
+
+function NextObject()
+{
+	while( bebeRef.GetComponent.<Animation>().IsPlaying("beijo") || bebeRef.GetComponent.<Animation>().IsPlaying("lambendo beico"))
+	{
+		yield WaitForSeconds ( 0.05 );
+	}
+	
+	bebeRef.GetComponent.<Animation>().Play("beijo");
+	
+	//Assim que for mudar para a animacao de apontando permitir clicar denovo
+	if( Chocalho ) Chocalho.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	if( Chupeta ) Chupeta.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	if( Papinha ) Papinha.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	if( Mamadeira ) Mamadeira.GetComponent("GrabberBruno").MakeGrabberActive(true);
+	
+	switch ( ordemObjetos.Pop() )
+	{
+		case 3:  
+		//ObjetoDaVez = "Mamadeira";
+		bebeRef.GetComponent.<Animation>().CrossFade("apontando_LD"); // Apontar pro objeto escolhido
+		currentAnimation = "apontando_LD";
+		break;
+		case 0: 
+		//ObjetoDaVez = "Chocalho";
+		bebeRef.GetComponent.<Animation>().CrossFade("apontando_RU");
+		currentAnimation = "apontando_RU";
+		break;
+		case 2: 
+		//ObjetoDaVez = "Chupeta";
+		bebeRef.GetComponent.<Animation>().CrossFade("apontando_LU");
+		currentAnimation = "apontando_LU";
+		break;
+		case 1: 
+		//ObjetoDaVez = "Papinha";
+		bebeRef.GetComponent.<Animation>().CrossFade("apontando_RD");
+		currentAnimation = "apontando_RD";
+		break;
+	}
+	
+	//ATIVAR SOM CORRESPONDENTE
+	bebeRef.GetComponent("BebeSoundController").ChangeToBalbuciando();
+}
+
+private var timeTotal:float = 10;
+private var counting:float = 2;
+
+function Update()
+{
+	if(activityStarted)
+	{
+		counting -= Time.deltaTime;
+		if ( counting <= 0 )
+		{
+			counting = timeTotal;
+			//Play a narrator sound
+			if( !bebeRef.GetComponent.<Animation>().IsPlaying("beijo") && !bebeRef.GetComponent.<Animation>().IsPlaying("lambendo beico"))
+			{
+				switch ( ObjetoDaVez )
+				{
+					case "Mamadeira":  
+					sound.PlayMamadeira();
+					break;
+					case "Chocalho":
+					sound.PlayChocalho();
+					break;
+					case "Chupeta":
+					sound.PlayChupeta();
+					break;
+					case "Papinha":
+					sound.PlayPapinha();
+					break;
+				}
+			}
+		}
+	}
+}
+/// PARA A VERSAO FULL REFATORAR ESSES YIELDS POGS QUE GERAM MILHOES DE ERROS COLATERAIS COM EVENTOS DISPARADOS PELAS ANIMA�OES

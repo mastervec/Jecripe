@@ -1,0 +1,6 @@
+
+function Start () 
+{
+		var gcaux:GameObject = GameObject.Find("GameController");
+		gcaux.GetComponent("AudioSource").Stop();
+}

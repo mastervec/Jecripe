@@ -1,0 +1,57 @@
+var bubble: Transform;
+//var maxNumOfBubbles: int = 10;
+var intervalTime: float = 1.0;
+var minVelocity: int = 100;
+var maxVelocity: int = 150;
+var lifeTime: int = 10;
+static var curNumOfBubbles: int = 0; 
+private var bubblesArray: Array;
+private var isBlowing: boolean = true;
+private var count: int = 0;
+ 
+function Start() {
+	yield WaitForSeconds(0.5);
+	bubblesArray = new Array();
+	//Screen.showCursor = false;
+	//Screen.lockCursor = true;
+	while (enabled) {
+		var clone = Instantiate(bubble, this.transform.position, Quaternion.identity);
+		clone.transform.parent = this.transform;
+		clone.transform.Rotate(Vector3(0,0,0));
+		clone.GetComponent(BubbleBlow).setLifeTime(lifeTime);
+		bubblesArray.push(clone);
+		for (var i: int = 0; i < bubblesArray.length - 1; i++) {
+			if ( bubblesArray[i] != null )
+			Physics.IgnoreCollision(bubblesArray[i].collider, clone.GetComponent.<Collider>());
+		}	
+		clone.GetComponent(Rigidbody).AddForce(Random.Range(minVelocity,maxVelocity), Random.Range(minVelocity,maxVelocity), Random.Range(minVelocity,maxVelocity));
+		curNumOfBubbles++;
+		count++;
+        yield WaitForSeconds(intervalTime);			
+	}	
+	isBlowing = false;
+    //StartCoroutine("BlowBubbles");	
+	//Screen.showCursor = true;
+	Screen.lockCursor = false;
+}
+
+
+/*function BlowBubbles() {
+	Debug.Log("ENTROU NO BLOW BUBBLES");
+	while (curNumOfBubbles < maxNumOfBubbles) {
+		var clone = Instantiate(bubble, this.transform.position, Quaternion.identity);
+		clone.transform.parent = this.transform;
+		clone.transform.Rotate(Vector3(0,180,180));
+		clone.GetComponent(BubbleBlow).setLifeTime(lifeTime);
+		bubblesArray.push(clone);
+		for (var i: int = 0; i < bubblesArray.length - 1; i++) {
+			if ( bubblesArray[i] != null )
+			Physics.IgnoreCollision(bubblesArray[i].collider, clone.collider);
+		}
+		clone.GetComponent(Rigidbody).AddForce(Random.Range(minVelocity,maxVelocity), Random.Range(minVelocity,maxVelocity), Random.Range(minVelocity,maxVelocity));
+		curNumOfBubbles++;
+		count++;
+		yield WaitForSeconds(intervalTime);	
+	}	
+	isBlowing = false;	
+}*/

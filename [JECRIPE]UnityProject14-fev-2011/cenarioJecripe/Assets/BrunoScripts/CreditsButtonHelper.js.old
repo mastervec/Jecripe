@@ -1,0 +1,16 @@
+var creditsTranform:Transform;
+
+function OnMouseDown()
+{
+	creditsTranform.GetComponent("CreditosButton").OnMouseDown();
+}
+
+function OnMouseEnter() 
+{
+	creditsTranform.GetComponent("CreditosButton").OnMouseEnter();
+}
+
+function OnMouseExit() 
+{
+	creditsTranform.GetComponent("CreditosButton").OnMouseExit();
+}

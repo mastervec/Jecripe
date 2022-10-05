@@ -1,0 +1,4 @@
+function OnTriggerEnter(other : Collider) {
+	Debug.Log("Chegou perto da Porta - OnTriggerEnter at ActivitieCollisionDetector");
+	this.transform.parent.GetComponent(ActivitieEntrance).enabled = true;	
+}

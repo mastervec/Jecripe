@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 1e5def19c7463db4b8eae152c52419f1
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: "balan\xE7o"
+    100002: "balan\xE7o 1"
+    100004: "bal\xE3o"
+    100006: Box20
+    100008: Box26
+    100010: caixa de brinquedo
+    100012: caixas dadinho02
+    100014: caixas dadinho03
+    100016: caixas dadinho04
+    100018: Camera01
+    100020: Camera01.Target
+    100022: Camera02
+    100024: Camera02.Target
+    100026: carrinho de golf
+    100028: //RootNode
+    100030: "ch\xE3o"
+    100032: "ch\xE3o01"
+    100034: coelho
+    100036: coelho 1
+    100038: coelho 2
+    100040: Cylinder01
+    100042: Cylinder06
+    100044: detergente
+    100046: estante do quarto das bolhas
+    100048: folha
+    100050: "garrafa de \xE1gua"
+    100052: iglu interno01
+    100054: Interruptor
+    100056: lego
+    100058: lego 1
+    100060: lego 2
+    100062: livros
+    100064: Omni01
+    100066: pega bolhas
+    100068: pegador
+    100070: "pi\xE3o"
+    100072: porta retrato
+    100074: Puff
+    100076: Puff01
+    100078: "REL\xD3GIO"
+    100080: "sentop\xE9ia"
+    100082: "sentop\xE9ia01"
+    100084: "sof\xE1"
+    100086: tapete
+    100088: trenzinho
+    100090: tronco
+    100092: tv
+    100094: tv 1
+    100096: ventilador
+    100098: "\xE1rvore"
+    100100: "\xF4nibus"
+    400000: "balan\xE7o"
+    400002: "balan\xE7o 1"
+    400004: "bal\xE3o"
+    400006: Box20
+    400008: Box26
+    400010: caixa de brinquedo
+    400012: caixas dadinho02
+    400014: caixas dadinho03
+    400016: caixas dadinho04
+    400018: Camera01
+    400020: Camera01.Target
+    400022: Camera02
+    400024: Camera02.Target
+    400026: carrinho de golf
+    400028: //RootNode
+    400030: "ch\xE3o"
+    400032: "ch\xE3o01"
+    400034: coelho
+    400036: coelho 1
+    400038: coelho 2
+    400040: Cylinder01
+    400042: Cylinder06
+    400044: detergente
+    400046: estante do quarto das bolhas
+    400048: folha
+    400050: "garrafa de \xE1gua"
+    400052: iglu interno01
+    400054: Interruptor
+    400056: lego
+    400058: lego 1
+    400060: lego 2
+    400062: livros
+    400064: Omni01
+    400066: pega bolhas
+    400068: pegador
+    400070: "pi\xE3o"
+    400072: porta retrato
+    400074: Puff
+    400076: Puff01
+    400078: "REL\xD3GIO"
+    400080: "sentop\xE9ia"
+    400082: "sentop\xE9ia01"
+    400084: "sof\xE1"
+    400086: tapete
+    400088: trenzinho
+    400090: tronco
+    400092: tv
+    400094: tv 1
+    400096: ventilador
+    400098: "\xE1rvore"
+    400100: "\xF4nibus"
+    2000000: Camera01
+    2000002: Camera02
+    2100000: 'Material #277'
+    2100002: Standard_15
+    2100004: dado
+    2100006: estante
+    2100008: 'Material #29'
+    2100010: 'Material #31'
+    2100012: 'Material #28'
+    2100014: 'Material #27'
+    2100016: caixas
+    2100018: 'Material #25'
+    2100020: Pega bolhas
+    2100022: quadro
+    2100024: 'Material #335'
+    2100026: 'Material #172'
+    2100028: Standard_7
+    2100030: Standard_6
+    2100032: "garrafa de \xE1gua"
+    2100034: uv iglu
+    2100036: Standard_11
+    2100038: poltrona
+    2100040: 'Material #679'
+    2100042: 'Material #678'
+    2100044: 'Material #23'
+    2100046: Standard_1
+    2100048: 'Material #30'
+    2100050: "Rel\xF3gio"
+    2100052: tapete
+    2100054: 'Material #993'
+    2100056: "bal\xE3o"
+    2100058: UV folhas
+    2100060: uv tronco
+    2100062: "ch\xE3o"
+    2100064: detergente
+    2300000: "balan\xE7o 1"
+    2300002: "bal\xE3o"
+    2300004: Box20
+    2300006: Box26
+    2300008: caixa de brinquedo
+    2300010: caixas dadinho02
+    2300012: caixas dadinho03
+    2300014: caixas dadinho04
+    2300016: carrinho de golf
+    2300018: "ch\xE3o"
+    2300020: "ch\xE3o01"
+    2300022: coelho
+    2300024: coelho 1
+    2300026: coelho 2
+    2300028: Cylinder06
+    2300030: detergente
+    2300032: estante do quarto das bolhas
+    2300034: folha
+    2300036: "garrafa de \xE1gua"
+    2300038: iglu interno01
+    2300040: Interruptor
+    2300042: lego
+    2300044: lego 1
+    2300046: lego 2
+    2300048: livros
+    2300050: pega bolhas
+    2300052: pegador
+    2300054: "pi\xE3o"
+    2300056: porta retrato
+    2300058: Puff
+    2300060: Puff01
+    2300062: "REL\xD3GIO"
+    2300064: "sentop\xE9ia"
+    2300066: "sentop\xE9ia01"
+    2300068: "sof\xE1"
+    2300070: tapete
+    2300072: trenzinho
+    2300074: tronco
+    2300076: tv 1
+    2300078: ventilador
+    2300080: "\xE1rvore"
+    2300082: "\xF4nibus"
+    3300000: "balan\xE7o 1"
+    3300002: "bal\xE3o"
+    3300004: Box20
+    3300006: Box26
+    3300008: caixa de brinquedo
+    3300010: caixas dadinho02
+    3300012: caixas dadinho03
+    3300014: caixas dadinho04
+    3300016: carrinho de golf
+    3300018: "ch\xE3o"
+    3300020: "ch\xE3o01"
+    3300022: coelho
+    3300024: coelho 1
+    3300026: coelho 2
+    3300028: Cylinder06
+    3300030: detergente
+    3300032: estante do quarto das bolhas
+    3300034: folha
+    3300036: "garrafa de \xE1gua"
+    3300038: iglu interno01
+    3300040: Interruptor
+    3300042: lego
+    3300044: lego 1
+    3300046: lego 2
+    3300048: livros
+    3300050: pega bolhas
+    3300052: pegador
+    3300054: "pi\xE3o"
+    3300056: porta retrato
+    3300058: Puff
+    3300060: Puff01
+    3300062: "REL\xD3GIO"
+    3300064: "sentop\xE9ia"
+    3300066: "sentop\xE9ia01"
+    3300068: "sof\xE1"
+    3300070: tapete
+    3300072: trenzinho
+    3300074: tronco
+    3300076: tv 1
+    3300078: ventilador
+    3300080: "\xE1rvore"
+    3300082: "\xF4nibus"
+    4300000: Cylinder06
+    4300002: caixas dadinho02
+    4300004: estante do quarto das bolhas
+    4300006: caixa de brinquedo
+    4300008: pega bolhas
+    4300010: pegador
+    4300012: Interruptor
+    4300014: porta retrato
+    4300016: livros
+    4300018: ventilador
+    4300020: "garrafa de \xE1gua"
+    4300022: "pi\xE3o"
+    4300024: iglu interno01
+    4300026: "\xE1rvore"
+    4300028: "sof\xE1"
+    4300030: Puff
+    4300032: tv
+    4300034: lego
+    4300036: Box20
+    4300038: lego
+    4300040: coelho
+    4300042: coelho
+    4300044: coelho
+    4300046: "sentop\xE9ia"
+    4300048: "REL\xD3GIO"
+    4300050: caixas dadinho03
+    4300052: caixas dadinho04
+    4300054: Puff01
+    4300056: tapete
+    4300058: Box26
+    4300060: lego
+    4300062: "sentop\xE9ia01"
+    4300064: "balan\xE7o"
+    4300066: trenzinho
+    4300068: "\xF4nibus"
+    4300070: "bal\xE3o"
+    4300072: carrinho de golf
+    4300074: folha
+    4300076: tronco
+    4300078: "ch\xE3o"
+    4300080: detergente
+    4300082: "ch\xE3o01"
+    10800000: Omni01
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

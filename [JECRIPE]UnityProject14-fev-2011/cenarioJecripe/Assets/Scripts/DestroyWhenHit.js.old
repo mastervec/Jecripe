@@ -1,0 +1,4 @@
+// Destroy everything that enters the trigger
+function OnTriggerExit (other : Collider) {
+	Destroy(other.gameObject);
+}

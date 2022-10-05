@@ -1,0 +1,19 @@
+public static var isDraggingWater : boolean;
+public static var isDraggingSoap : boolean;
+public static var isDraggingLastPiece : boolean;
+public static var canDragLastPiece : boolean;
+public static var canDragSoapBottle : boolean;
+
+
+function Start() {
+	isDraggingWater = false;
+	isDraggingSoap = false;
+	isDraggingLastPiece = false;
+	canDragLastPiece  = false;
+	canDragSoapBottle = false;
+}
+
+/*function OnGUI() {
+	GUI.Label(Rect(10,130,200,150),"canDragSoapBottle == "+canDragSoapBottle);
+	GUI.Label(Rect(10,150,200,180),"canDragLastPiece == "+canDragLastPiece);
+}*/

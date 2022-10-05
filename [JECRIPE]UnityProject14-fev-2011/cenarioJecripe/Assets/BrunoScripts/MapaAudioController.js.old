@@ -1,0 +1,51 @@
+var TimeToPlayAgain: float = 30;
+
+var auxCount:float = 0;
+private var canPlay : boolean = false;
+
+function Start() 
+{
+	FirstCheck();
+}
+
+function ResetTimer()
+{
+	auxCount = TimeToPlayAgain;
+}
+
+var cam : Transform;
+var finalPosition : Transform;
+
+function FirstCheck()
+{
+	while(  (cam.position - finalPosition.position).sqrMagnitude > 0.3 )
+	{
+		yield WaitForSeconds(0.2);
+	}
+	canPlay = true;
+}
+
+function Update() 
+{
+	if ( canPlay )
+	{
+		if( auxCount <= 0 )
+		{
+			auxCount = TimeToPlayAgain;
+			PlaySounds();
+		}
+		else
+		{
+			auxCount -= Time.deltaTime;
+		}
+	}
+}
+
+var narrationAudio: AudioClip;
+var mapAudio:AudioSource;
+
+function PlaySounds()
+{
+	mapAudio.clip = narrationAudio;
+	mapAudio.Play();
+}

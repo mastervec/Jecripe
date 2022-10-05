@@ -1,0 +1,62 @@
+var animationToHandle:Animation;
+
+var PlayButton:Transform;
+var CreditsButton:Transform;
+var Credits2Button:Transform;
+var Play2Collider:Transform;
+
+private var gc:GameObject;
+
+var narrationSound: AudioSource;
+
+function OnMouseDown() 
+{
+	
+	
+		narrationSound.Stop();
+		Destroy(this.GetComponent.<Collider>());
+		Destroy(PlayButton.GetComponent.<Collider>());
+		Destroy(Play2Collider.GetComponent.<Collider>());
+		Destroy(CreditsButton.GetComponent.<Collider>());
+		Destroy(Credits2Button.GetComponent.<Collider>());
+		animationToHandle.GetComponent.<Animation>().Rewind();
+		animationToHandle.GetComponent.<Animation>().Stop();
+		//animation["Take 001"].time = 0;
+		LoadExit();
+	
+}
+
+function OnMouseEnter() 
+{
+	
+		GetComponent.<AudioSource>().Play();
+		animationToHandle.GetComponent.<Animation>()["Take 001"].speed = 1;
+		//Debug.Log("time: "+animation["Take 001"].time+ "normalizedTime: "+animation["Take 001"].normalizedTime);
+		if( animationToHandle.GetComponent.<Animation>()["Take 001"].normalizedTime < -1 )
+		{
+			animationToHandle.GetComponent.<Animation>().Rewind();
+		}
+		animationToHandle.GetComponent.<Animation>().Play();
+	
+}
+
+function OnMouseExit() 
+{
+	
+		if(!animationToHandle.GetComponent.<Animation>().isPlaying)
+		{
+			animationToHandle.GetComponent.<Animation>().Play();
+			animationToHandle.GetComponent.<Animation>()["Take 001"].normalizedTime = 1;
+		}
+		animationToHandle.GetComponent.<Animation>()["Take 001"].speed = -1;
+	
+}
+
+function LoadExit()
+{
+	
+		GameObject.Find("GameController").GetComponent("GUIFader").GUIFaderIn(0,1);
+		yield WaitForSeconds(1);
+		Application.LoadLevel ("Encerramento");
+	
+}

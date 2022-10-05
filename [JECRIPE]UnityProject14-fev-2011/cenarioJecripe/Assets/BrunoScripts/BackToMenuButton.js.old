@@ -1,0 +1,32 @@
+private var gc:GameObject;
+
+function Start()
+{
+	gc = GameObject.Find("GameController");
+}
+
+function OnMouseDown () 
+{
+	gc.GetComponent("GUIFader").GUIFaderIn(0.3,1);
+	LoadMenu();
+}
+
+
+   
+function OnMouseOver() 
+{
+	this.GetComponent.<GUITexture>().pixelInset.width = 100;
+	this.GetComponent.<GUITexture>().pixelInset.height = 100;
+}
+
+function OnMouseExit() 
+{
+	this.GetComponent.<GUITexture>().pixelInset.width = 70;
+	this.GetComponent.<GUITexture>().pixelInset.height = 70;
+}
+
+function LoadMenu()
+{
+	yield WaitForSeconds(1.1);
+	Application.LoadLevel ("JecripeMenu");
+}

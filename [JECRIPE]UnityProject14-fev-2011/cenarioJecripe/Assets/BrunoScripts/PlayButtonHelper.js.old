@@ -1,0 +1,6 @@
+var playTranform:Transform;
+
+function OnMouseDown()
+{
+	playTranform.GetComponent("PlayGameButton").OnMouseDown();
+}

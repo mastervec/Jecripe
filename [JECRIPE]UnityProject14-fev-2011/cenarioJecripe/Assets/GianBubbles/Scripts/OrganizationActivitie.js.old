@@ -1,0 +1,131 @@
+var toys: Transform;
+var toysToRemove: Transform[];
+var boxes: Transform[];
+var boxCollider: Transform[];
+var smooth: float = 5.0;
+var caixaDeMesmaCor: AudioClip;
+var passeAMaoParaPegar: AudioClip;
+var positiveReinforcement: AudioClip[];
+var estourarBolhasFoiMuitoDivertido: AudioClip;
+
+
+private var oldPosition: Transform;
+private var newPosition: Transform;
+private var count: int = 0;
+private var target: Vector3[];
+private var moveBoxes = false;
+private var mAudio: AudioSource;
+private var delay: float = 0.5;
+
+function Start() {
+	MoveBoxesFromShelf();
+	RemoveOldToys();
+	ActivateToys();
+	target = new Vector3[4];
+	yield WaitForSeconds(1.0);
+	mAudio = GetComponent(AudioSource);
+	mAudio.clip = caixaDeMesmaCor;
+	mAudio.Play();
+	yield WaitForSeconds(mAudio.clip.length+delay);
+	mAudio.clip = passeAMaoParaPegar;
+	mAudio.Play();
+	yield WaitForSeconds(mAudio.clip.length+delay);
+	
+	var cam = GameObject.Find("Main Camera");
+	cam.GetComponent(DragOn2D).enabled = true;	
+}
+
+function GetFallingPosition(i: int): Vector3 {
+	switch (i) {
+		case 1:  
+			return GameObject.Find("FallingPosition1").transform.position;
+		case 2:
+			return GameObject.Find("FallingPosition2").transform.position;
+		case 3: 
+			return GameObject.Find("FallingPosition3").transform.position;
+		case 4:
+			return GameObject.Find("FallingPosition4").transform.position;					
+	}
+	return;
+}
+
+function ActivateToys() {
+	toys.gameObject.SetActiveRecursively(true);
+	var colliders = toys.gameObject.GetComponentsInChildren (Collider);
+	for (var col : Collider in colliders) {
+		col.isTrigger = false;
+		col.gameObject.AddComponent(Rigidbody);
+		col.GetComponent.<Rigidbody>().drag = 5.0;
+	}
+}
+
+function MakeBoxesIgnoreRaycast() {
+	for (var i: int = 0; i < boxCollider.length; i++) {
+		boxCollider[i].gameObject.layer = 2;				
+	}
+}
+
+function MakeBoxesDetectRaycast() {
+	for (var i: int = 0; i < boxCollider.length; i++) {
+		boxCollider[i].gameObject.layer = 0;				
+	}
+}
+
+function RemoveOldToys() {
+	for (var i : int = 0; i < toysToRemove.length; i++) {
+		Destroy(toysToRemove[i].gameObject);
+	}
+}
+
+function MoveBoxesFromShelf() {	
+	for (var i : int = 0; i < boxes.length; i++) {
+		//Debug.Log("boxes["+i+"].position = "+ boxes[i].position);
+		//Debug.Log("target["+i+"] = "+ target[i]);
+		//target[i] = boxes[i].position;
+		//target[i].x -= 2.0;
+		boxes[i].position.x -= 2.0;
+		//boxes[i].position.x = target[i].position.x;
+	}	
+}
+
+/*function Update() {
+	if (moveBoxes) {
+		for (var i : int = 0; i < boxes.length; i++) {
+			boxes[i].position = Vector3.Lerp(boxes[i].position, target[i], Time.deltaTime * smooth);
+		}		
+	}	
+}*/
+
+var backToMapaButton:Transform;
+
+function IncreaseCount() {
+	count++;
+	Debug.Log("count: "+ count);
+	mAudio.clip = positiveReinforcement[Random.Range(0,positiveReinforcement.length)];
+	mAudio.Play();
+	//yield WaitForSeconds(mAudio.clip.length+delay);
+	if (count == boxes.length * 2) {
+		yield WaitForSeconds(1.0);
+		var cam = GameObject.Find("Main Camera");	
+		cam.GetComponent(SplineController).SplineParent = GameObject.Find("CameraPosAfterOrganization");
+		cam.GetComponent(SplineController).Start();
+		cam.GetComponent(SplineController).FollowSpline();
+		yield WaitForSeconds(1.0);	
+		yield WaitForSeconds(cam.GetComponent(SplineController).Duration);
+		mAudio.clip = estourarBolhasFoiMuitoDivertido;
+		mAudio.Play();
+		yield WaitForSeconds(mAudio.clip.length+delay);
+		GameObject.Find("BubbleActivitieBGSound").GetComponent(AudioSource).Stop();
+		Debug.Log("FIM DA ATIVIDADE - VOLTAR AO MENU");
+		//sucess.Play();
+		//yield WaitForSeconds(sucess.clip.length);
+		
+		
+		
+		//BRUNO
+		// Avisar o GameController que ja fez a atividade
+		GameObject.Find("GameController").GetComponent("GameController").CasaBolhasCompleta = true;
+		//Esperar narra�ao final e voltar para o mapa
+		backToMapaButton.GetComponent("BackToMapButton").OnMouseDown();
+	}
+}

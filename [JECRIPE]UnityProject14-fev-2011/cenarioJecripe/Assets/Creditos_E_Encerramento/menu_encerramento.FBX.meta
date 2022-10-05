@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 055a2fd9d11164846ae436bb5954539f
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Camera05
+    100002: Camera05.Target
+    100004: Fundo_Encerramento
+    100006: Head
+    100008: //RootNode
+    100010: Person
+    100012: Personagem Betinho
+    100014: Plano_Encerra
+    100016: Plano_EncerraControlador
+    100018: Plano_Encerramento
+    100020: Plano_EncerraResizer
+    100022: Rig
+    100024: "Rig BetinhoCabe\xE7a"
+    100026: Rig BetinhoColuna2
+    100028: Rig BetinhoColunaCATRigSpine1
+    100030: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o1"
+    100032: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o2"
+    100034: "Rig BetinhoDireita Bra\xE7oBra\xE7o"
+    100036: "Rig BetinhoDireita Bra\xE7oClavicula"
+    100038: "Rig BetinhoDireita Bra\xE7oDedo Anelar1"
+    100040: "Rig BetinhoDireita Bra\xE7oDedo Anelar2"
+    100042: "Rig BetinhoDireita Bra\xE7oDedo Anelar3"
+    100044: "Rig BetinhoDireita Bra\xE7oDedo Indicador1"
+    100046: "Rig BetinhoDireita Bra\xE7oDedo Indicador2"
+    100048: "Rig BetinhoDireita Bra\xE7oDedo Indicador3"
+    100050: "Rig BetinhoDireita Bra\xE7oDedo Mindinho1"
+    100052: "Rig BetinhoDireita Bra\xE7oDedo Mindinho2"
+    100054: "Rig BetinhoDireita Bra\xE7oDedo Mindinho3"
+    100056: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio1"
+    100058: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio2"
+    100060: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio3"
+    100062: "Rig BetinhoDireita Bra\xE7oDedo Polegar1"
+    100064: "Rig BetinhoDireita Bra\xE7oDedo Polegar2"
+    100066: "Rig BetinhoDireita Bra\xE7oDedo Polegar3"
+    100068: "Rig BetinhoDireita Bra\xE7oPalma"
+    100070: Rig BetinhoDireita PernaCanela
+    100072: Rig BetinhoDireita PernaCoxa
+    100074: Rig BetinhoDireita PernaPlatform
+    100076: "Rig BetinhoDireita PernaP\xE91"
+    100078: Rig BetinhoDireita PernaTornozelo
+    100080: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o1"
+    100082: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o2"
+    100084: "Rig BetinhoEsquerda Bra\xE7oBra\xE7o"
+    100086: "Rig BetinhoEsquerda Bra\xE7oClavicula"
+    100088: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar1"
+    100090: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar2"
+    100092: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar3"
+    100094: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador1"
+    100096: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador2"
+    100098: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador3"
+    100100: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho1"
+    100102: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho2"
+    100104: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho3"
+    100106: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio1"
+    100108: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio2"
+    100110: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio3"
+    100112: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar1"
+    100114: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar2"
+    100116: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar3"
+    100118: "Rig BetinhoEsquerda Bra\xE7oPalma"
+    100120: Rig BetinhoEsquerda PernaCanela
+    100122: Rig BetinhoEsquerda PernaCoxa
+    100124: Rig BetinhoEsquerda PernaPlatform
+    100126: "Rig BetinhoEsquerda PernaP\xE91"
+    100128: Rig BetinhoEsquerda PernaTornozelo
+    100130: Rig BetinhoPeito
+    100132: Rig BetinhoPelvis
+    100134: Rig BetinhoSpine
+    100136: Sky01
+    400000: Camera05
+    400002: Camera05.Target
+    400004: Fundo_Encerramento
+    400006: Head
+    400008: //RootNode
+    400010: Person
+    400012: Personagem Betinho
+    400014: Plano_Encerra
+    400016: Plano_EncerraControlador
+    400018: Plano_Encerramento
+    400020: Plano_EncerraResizer
+    400022: Rig
+    400024: "Rig BetinhoCabe\xE7a"
+    400026: Rig BetinhoColuna2
+    400028: Rig BetinhoColunaCATRigSpine1
+    400030: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o1"
+    400032: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o2"
+    400034: "Rig BetinhoDireita Bra\xE7oBra\xE7o"
+    400036: "Rig BetinhoDireita Bra\xE7oClavicula"
+    400038: "Rig BetinhoDireita Bra\xE7oDedo Anelar1"
+    400040: "Rig BetinhoDireita Bra\xE7oDedo Anelar2"
+    400042: "Rig BetinhoDireita Bra\xE7oDedo Anelar3"
+    400044: "Rig BetinhoDireita Bra\xE7oDedo Indicador1"
+    400046: "Rig BetinhoDireita Bra\xE7oDedo Indicador2"
+    400048: "Rig BetinhoDireita Bra\xE7oDedo Indicador3"
+    400050: "Rig BetinhoDireita Bra\xE7oDedo Mindinho1"
+    400052: "Rig BetinhoDireita Bra\xE7oDedo Mindinho2"
+    400054: "Rig BetinhoDireita Bra\xE7oDedo Mindinho3"
+    400056: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio1"
+    400058: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio2"
+    400060: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio3"
+    400062: "Rig BetinhoDireita Bra\xE7oDedo Polegar1"
+    400064: "Rig BetinhoDireita Bra\xE7oDedo Polegar2"
+    400066: "Rig BetinhoDireita Bra\xE7oDedo Polegar3"
+    400068: "Rig BetinhoDireita Bra\xE7oPalma"
+    400070: Rig BetinhoDireita PernaCanela
+    400072: Rig BetinhoDireita PernaCoxa
+    400074: Rig BetinhoDireita PernaPlatform
+    400076: "Rig BetinhoDireita PernaP\xE91"
+    400078: Rig BetinhoDireita PernaTornozelo
+    400080: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o1"
+    400082: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o2"
+    400084: "Rig BetinhoEsquerda Bra\xE7oBra\xE7o"
+    400086: "Rig BetinhoEsquerda Bra\xE7oClavicula"
+    400088: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar1"
+    400090: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar2"
+    400092: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar3"
+    400094: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador1"
+    400096: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador2"
+    400098: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador3"
+    400100: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho1"
+    400102: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho2"
+    400104: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho3"
+    400106: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio1"
+    400108: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio2"
+    400110: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio3"
+    400112: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar1"
+    400114: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar2"
+    400116: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar3"
+    400118: "Rig BetinhoEsquerda Bra\xE7oPalma"
+    400120: Rig BetinhoEsquerda PernaCanela
+    400122: Rig BetinhoEsquerda PernaCoxa
+    400124: Rig BetinhoEsquerda PernaPlatform
+    400126: "Rig BetinhoEsquerda PernaP\xE91"
+    400128: Rig BetinhoEsquerda PernaTornozelo
+    400130: Rig BetinhoPeito
+    400132: Rig BetinhoPelvis
+    400134: Rig BetinhoSpine
+    400136: Sky01
+    2100000: No Name
+    2100002: "cabe\xE7a"
+    2100004: corpo
+    2100006: Encerramento_Fundo
+    2300000: Fundo_Encerramento
+    2300002: Plano_EncerraControlador
+    2300004: Plano_EncerraResizer
+    2300006: "Rig BetinhoCabe\xE7a"
+    2300008: Rig BetinhoColuna2
+    2300010: Rig BetinhoColunaCATRigSpine1
+    2300012: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o1"
+    2300014: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o2"
+    2300016: "Rig BetinhoDireita Bra\xE7oBra\xE7o"
+    2300018: "Rig BetinhoDireita Bra\xE7oClavicula"
+    2300020: "Rig BetinhoDireita Bra\xE7oDedo Anelar1"
+    2300022: "Rig BetinhoDireita Bra\xE7oDedo Anelar2"
+    2300024: "Rig BetinhoDireita Bra\xE7oDedo Anelar3"
+    2300026: "Rig BetinhoDireita Bra\xE7oDedo Indicador1"
+    2300028: "Rig BetinhoDireita Bra\xE7oDedo Indicador2"
+    2300030: "Rig BetinhoDireita Bra\xE7oDedo Indicador3"
+    2300032: "Rig BetinhoDireita Bra\xE7oDedo Mindinho1"
+    2300034: "Rig BetinhoDireita Bra\xE7oDedo Mindinho2"
+    2300036: "Rig BetinhoDireita Bra\xE7oDedo Mindinho3"
+    2300038: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio1"
+    2300040: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio2"
+    2300042: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio3"
+    2300044: "Rig BetinhoDireita Bra\xE7oDedo Polegar1"
+    2300046: "Rig BetinhoDireita Bra\xE7oDedo Polegar2"
+    2300048: "Rig BetinhoDireita Bra\xE7oDedo Polegar3"
+    2300050: "Rig BetinhoDireita Bra\xE7oPalma"
+    2300052: Rig BetinhoDireita PernaCanela
+    2300054: Rig BetinhoDireita PernaCoxa
+    2300056: "Rig BetinhoDireita PernaP\xE91"
+    2300058: Rig BetinhoDireita PernaTornozelo
+    2300060: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o1"
+    2300062: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o2"
+    2300064: "Rig BetinhoEsquerda Bra\xE7oBra\xE7o"
+    2300066: "Rig BetinhoEsquerda Bra\xE7oClavicula"
+    2300068: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar1"
+    2300070: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar2"
+    2300072: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar3"
+    2300074: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador1"
+    2300076: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador2"
+    2300078: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador3"
+    2300080: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho1"
+    2300082: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho2"
+    2300084: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho3"
+    2300086: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio1"
+    2300088: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio2"
+    2300090: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio3"
+    2300092: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar1"
+    2300094: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar2"
+    2300096: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar3"
+    2300098: "Rig BetinhoEsquerda Bra\xE7oPalma"
+    2300100: Rig BetinhoEsquerda PernaCanela
+    2300102: Rig BetinhoEsquerda PernaCoxa
+    2300104: "Rig BetinhoEsquerda PernaP\xE91"
+    2300106: Rig BetinhoEsquerda PernaTornozelo
+    2300108: Rig BetinhoPeito
+    2300110: Rig BetinhoPelvis
+    2300112: Rig BetinhoSpine
+    3300000: Fundo_Encerramento
+    3300002: Plano_EncerraControlador
+    3300004: Plano_EncerraResizer
+    3300006: "Rig BetinhoCabe\xE7a"
+    3300008: Rig BetinhoColuna2
+    3300010: Rig BetinhoColunaCATRigSpine1
+    3300012: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o1"
+    3300014: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o2"
+    3300016: "Rig BetinhoDireita Bra\xE7oBra\xE7o"
+    3300018: "Rig BetinhoDireita Bra\xE7oClavicula"
+    3300020: "Rig BetinhoDireita Bra\xE7oDedo Anelar1"
+    3300022: "Rig BetinhoDireita Bra\xE7oDedo Anelar2"
+    3300024: "Rig BetinhoDireita Bra\xE7oDedo Anelar3"
+    3300026: "Rig BetinhoDireita Bra\xE7oDedo Indicador1"
+    3300028: "Rig BetinhoDireita Bra\xE7oDedo Indicador2"
+    3300030: "Rig BetinhoDireita Bra\xE7oDedo Indicador3"
+    3300032: "Rig BetinhoDireita Bra\xE7oDedo Mindinho1"
+    3300034: "Rig BetinhoDireita Bra\xE7oDedo Mindinho2"
+    3300036: "Rig BetinhoDireita Bra\xE7oDedo Mindinho3"
+    3300038: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio1"
+    3300040: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio2"
+    3300042: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio3"
+    3300044: "Rig BetinhoDireita Bra\xE7oDedo Polegar1"
+    3300046: "Rig BetinhoDireita Bra\xE7oDedo Polegar2"
+    3300048: "Rig BetinhoDireita Bra\xE7oDedo Polegar3"
+    3300050: "Rig BetinhoDireita Bra\xE7oPalma"
+    3300052: Rig BetinhoDireita PernaCanela
+    3300054: Rig BetinhoDireita PernaCoxa
+    3300056: "Rig BetinhoDireita PernaP\xE91"
+    3300058: Rig BetinhoDireita PernaTornozelo
+    3300060: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o1"
+    3300062: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o2"
+    3300064: "Rig BetinhoEsquerda Bra\xE7oBra\xE7o"
+    3300066: "Rig BetinhoEsquerda Bra\xE7oClavicula"
+    3300068: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar1"
+    3300070: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar2"
+    3300072: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar3"
+    3300074: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador1"
+    3300076: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador2"
+    3300078: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador3"
+    3300080: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho1"
+    3300082: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho2"
+    3300084: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho3"
+    3300086: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio1"
+    3300088: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio2"
+    3300090: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio3"
+    3300092: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar1"
+    3300094: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar2"
+    3300096: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar3"
+    3300098: "Rig BetinhoEsquerda Bra\xE7oPalma"
+    3300100: Rig BetinhoEsquerda PernaCanela
+    3300102: Rig BetinhoEsquerda PernaCoxa
+    3300104: "Rig BetinhoEsquerda PernaP\xE91"
+    3300106: Rig BetinhoEsquerda PernaTornozelo
+    3300108: Rig BetinhoPeito
+    3300110: Rig BetinhoPelvis
+    3300112: Rig BetinhoSpine
+    4300000: Rig BetinhoPelvis
+    4300002: Rig BetinhoEsquerda PernaCoxa
+    4300004: Rig BetinhoEsquerda PernaCanela
+    4300006: Rig BetinhoEsquerda PernaTornozelo
+    4300008: "Rig BetinhoEsquerda PernaP\xE91"
+    4300010: Rig BetinhoColunaCATRigSpine1
+    4300012: Rig BetinhoColuna2
+    4300014: Rig BetinhoPeito
+    4300016: Rig BetinhoSpine
+    4300018: "Rig BetinhoCabe\xE7a"
+    4300020: "Rig BetinhoDireita Bra\xE7oClavicula"
+    4300022: "Rig BetinhoDireita Bra\xE7oBra\xE7o"
+    4300024: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o1"
+    4300026: "Rig BetinhoDireita Bra\xE7oAntiBra\xE7o2"
+    4300028: "Rig BetinhoDireita Bra\xE7oPalma"
+    4300030: "Rig BetinhoDireita Bra\xE7oDedo Polegar1"
+    4300032: "Rig BetinhoDireita Bra\xE7oDedo Polegar2"
+    4300034: "Rig BetinhoDireita Bra\xE7oDedo Polegar3"
+    4300036: "Rig BetinhoDireita Bra\xE7oDedo Indicador1"
+    4300038: "Rig BetinhoDireita Bra\xE7oDedo Indicador2"
+    4300040: "Rig BetinhoDireita Bra\xE7oDedo Indicador3"
+    4300042: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio1"
+    4300044: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio2"
+    4300046: "Rig BetinhoDireita Bra\xE7oDedo M\xE9dio3"
+    4300048: "Rig BetinhoDireita Bra\xE7oDedo Anelar1"
+    4300050: "Rig BetinhoDireita Bra\xE7oDedo Anelar2"
+    4300052: "Rig BetinhoDireita Bra\xE7oDedo Anelar3"
+    4300054: "Rig BetinhoDireita Bra\xE7oDedo Mindinho1"
+    4300056: "Rig BetinhoDireita Bra\xE7oDedo Mindinho2"
+    4300058: "Rig BetinhoDireita Bra\xE7oDedo Mindinho3"
+    4300060: "Rig BetinhoEsquerda Bra\xE7oClavicula"
+    4300062: "Rig BetinhoEsquerda Bra\xE7oBra\xE7o"
+    4300064: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o1"
+    4300066: "Rig BetinhoEsquerda Bra\xE7oAntiBra\xE7o2"
+    4300068: "Rig BetinhoEsquerda Bra\xE7oPalma"
+    4300070: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar1"
+    4300072: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar2"
+    4300074: "Rig BetinhoEsquerda Bra\xE7oDedo Polegar3"
+    4300076: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador1"
+    4300078: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador2"
+    4300080: "Rig BetinhoEsquerda Bra\xE7oDedo Indicador3"
+    4300082: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio1"
+    4300084: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio2"
+    4300086: "Rig BetinhoEsquerda Bra\xE7oDedo M\xE9dio3"
+    4300088: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar1"
+    4300090: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar2"
+    4300092: "Rig BetinhoEsquerda Bra\xE7oDedo Anelar3"
+    4300094: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho1"
+    4300096: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho2"
+    4300098: "Rig BetinhoEsquerda Bra\xE7oDedo Mindinho3"
+    4300100: Rig BetinhoDireita PernaCoxa
+    4300102: Rig BetinhoDireita PernaCanela
+    4300104: Rig BetinhoDireita PernaTornozelo
+    4300106: "Rig BetinhoDireita PernaP\xE91"
+    4300108: Head
+    4300110: Person
+    4300112: Plano_Encerramento
+    4300114: Plano_EncerraControlador
+    4300116: Plano_EncerraResizer
+    4300118: Fundo_Encerramento
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Head
+    13700002: Person
+    13700004: Plano_Encerramento
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Encerramento_Fundo
+    second: {fileID: 2100000, guid: 0227a37cca1b985428abb36e5fbeaeb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 2035819399d540549ac77dd911e5318f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "cabe\xE7a"
+    second: {fileID: 2100000, guid: 723c5c6c78da72c458e13810fcb6e6a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corpo
+    second: {fileID: 2100000, guid: 4ecec0be594830e43af4d69d1e212830, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,44 @@
+private var gc:GameObject;
+private var playPressed:boolean = false;
+
+var ExitButton:Transform;
+var PlayButton:Transform;
+var Play2Collider:Transform;
+var Credits2Button:Transform;
+	
+private var animationTime:float = 0;
+
+var narrationSound: AudioSource;
+
+function OnMouseDown() 
+{
+	narrationSound.Stop();
+	Destroy(this.GetComponent.<Collider>());
+	Destroy(ExitButton.GetComponent.<Collider>());
+	Destroy(PlayButton.GetComponent.<Collider>());
+	Destroy(Play2Collider.GetComponent.<Collider>());
+	Destroy(Credits2Button.GetComponent.<Collider>());
+
+	LoadCredits();
+}
+
+function OnMouseEnter() 
+{
+	GetComponent.<AudioSource>().Play();
+	GetComponent.<Animation>().Play();
+	GetComponent.<Animation>()["Take 001"].normalizedTime = animationTime;
+}
+
+function OnMouseExit() 
+{
+	GetComponent.<AudioSource>().Stop();
+	animationTime = GetComponent.<Animation>()["Take 001"].normalizedTime;
+	GetComponent.<Animation>().Stop();
+}
+
+function LoadCredits()
+{
+	GameObject.Find("GameController").GetComponent("GUIFader").GUIFaderIn(1,1);
+	yield WaitForSeconds(1);
+	Application.LoadLevel ("Creditos");
+}

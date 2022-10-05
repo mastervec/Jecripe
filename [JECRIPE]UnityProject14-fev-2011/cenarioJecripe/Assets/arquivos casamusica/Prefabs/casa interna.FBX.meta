@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: f6b40f651d0c1af42b0ec5f932c9f07e
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: "balan\xE7o"
+    100002: "balan\xE7o 1"
+    100004: "bal\xE3o"
+    100006: baqueta xilofone
+    100008: baqueta xilofone 1
+    100010: Box06
+    100012: Box07
+    100014: Box08
+    100016: Box09
+    100018: Box10
+    100020: Box11
+    100022: Box12
+    100024: Box13
+    100026: Box14
+    100028: Box15
+    100030: Box16
+    100032: Box20
+    100034: Box26
+    100036: caixa de brinquedo
+    100038: caixas dadinho02
+    100040: caixas dadinho03
+    100042: caixas dadinho04
+    100044: carrinho de golf
+    100046: //RootNode
+    100048: "ch\xE3o"
+    100050: coelho
+    100052: coelho 1
+    100054: coelho 2
+    100056: Cylinder01
+    100058: detergente
+    100060: estante do quarto das bolhas
+    100062: "garrafa de \xE1gua"
+    100064: iglu interno01
+    100066: lego
+    100068: lego 1
+    100070: lego 2
+    100072: livros
+    100074: pega bolhas
+    100076: pegador
+    100078: "pi\xE3o"
+    100080: porta retrato
+    100082: Puff
+    100084: Puff01
+    100086: "REL\xD3GIO"
+    100088: "sentop\xE9ia"
+    100090: "sentop\xE9ia01"
+    100092: "sof\xE1"
+    100094: tapete
+    100096: trenzinho
+    100098: tv
+    100100: tv 1
+    100102: ventilador
+    100104: xilofone
+    100106: "\xE1rvore"
+    100108: "\xF4nibus"
+    400000: "balan\xE7o"
+    400002: "balan\xE7o 1"
+    400004: "bal\xE3o"
+    400006: baqueta xilofone
+    400008: baqueta xilofone 1
+    400010: Box06
+    400012: Box07
+    400014: Box08
+    400016: Box09
+    400018: Box10
+    400020: Box11
+    400022: Box12
+    400024: Box13
+    400026: Box14
+    400028: Box15
+    400030: Box16
+    400032: Box20
+    400034: Box26
+    400036: caixa de brinquedo
+    400038: caixas dadinho02
+    400040: caixas dadinho03
+    400042: caixas dadinho04
+    400044: carrinho de golf
+    400046: //RootNode
+    400048: "ch\xE3o"
+    400050: coelho
+    400052: coelho 1
+    400054: coelho 2
+    400056: Cylinder01
+    400058: detergente
+    400060: estante do quarto das bolhas
+    400062: "garrafa de \xE1gua"
+    400064: iglu interno01
+    400066: lego
+    400068: lego 1
+    400070: lego 2
+    400072: livros
+    400074: pega bolhas
+    400076: pegador
+    400078: "pi\xE3o"
+    400080: porta retrato
+    400082: Puff
+    400084: Puff01
+    400086: "REL\xD3GIO"
+    400088: "sentop\xE9ia"
+    400090: "sentop\xE9ia01"
+    400092: "sof\xE1"
+    400094: tapete
+    400096: trenzinho
+    400098: tv
+    400100: tv 1
+    400102: ventilador
+    400104: xilofone
+    400106: "\xE1rvore"
+    400108: "\xF4nibus"
+    2100000: "ch\xE3o"
+    2100002: dado
+    2100004: Standard_1
+    2100006: 'Material #29'
+    2100008: 'Material #31'
+    2100010: 'Material #28'
+    2100012: 'Material #27'
+    2100014: 'Material #335'
+    2100016: Pega bolhas
+    2100018: 'Material #172'
+    2100020: Standard_7
+    2100022: Standard_6
+    2100024: 'Material #277'
+    2100026: uv iglu
+    2100028: 'Material #993'
+    2100030: 'Material #679'
+    2100032: 'Material #678'
+    2100034: 'Material #30'
+    2100036: tapete
+    2300000: "balan\xE7o 1"
+    2300002: "bal\xE3o"
+    2300004: baqueta xilofone
+    2300006: baqueta xilofone 1
+    2300008: Box06
+    2300010: Box07
+    2300012: Box08
+    2300014: Box09
+    2300016: Box10
+    2300018: Box11
+    2300020: Box12
+    2300022: Box13
+    2300024: Box14
+    2300026: Box15
+    2300028: Box16
+    2300030: Box20
+    2300032: Box26
+    2300034: caixa de brinquedo
+    2300036: caixas dadinho02
+    2300038: caixas dadinho03
+    2300040: caixas dadinho04
+    2300042: carrinho de golf
+    2300044: "ch\xE3o"
+    2300046: coelho
+    2300048: coelho 1
+    2300050: coelho 2
+    2300052: detergente
+    2300054: estante do quarto das bolhas
+    2300056: "garrafa de \xE1gua"
+    2300058: iglu interno01
+    2300060: lego
+    2300062: lego 1
+    2300064: lego 2
+    2300066: livros
+    2300068: pega bolhas
+    2300070: pegador
+    2300072: "pi\xE3o"
+    2300074: porta retrato
+    2300076: Puff
+    2300078: Puff01
+    2300080: "REL\xD3GIO"
+    2300082: "sentop\xE9ia"
+    2300084: "sentop\xE9ia01"
+    2300086: "sof\xE1"
+    2300088: tapete
+    2300090: trenzinho
+    2300092: tv 1
+    2300094: ventilador
+    2300096: "\xE1rvore"
+    2300098: "\xF4nibus"
+    3300000: "balan\xE7o 1"
+    3300002: "bal\xE3o"
+    3300004: baqueta xilofone
+    3300006: baqueta xilofone 1
+    3300008: Box06
+    3300010: Box07
+    3300012: Box08
+    3300014: Box09
+    3300016: Box10
+    3300018: Box11
+    3300020: Box12
+    3300022: Box13
+    3300024: Box14
+    3300026: Box15
+    3300028: Box16
+    3300030: Box20
+    3300032: Box26
+    3300034: caixa de brinquedo
+    3300036: caixas dadinho02
+    3300038: caixas dadinho03
+    3300040: caixas dadinho04
+    3300042: carrinho de golf
+    3300044: "ch\xE3o"
+    3300046: coelho
+    3300048: coelho 1
+    3300050: coelho 2
+    3300052: detergente
+    3300054: estante do quarto das bolhas
+    3300056: "garrafa de \xE1gua"
+    3300058: iglu interno01
+    3300060: lego
+    3300062: lego 1
+    3300064: lego 2
+    3300066: livros
+    3300068: pega bolhas
+    3300070: pegador
+    3300072: "pi\xE3o"
+    3300074: porta retrato
+    3300076: Puff
+    3300078: Puff01
+    3300080: "REL\xD3GIO"
+    3300082: "sentop\xE9ia"
+    3300084: "sentop\xE9ia01"
+    3300086: "sof\xE1"
+    3300088: tapete
+    3300090: trenzinho
+    3300092: tv 1
+    3300094: ventilador
+    3300096: "\xE1rvore"
+    3300098: "\xF4nibus"
+    4300000: "ch\xE3o"
+    4300002: caixas dadinho02
+    4300004: estante do quarto das bolhas
+    4300006: caixa de brinquedo
+    4300008: pega bolhas
+    4300010: pegador
+    4300012: porta retrato
+    4300014: livros
+    4300016: ventilador
+    4300018: "garrafa de \xE1gua"
+    4300020: detergente
+    4300022: "pi\xE3o"
+    4300024: iglu interno01
+    4300026: "\xE1rvore"
+    4300028: "sof\xE1"
+    4300030: Puff
+    4300032: tv
+    4300034: lego
+    4300036: Box20
+    4300038: lego
+    4300040: coelho
+    4300042: coelho
+    4300044: coelho
+    4300046: "sentop\xE9ia"
+    4300048: "REL\xD3GIO"
+    4300050: caixas dadinho03
+    4300052: caixas dadinho04
+    4300054: Puff01
+    4300056: tapete
+    4300058: Box26
+    4300060: lego
+    4300062: "sentop\xE9ia01"
+    4300064: "balan\xE7o"
+    4300066: trenzinho
+    4300068: "\xF4nibus"
+    4300070: "bal\xE3o"
+    4300072: carrinho de golf
+    4300074: Box09
+    4300076: baqueta xilofone
+    4300078: Box16
+    4300080: Box06
+    4300082: Box07
+    4300084: Box08
+    4300086: Box15
+    4300088: Box10
+    4300090: Box11
+    4300092: Box12
+    4300094: Box13
+    4300096: Box14
+    4300098: baqueta xilofone
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

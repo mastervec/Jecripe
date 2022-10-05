@@ -1,0 +1,7 @@
+var objs: GameObject[];
+
+function Start() {
+	for(var i : int = 0; i < objs.length-1; i++)
+		for(var j : int = i+1; j <objs.length; j++)
+			Physics.IgnoreCollision(objs[i].GetComponent.<Collider>(),objs[j].GetComponent.<Collider>());
+}

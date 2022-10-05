@@ -1,0 +1,77 @@
+var endAnimation:Animation;
+
+private var gc:GameController;
+	
+function Start()
+{
+	gc = GameObject.Find("GameController").GetComponent("GameController");
+	if ( gc )
+	{
+		Musica = gc.CasaMusicaCompleta;
+		Creche = gc.CrecheVovoCompleta;
+		Bolhas = gc.CasaBolhasCompleta;
+	}
+	endAnimation["Take 001"].speed = 0.36;
+	yield ExitApplication();
+}
+
+function ExitApplication()
+{
+	yield WaitForSeconds(endAnimation.clip.length*(1/0.36));
+	Application.Quit();
+	yield WaitForSeconds(8);
+}
+
+private var Musica : boolean = false;
+private var Creche : boolean = false;
+private var Bolhas : boolean = false;
+
+var MA : AudioClip;
+var BA : AudioClip;
+var CA : AudioClip;
+var MBA : AudioClip;
+var MCA : AudioClip;
+var BCA : AudioClip;
+var MBCA : AudioClip;
+var NA : AudioClip;
+var Obrigado : AudioClip;
+
+function CheckSoundToPlay()
+{
+	if ( Musica && Creche && Bolhas )
+	{
+		GetComponent.<AudioSource>().clip = MBCA;
+	}
+	else if ( Musica && Creche )
+			{
+				GetComponent.<AudioSource>().clip = MCA;
+			}
+			else if ( Musica && Bolhas )
+				{
+					GetComponent.<AudioSource>().clip = MBA;
+				}
+				else if ( Bolhas && Creche )
+					{
+						GetComponent.<AudioSource>().clip = BCA;
+					}
+					else if ( Musica )
+						{
+							GetComponent.<AudioSource>().clip = MA;
+						}
+						else if ( Bolhas )
+							{
+								GetComponent.<AudioSource>().clip = BA;
+							}
+							else if ( Creche )
+								{
+									GetComponent.<AudioSource>().clip = CA;
+								}
+								else
+								{
+									GetComponent.<AudioSource>().clip = NA;
+								}
+	GetComponent.<AudioSource>().Play();
+	yield WaitForSeconds(GetComponent.<AudioSource>().clip.length);
+	GetComponent.<AudioSource>().clip = Obrigado;
+	GetComponent.<AudioSource>().Play();
+}

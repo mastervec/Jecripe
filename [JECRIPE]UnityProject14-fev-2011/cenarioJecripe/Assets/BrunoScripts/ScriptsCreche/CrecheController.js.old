@@ -1,0 +1,16 @@
+private var gc:GameObject;
+
+function Start()
+{
+	gc = GameObject.Find("GameController");
+	if( !gc.GetComponent("AudioSource").isPlaying )  gc.GetComponent("AudioSource").Play();
+	LoadInsideCreche();
+}
+
+function LoadInsideCreche()
+{
+	yield WaitForSeconds(5);
+	if(gc) gc.GetComponent("GUIFader").GUIFaderIn(0.2,1);
+	yield WaitForSeconds(1.1);
+	Application.LoadLevel("CrecheInterna");
+}

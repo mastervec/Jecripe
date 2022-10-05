@@ -1,0 +1,81 @@
+var target:Transform;
+
+private var originalRotation:Quaternion;
+
+private var dir:Vector3; 
+private var dir2:Vector3;
+
+function Start()
+{
+	originalRotation = transform.localRotation;
+	dir = transform.TransformDirection(Vector3.up);
+	dir2 = transform.TransformDirection(Vector3.left);
+}
+
+private var lookOn:boolean = false;
+
+function LookOn(_state:boolean)
+{
+	lookOn = _state; 
+}
+
+function SetTarget( _target:Transform)
+{
+	target = _target;
+}
+
+function LateUpdate () {
+	//var vetaux:Vector3 = target.position - transform.position;
+	///Debug.DrawRay(transform.position,vetaux* 10, Color.green);
+	//this.transform.rotation.x += this.transform.rotation.x - vetaux.x;
+	//Debug.Log(vetaux);
+	
+	
+	Debug.DrawRay(transform.position, dir*5, Color.white);
+	//firstRotation = this.transform;
+	
+	//Debug.Log(Vector3.Angle(vetaux, transform.position.forward));
+	//Debug.Log(firstRotation.rotation);
+	
+	//this.transform.rotation = Quaternion.Euler(90, 0,0);
+
+	if(lookOn)
+	{
+		var auxVetx:Vector3 = target.position - transform.position;
+		auxVetx.y = 0;
+		//auxVetx.z = 0;
+		
+	//	Debug.DrawRay(transform.position,-auxVetx* 10, Color.blue);
+		
+		var auxVety:Vector3 = target.position - transform.position;
+		auxVety.x = 0;
+		//auxVety.z = 0;
+		
+	//	Debug.DrawRay(transform.position,auxVety*10, Color.green);
+		
+	//	Debug.Log(Vector3.Angle(dir, auxVetx));
+	//	Debug.Log(Vector3.Angle(dir2, auxVety));
+		var  xQuaternion : Quaternion = Quaternion.AngleAxis (270+Vector3.Angle(dir, auxVetx), Vector3.right);
+		var  yQuaternion : Quaternion  = Quaternion.AngleAxis ((-90+Vector3.Angle(dir2,auxVety))/2.5+8, Vector3.up);
+			
+		transform.localRotation = originalRotation * xQuaternion * yQuaternion;
+	}
+//var relativePos = target.position - transform.position;
+	
+	//var rotationRel = Quaternion.LookRotation(relativePos);
+	
+	//transform.LookAt(relativePos);
+	//var vetaux:Vector3 = target.position - transform.position;
+	//this.transform.rotation = Quaternion.zero;
+	//var vetaux = firstRotation.TransformDirection(Vector3.forward);
+
+	//transform.rotation = Quaternion.FromToRotation (Camera.main.transform.position - transform.position , target.position - transform.position);
+	
+	//var relativePos = target.position - transform.position;
+	
+	//var rotationRel = Quaternion.LookRotation(relativePos);
+	
+	//var angle = Quaternion.Angle(transform.rotation, rotationRel);
+	
+	//transform.rotation = Quaternion.AngleAxis(angle, Vector3.up);
+}

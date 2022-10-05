@@ -1,0 +1,8 @@
+private var gc:GameObject;
+
+function Start()
+{
+	gc = GameObject.Find("GameController");
+	if( !gc.GetComponent("AudioSource").isPlaying )  gc.GetComponent("AudioSource").Play();
+	gc.GetComponent("GUIFader").GUIFaderOut(0.3,1);
+}

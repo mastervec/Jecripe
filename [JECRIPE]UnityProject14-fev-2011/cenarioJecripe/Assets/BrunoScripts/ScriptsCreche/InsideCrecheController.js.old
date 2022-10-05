@@ -1,0 +1,15 @@
+var cam:Transform;
+private var gc:GameObject;
+
+function Start()
+{
+	gc = GameObject.Find("GameController");
+	if( gc)	gc.GetComponent("GUIFader").GUIFaderOut(0.2,1);
+	PlaySpline();
+}
+
+function PlaySpline()
+{
+	yield WaitForSeconds(1);
+	cam.GetComponent("SplineControllerBruno").PlayIt();
+}

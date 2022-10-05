@@ -1,0 +1,6 @@
+function Start() {
+	if (!(GetComponent.<AudioSource>().loop)) {
+		yield WaitForSeconds(GetComponent.<AudioSource>().clip.length);
+		Destroy(this.gameObject);
+	}	
+}

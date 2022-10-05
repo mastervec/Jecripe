@@ -1,0 +1,278 @@
+//////////////// EXPOSED VARIABLES ////////////////
+var openingSpeed: int = 10;
+var closingSpeed: int = 10;
+
+var window1L: Transform;
+var window1R: Transform;
+var window2L: Transform;
+var window2R: Transform;
+var window3L: Transform;
+var window3R: Transform;
+var window4L: Transform;
+var window4R: Transform;
+var window5L: Transform;
+var window5R: Transform;
+var window6L: Transform;
+var window6R: Transform;
+
+var openLowerAngle: float = 250;
+var openHigherAngle: float = 320;
+var closeLowerAngle: float = 88;
+var closeHigherAngle: float = 92;
+
+////////////// PRIVATE ///////////////////////////
+private var openWindow1: boolean = false;
+private var openWindow2: boolean = false;
+private var openWindow3: boolean = false;
+private var openWindow4: boolean = false;
+private var openWindow5: boolean = false;
+private var openWindow6: boolean = false;
+private var closeWindow1: boolean = false;
+private var closeWindow2: boolean = false;
+private var closeWindow3: boolean = false;
+private var closeWindow4: boolean = false;
+private var closeWindow5: boolean = false;
+private var closeWindow6: boolean = false;
+
+private var window1LInitialRotation: Quaternion;
+private var window1RInitialRotation: Quaternion;
+private var window2LInitialRotation: Quaternion;
+private var window2RInitialRotation: Quaternion;
+private var window3LInitialRotation: Quaternion;
+private var window3RInitialRotation: Quaternion;
+private var window4LInitialRotation: Quaternion;
+private var window4RInitialRotation: Quaternion;
+private var window5LInitialRotation: Quaternion;
+private var window5RInitialRotation: Quaternion;
+private var window6LInitialRotation: Quaternion;
+private var window6RInitialRotation: Quaternion;
+
+
+function Start() {
+	window1LInitialRotation = window1L.rotation;
+	window1RInitialRotation = window1R.rotation;
+	window2LInitialRotation = window2L.rotation;
+	window2RInitialRotation = window2R.rotation;
+	window3LInitialRotation = window3L.rotation;
+	window3RInitialRotation = window3R.rotation;
+	window4LInitialRotation = window4L.rotation;
+	window4RInitialRotation = window4R.rotation;
+	window5LInitialRotation = window5L.rotation;
+	window5RInitialRotation = window5R.rotation;
+	window6LInitialRotation = window6L.rotation;
+	window6RInitialRotation = window6R.rotation;	
+	
+	//Open(1);
+	//Open(2);
+	//Open(3);
+	//Open(4);
+	//Open(5);
+	//Open(6);
+}
+
+function Open(_window: int) {
+	switch (_window) {
+		case 1: 
+			openWindow1 = true;
+			break;
+		case 2:
+			openWindow2 = true;
+			break;
+		case 3: 
+			openWindow3 = true;
+			break;
+		case 4: 
+			openWindow4 = true;
+			break;
+		case 5: 
+			openWindow5 = true;
+			break;
+		case 6: 
+			openWindow6 = true;
+			break;		
+	}	
+}
+
+function Close(_window: int) {
+	switch (_window) {
+		case 1: 
+			closeWindow1 = true;
+			break;
+		case 2:
+			closeWindow2 = true;
+			break;
+		case 3: 
+			closeWindow3 = true;
+			break;
+		case 4: 
+			closeWindow4 = true;
+			break;
+		case 5: 
+			closeWindow5 = true;
+			break;
+		case 6: 
+			closeWindow6 = true;
+			break;		
+	}	
+}
+
+function Update() {
+	if (openWindow1) {
+		window1L.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		window1R.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		if ((window1L.eulerAngles.z >= openLowerAngle && window1L.eulerAngles.z <= openHigherAngle) && (window1R.eulerAngles.z >= openLowerAngle && window1R.eulerAngles.z <= openHigherAngle)) {
+			openWindow1 = false;
+			//Close(1);
+		}
+	}
+	if (openWindow2) {
+		window2L.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		window2R.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		if ((window2L.eulerAngles.z >= openLowerAngle && window2L.eulerAngles.z <= openHigherAngle) && (window2R.eulerAngles.z >= openLowerAngle && window2R.eulerAngles.z <= openHigherAngle)) {
+			openWindow2 = false;	
+			//Close(2);			
+		}
+	}
+	if (openWindow3) {
+		window3L.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		window3R.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		if ((window3L.eulerAngles.z >= openLowerAngle && window3L.eulerAngles.z <= openHigherAngle) && (window3R.eulerAngles.z >= openLowerAngle && window3R.eulerAngles.z <= openHigherAngle)) {
+			openWindow3 = false;	
+			//Close(3);		
+		}
+	}
+	if (openWindow4) {
+		window4L.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		window4R.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		if ((window4L.eulerAngles.z >= openLowerAngle && window4L.eulerAngles.z <= openHigherAngle) && (window4R.eulerAngles.z >= openLowerAngle && window4R.eulerAngles.z <= openHigherAngle)) {
+			openWindow4 = false;
+			//Close(4);
+		}
+	}
+	if (openWindow5) {
+		window5L.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		window5R.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		if ((window5L.eulerAngles.z >= openLowerAngle && window5L.eulerAngles.z <= openHigherAngle) && (window5R.eulerAngles.z >= openLowerAngle && window5R.eulerAngles.z <= openHigherAngle)) {
+			openWindow5 = false;	
+			//Close(5);	
+		}
+	}
+	if (openWindow6) {
+		window6L.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		window6R.Rotate(0,0,-Time.deltaTime * openingSpeed);
+		if ((window6L.eulerAngles.z >= openLowerAngle && window6L.eulerAngles.z <= openHigherAngle) && (window6R.eulerAngles.z >= openLowerAngle && window6R.eulerAngles.z <= openHigherAngle)) {
+			openWindow6 = false;	
+			//Close(6);
+		}
+	}
+	if (closeWindow1) {
+		window1L.Rotate(0,0,Time.deltaTime * closingSpeed);
+		window1R.Rotate(0,0,Time.deltaTime * closingSpeed);
+		if ((window1L.eulerAngles.z >= closeLowerAngle && window1L.eulerAngles.z <= closeHigherAngle) && (window1R.eulerAngles.z >= closeLowerAngle && window1R.eulerAngles.z <= closeHigherAngle)) {
+			closeWindow1 = false;
+			Reset(1);
+			//Open(1);
+		}
+	}
+	if (closeWindow2) {
+		window2L.Rotate(0,0,Time.deltaTime * closingSpeed);
+		window2R.Rotate(0,0,Time.deltaTime * closingSpeed);
+		if ((window2L.eulerAngles.z >= closeLowerAngle && window2L.eulerAngles.z <= closeHigherAngle) && (window2R.eulerAngles.z >= closeLowerAngle && window2R.eulerAngles.z <= closeHigherAngle)) {
+			closeWindow2 = false;
+			Reset(2);
+			//Open(2);
+		}
+	}	
+	if (closeWindow3) {
+		window3L.Rotate(0,0,Time.deltaTime * closingSpeed);
+		window3R.Rotate(0,0,Time.deltaTime * closingSpeed);
+		if ((window3L.eulerAngles.z >= closeLowerAngle && window3L.eulerAngles.z <= closeHigherAngle) && (window3R.eulerAngles.z >= closeLowerAngle && window3R.eulerAngles.z <= closeHigherAngle)) {
+			closeWindow3 = false;
+			Reset(3);
+			//Open(3);
+		}
+	}	
+	if (closeWindow4) {
+		window4L.Rotate(0,0,Time.deltaTime * closingSpeed);
+		window4R.Rotate(0,0,Time.deltaTime * closingSpeed);
+		if ((window4L.eulerAngles.z >= closeLowerAngle && window4L.eulerAngles.z <= closeHigherAngle) && (window4R.eulerAngles.z >= closeLowerAngle && window4R.eulerAngles.z <= closeHigherAngle)) {
+			closeWindow4 = false; 
+			Reset(4);
+			//Open(4);
+		}
+	}	
+	if (closeWindow5) {
+		window5L.Rotate(0,0,Time.deltaTime * closingSpeed);
+		window5R.Rotate(0,0,Time.deltaTime * closingSpeed);
+		if ((window5L.eulerAngles.z >= closeLowerAngle && window5L.eulerAngles.z <= closeHigherAngle) && (window5R.eulerAngles.z >= closeLowerAngle&& window5R.eulerAngles.z <= closeHigherAngle)) {
+			closeWindow5 = false;
+			Reset(5);
+			//Open(5);
+		}
+	}	
+	if (closeWindow6) {
+		window6L.Rotate(0,0,Time.deltaTime * closingSpeed);
+		window6R.Rotate(0,0,Time.deltaTime * closingSpeed);
+		if ((window6L.eulerAngles.z >= closeLowerAngle && window6L.eulerAngles.z <= closeHigherAngle) && (window6R.eulerAngles.z >= closeLowerAngle && window6R.eulerAngles.z <= closeHigherAngle)) {
+			closeWindow6 = false;
+			Reset(6);
+			//Open(6);
+		}
+	}		
+}
+
+function Reset(_window) {
+	switch (_window) {
+		case 1: 
+			window1L.rotation = window1LInitialRotation;
+			window1R.rotation = window1RInitialRotation;
+			window1 = false;
+			break;
+		case 2: 
+			window2L.rotation = window2LInitialRotation;
+			window2R.rotation = window2RInitialRotation;
+			window2 = false;
+			break;
+		case 3: 
+			window3L.rotation = window3LInitialRotation;
+			window3R.rotation = window3RInitialRotation;
+			window3 = false;
+			break;
+		case 4: 
+			window4L.rotation = window4LInitialRotation;
+			window4R.rotation = window4RInitialRotation;
+			window4 = false;
+			break;
+		case 5: 
+			window5L.rotation = window5LInitialRotation;
+			window5R.rotation = window5RInitialRotation;
+			window5 = false;
+			break;
+		case 6: 
+			window6L.rotation = window6LInitialRotation;
+			window6R.rotation = window6RInitialRotation;
+			window6 = false;
+			break;		
+	}	
+}
+
+function Reset() {
+	window1L.rotation = window1LInitialRotation;
+	window1R.rotation = window1RInitialRotation;
+	window1 = false;
+	window2L.rotation = window2LInitialRotation;
+	window2R.rotation = window2RInitialRotation;
+	window2 = false;
+	window3L.rotation = window3LInitialRotation;
+	window3R.rotation = window3RInitialRotation;
+	window3 = false;
+	window4L.rotation = window4LInitialRotation;
+	window4R.rotation = window4RInitialRotation;
+	window4 = false;
+	window5L.rotation = window5LInitialRotation;
+	window5R.rotation = window5RInitialRotation;
+	window5 = false;
+	window6L.rotation = window6LInitialRotation;
+	window6R.rotation = window6RInitialRotation;
+	window6 = false;		
+}

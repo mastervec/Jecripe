@@ -1,0 +1,126 @@
+private var fadeInTime:float = 1;
+private var fadeOutTime:float = 1;
+private var guiTime:float = 1;
+
+private var allGuiTimeAux:float = guiTime;
+private var fadeInAuxTime:float = fadeInTime;
+private var fadeOutAuxTime:float = fadeOutTime;
+
+private var fadingIn:boolean = false;
+private var fadingOut:boolean = false;
+
+private var GUIFaderInCalled:boolean = false;
+private var GUIFaderOutCalled:boolean = false;
+
+function GUIFaderIn(_guiTime:float,_fadeIn:float)
+{
+	//Setting the parameters to the global variables
+	//if (_gui!=null)
+	//{
+		//gui = _gui;
+		guiTime = _guiTime;
+		fadeInTime = _fadeIn;
+		fadeOutTime = 0;
+		allGuiTimeAux = _guiTime+_fadeIn;
+		GUIFaderInCalled = true;
+		GUIFaderOutCalled = false;
+		fadingIn=true;
+		fadingOut=false;
+		ShowGUI();
+	//}
+
+}
+
+function GUIFaderOut(_guiTime:float,_fadeOut:float)
+{
+	//Setting the parameters to the global variables
+	//if (_gui!=null)
+	//{
+	//	gui = _gui;
+		guiTime = _guiTime;
+		fadeInTime = 0;
+		fadeOutTime = _fadeOut;
+		allGuiTimeAux = _guiTime+_fadeOut;
+		GUIFaderInCalled = false;
+		GUIFaderOutCalled = true;
+		fadingIn=false;
+		fadingOut=false;
+		ShowGUI();
+	//}
+
+}
+
+
+
+function ShowGUI()
+{
+	fadeInAuxTime = fadeInTime;
+	fadeOutAuxTime = fadeOutTime;
+	gameObject.GetComponent.<GUITexture>().enabled = true;
+}
+
+function FixedUpdate()
+{	
+
+	if(GUIFaderInCalled)
+	{
+		if (allGuiTimeAux > 0) 
+		{			
+			allGuiTimeAux -= Time.deltaTime;
+			if(fadingIn)
+			{
+				if ( fadeInAuxTime > 0 )
+				{
+					gameObject.GetComponent.<GUITexture>().color.a = 1-(fadeInAuxTime/fadeInTime);
+				}
+				else
+				{
+					fadingIn = false;
+				}
+				fadeInAuxTime -= Time.deltaTime;
+			}
+			else if(gameObject.GetComponent.<GUITexture>().enabled)
+						{
+							gameObject.GetComponent.<GUITexture>().color.a = 1;
+						}
+		}
+		else
+		{
+			GUIFaderInCalled = false;
+			gameObject.GetComponent.<GUITexture>().enabled = false;
+		}
+	}
+	
+	if(GUIFaderOutCalled)
+		if (allGuiTimeAux > 0) 
+		{			
+			allGuiTimeAux -= Time.deltaTime;
+			if(fadingOut)
+				{
+					if ( fadeOutAuxTime > 0 )
+					{
+						gameObject.GetComponent.<GUITexture>().color.a = fadeOutAuxTime/fadeOutTime;
+					}
+					else
+					{
+						fadingOut=false;
+						gameObject.GetComponent.<GUITexture>().enabled = false;
+					}
+					fadeOutAuxTime -= Time.deltaTime;
+				}
+				else if( (allGuiTimeAux - fadeOutTime > guiTime) && gameObject.GetComponent.<GUITexture>().enabled)
+					{
+						gameObject.GetComponent.<GUITexture>().color.a = 0;
+					}
+					else
+					{
+						fadingOut = true;
+					}
+		}
+		else
+		{
+			GUIFaderOutCalled = false;
+			gameObject.GetComponent.<GUITexture>().enabled = false;
+		}
+		
+}

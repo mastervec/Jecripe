@@ -1,0 +1,52 @@
+var InicioAtividade1Audio:AudioClip;
+var InicioAtividade2Audio:AudioClip;
+
+var MamadeiraAudio:AudioClip;
+var PapinhaAudio:AudioClip;
+var ChupetaAudio:AudioClip;
+var ChocalhoAudio:AudioClip;
+
+var FimAtividade1Audio:AudioClip;
+var FimAtividade2Audio:AudioClip;
+
+function PlayInicioAtividade()
+{
+	GetComponent.<AudioSource>().clip = InicioAtividade1Audio;
+	GetComponent.<AudioSource>().Play();
+	yield WaitForSeconds(InicioAtividade1Audio.length);
+	GetComponent.<AudioSource>().clip = InicioAtividade2Audio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function PlayMamadeira()
+{
+	GetComponent.<AudioSource>().clip = MamadeiraAudio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function PlayPapinha()
+{
+	GetComponent.<AudioSource>().clip = PapinhaAudio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function PlayChupeta()
+{
+	GetComponent.<AudioSource>().clip = ChupetaAudio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function PlayChocalho()
+{
+	GetComponent.<AudioSource>().clip = ChocalhoAudio;
+	GetComponent.<AudioSource>().Play();
+}
+
+function PlayFimAtividade()
+{
+	GetComponent.<AudioSource>().clip = FimAtividade1Audio;
+	GetComponent.<AudioSource>().Play();
+	yield WaitForSeconds(FimAtividade1Audio.length);
+	GetComponent.<AudioSource>().clip = FimAtividade2Audio;
+	GetComponent.<AudioSource>().Play();
+}

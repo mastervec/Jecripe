@@ -1,0 +1,7 @@
+var speed:float = 2;
+
+function FixedUpdate () 
+{
+	transform.localPosition.x += speed * Time.deltaTime;
+	transform.localPosition.z -= speed * Time.deltaTime;
+}

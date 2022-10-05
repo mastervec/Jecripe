@@ -1,0 +1,31 @@
+var gc:Transform;
+var camPosition:Transform;
+var frezzeSeconds:int = 3;
+
+function Start()
+{
+	if( !GameObject.Find("GameController") )
+	{
+		gc = Instantiate(gc);
+		gc.name = "GameController";
+		playAfterSeconds(frezzeSeconds);
+		gc.GetComponent("GameController").firstLoadOff();
+		gc.GetComponent("GUIFader").GUIFaderOut(0.3,1);
+		gc.GetComponent("AudioSource").ignoreListenerVolume = false;
+	}
+	else
+	{
+		transform.position = camPosition.position;
+		transform.rotation = camPosition.rotation;
+		var gcaux:GameObject = GameObject.Find("GameController");
+		gcaux.GetComponent("GameController").firstLoadMapOn(); // Faz o travel do mapa ocorrer novamente se voltar ate o menu
+		gcaux.GetComponent("GUIFader").GUIFaderOut(0.3,1);
+		if( !gcaux.GetComponent("AudioSource").isPlaying ) gcaux.GetComponent("AudioSource").Play();
+	}
+}
+
+function playAfterSeconds( sec:int )
+{
+	yield WaitForSeconds(sec);
+	GetComponent("SplineControllerBruno").PlayIt();
+}

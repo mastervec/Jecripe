@@ -1,0 +1,30 @@
+var rotationSpeed: float= 1;
+var leftGate: Transform;
+var rightGate: Transform;
+
+private var isAllowedToRotate : boolean = false;
+
+function Start() {
+	leftGate.rotation = Quaternion.identity;
+	rightGate.rotation = Quaternion.identity;
+}
+
+function OnTriggerEnter(other : Collider) {
+	if (other.tag == "Player") {
+		isAllowedToRotate = true;
+	}
+}
+
+function Update() {
+	leftGate.Rotate(0,-Time.deltaTime * rotationSpeed,0);
+	rightGate.Rotate(0,Time.deltaTime * rotationSpeed,0);	
+	if (leftGate.eulerAngles.y <= 270 && rightGate.eulerAngles.y >= 90) {
+		enabled = false;
+	}
+}
+
+function Reset() {
+	leftGate.rotation = Quaternion.identity;
+	rightGate.rotation = Quaternion.identity;
+	enabled = true;
+}

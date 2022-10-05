@@ -1,0 +1,17 @@
+
+function SetRigidbody( b : boolean) {
+	if (this.GetComponent.<Rigidbody>() == null) 
+		this.gameObject.AddComponent(Rigidbody);
+	this.GetComponent.<Rigidbody>().isKinematic = false;
+	this.GetComponent.<Rigidbody>().useGravity = b;	
+	//this.collider.isTrigger = false;
+	yield WaitForSeconds(2.0);
+	//this.collider.isTrigger = true;
+	Destroy(this.gameObject);
+}
+
+public function ResizeScale(newScale : float) {
+	this.transform.localScale.x += newScale;
+	this.transform.localScale.y += newScale;
+	this.transform.localScale.z += newScale;
+}	
