@@ -21,6 +21,9 @@ public partial class SplineController : MonoBehaviour
     public bool HideOnExecute;
     private SplineInterpolator mSplineInterp;
     private Transform[] mTransforms;
+    public Transform target;
+    public bool rotate = true;
+
     public virtual SplineInterpolator Interpolator()
     {
         return this.mSplineInterp;
@@ -134,7 +137,16 @@ public partial class SplineController : MonoBehaviour
         if (this.mTransforms.Length > 0)
         {
             this.SetupSplineInterpolator(this.mSplineInterp, this.mTransforms);
-            this.mSplineInterp.StartInterpolation(null, true, this.WrapMode);
+            this.mSplineInterp.StartInterpolation(null, rotate, this.WrapMode);
+        }
+    }
+
+    public virtual void Update()
+    {
+        if (target)
+        {
+            transform.rotation = Quaternion.Euler(new Vector3(this.transform.rotation.x, this.transform.rotation.y, target.rotation.z));
+            transform.LookAt(target);
         }
     }
 

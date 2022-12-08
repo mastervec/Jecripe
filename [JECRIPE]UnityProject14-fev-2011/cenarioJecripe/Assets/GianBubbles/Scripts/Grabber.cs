@@ -4,13 +4,14 @@ using System.Collections;
 [System.Serializable]
 public partial class Grabber : MonoBehaviour
 {
+    public BBPiecesController BBPieces;
     private Ray ray;
     private Vector3 InitialPosition;
     private float distance;
     private bool WaterWasPlayed;
     private bool SoapWasPlayed;
     private bool LastPieceWasPlayed;
-    //private var grabberActive:boolean = false;
+    private bool grabberActive = false;
     /*function MakeGrabberActive(_state:boolean)
 {
 	grabberActive = _state;
@@ -22,7 +23,7 @@ public partial class Grabber : MonoBehaviour
 
     public virtual void Update()//Debug.DrawRay(ray.origin,ray.direction*4.5, Color.green);	
     {
-        if (BBPiecesController.isDraggingWater)
+        if (BBPieces.isDraggingWater)
         {
             if (this.tag == "WaterBottle")
             {
@@ -37,7 +38,7 @@ public partial class Grabber : MonoBehaviour
                 }
             }
         }
-        if (BBPiecesController.isDraggingSoap)
+        if (BBPieces.isDraggingSoap)
         {
             if (this.tag == "SoapBottle")
             {
@@ -52,7 +53,7 @@ public partial class Grabber : MonoBehaviour
                 }
             }
         }
-        if (BBPiecesController.isDraggingLastPiece)
+        if (BBPieces.isDraggingLastPiece)
         {
             if (this.tag == "LastPiece")
             {
@@ -75,7 +76,7 @@ public partial class Grabber : MonoBehaviour
         {
             if (this.tag == "WaterBottle")
             {
-                BBPiecesController.isDraggingWater = true;
+                BBPieces.isDraggingWater = true;
                 if (!((AudioSource) this.GetComponent(typeof(AudioSource))).isPlaying && !this.WaterWasPlayed)
                 {
                     ((AudioSource) this.GetComponent(typeof(AudioSource))).Play();
@@ -83,13 +84,13 @@ public partial class Grabber : MonoBehaviour
                 }
             }
             Debug.Log("grabber");
-            Debug.Log(!BBPiecesController.isDraggingWater);
-            Debug.Log(BBPiecesController.canDragSoapBottle);
-            if (!BBPiecesController.isDraggingWater && BBPiecesController.canDragSoapBottle)
+            Debug.Log(!BBPieces.isDraggingWater);
+            Debug.Log(BBPieces.canDragSoapBottle);
+            if (!BBPieces.isDraggingWater && BBPieces.canDragSoapBottle)
             {
                 if (this.tag == "SoapBottle")
                 {
-                    BBPiecesController.isDraggingSoap = true;
+                    BBPieces.isDraggingSoap = true;
                     if (!((AudioSource) this.GetComponent(typeof(AudioSource))).isPlaying && !this.SoapWasPlayed)
                     {
                         ((AudioSource) this.GetComponent(typeof(AudioSource))).Play();
@@ -98,9 +99,9 @@ public partial class Grabber : MonoBehaviour
                 }
                 else
                 {
-                    if ((this.tag == "LastPiece") && BBPiecesController.canDragLastPiece)
+                    if ((this.tag == "LastPiece") && BBPieces.canDragLastPiece)
                     {
-                        BBPiecesController.isDraggingLastPiece = true;
+                        BBPieces.isDraggingLastPiece = true;
                         if (!((AudioSource) this.GetComponent(typeof(AudioSource))).isPlaying && !this.LastPieceWasPlayed)
                         {
                             ((AudioSource) this.GetComponent(typeof(AudioSource))).Play();

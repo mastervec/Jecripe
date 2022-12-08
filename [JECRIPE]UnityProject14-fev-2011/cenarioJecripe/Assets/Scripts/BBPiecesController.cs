@@ -4,18 +4,18 @@ using System.Collections;
 [System.Serializable]
 public partial class BBPiecesController : MonoBehaviour
 {
-    public static bool isDraggingWater;
-    public static bool isDraggingSoap;
-    public static bool isDraggingLastPiece;
-    public static bool canDragLastPiece;
-    public static bool canDragSoapBottle;
+    public bool isDraggingWater;
+    public bool isDraggingSoap;
+    public bool isDraggingLastPiece;
+    public bool canDragLastPiece;
+    public bool canDragSoapBottle;
     public virtual void Start()
     {
-        BBPiecesController.isDraggingWater = false;
-        BBPiecesController.isDraggingSoap = false;
-        BBPiecesController.isDraggingLastPiece = false;
-        BBPiecesController.canDragLastPiece = false;
-        BBPiecesController.canDragSoapBottle = false;
+        isDraggingWater = false;
+        isDraggingSoap = false;
+        isDraggingLastPiece = false;
+        canDragLastPiece = false;
+        canDragSoapBottle = false;
     }
 
     /*function OnGUI() {

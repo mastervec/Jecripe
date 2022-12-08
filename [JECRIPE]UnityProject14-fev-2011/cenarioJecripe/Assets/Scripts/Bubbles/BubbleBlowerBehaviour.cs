@@ -20,6 +20,8 @@ public partial class BubbleBlowerBehaviour : MonoBehaviour
     private bool isBlowing;
     private int count;
     private int numToys;
+    public Transform casa;
+    public bool rotate=false;
     public virtual IEnumerator Start()//Screen.lockCursor = false;
     {
         bubblesArray = new List<Transform>();
@@ -107,8 +109,17 @@ public partial class BubbleBlowerBehaviour : MonoBehaviour
         this.wallColliders.SetActiveRecursively(false);
         GameObject cam = GameObject.Find("Main Camera");
         ((SplineController) cam.GetComponent(typeof(SplineController))).SplineParent = GameObject.Find("CameraPosBeforeOrganization");
+        //two lines to disable focus
+        ((SplineController)cam.GetComponent(typeof(SplineController))).target = null;
+        ((SplineController)cam.GetComponent(typeof(SplineController))).rotate = true;
+        //
         ((SplineController) cam.GetComponent(typeof(SplineController))).Start();
         ((SplineController) cam.GetComponent(typeof(SplineController))).FollowSpline();
+        GameObject focus = GameObject.Find("Focus");
+        ((SplineController)focus.GetComponent(typeof(SplineController))).SplineParent = GameObject.Find("FocusPosBeforeOrganization");
+        ((SplineController)focus.GetComponent(typeof(SplineController))).Start();
+        ((SplineController)focus.GetComponent(typeof(SplineController))).FollowSpline();
+
         //yield WaitForSeconds(cam.GetComponent(SplineController).Duration);
         yield return new WaitForSeconds(1f);
         ((OrganizationActivitie) GameObject.Find("CasaDasBolhas").GetComponent(typeof(OrganizationActivitie))).enabled = true;

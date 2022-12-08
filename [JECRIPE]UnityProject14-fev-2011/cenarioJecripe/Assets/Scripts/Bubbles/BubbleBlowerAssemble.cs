@@ -4,6 +4,7 @@ using System.Collections;
 [System.Serializable]
 public partial class BubbleBlowerAssemble : MonoBehaviour
 {
+    public BBPiecesController BBPieces;
     public Transform TargetPos;
     public Transform animationPosition;
     public GameObject wallColliders;
@@ -36,7 +37,8 @@ public partial class BubbleBlowerAssemble : MonoBehaviour
         {
             case "WaterBottle":
                 //Destroy(other.rigidbody);
-                BBPiecesController.isDraggingWater = false;
+                other.GetComponent<BoxCollider>().enabled = false;
+                BBPieces.isDraggingWater = false;
 
                 {
                     Vector3 _80 = this.animationPosition.transform.position;
@@ -53,7 +55,8 @@ public partial class BubbleBlowerAssemble : MonoBehaviour
             case "SoapBottle":
                 Debug.Log("switch");
                 //Destroy(other.rigidbody);
-                BBPiecesController.isDraggingSoap = false;
+                other.GetComponent<BoxCollider>().enabled = false;
+                BBPieces.isDraggingSoap = false;
 
                 {
                     Vector3 _82 = this.animationPosition.position;
@@ -72,7 +75,8 @@ public partial class BubbleBlowerAssemble : MonoBehaviour
                 break;
             case "LastPiece":
                 //Destroy(other.rigidbody);
-                BBPiecesController.isDraggingLastPiece = false;
+                other.GetComponent<BoxCollider>().enabled = false;
+                BBPieces.isDraggingLastPiece = false;
 
                 {
                     Vector3 _84 = this.animationPosition.position;
@@ -93,8 +97,6 @@ public partial class BubbleBlowerAssemble : MonoBehaviour
 }*/
     public virtual void Update()
     {
-        this.StartCoroutine("StartBlowingBubbles");
-        this.enabled = false;
         if (this.enabled)
         {
             if (this.aguaGrabber)
@@ -112,13 +114,13 @@ public partial class BubbleBlowerAssemble : MonoBehaviour
         }
         if (this.count == 1)
         {
-            BBPiecesController.canDragSoapBottle = true;
+            BBPieces.canDragSoapBottle = true;
         }
         else
         {
             if (this.count == 2)
             {
-                BBPiecesController.canDragLastPiece = true;
+                BBPieces.canDragLastPiece = true;
             }
             else
             {
@@ -136,6 +138,8 @@ public partial class BubbleBlowerAssemble : MonoBehaviour
         yield return new WaitForSeconds(1f);
         GameObject cam = GameObject.Find("Main Camera");
         ((SplineController) cam.GetComponent(typeof(SplineController))).SplineParent = GameObject.Find("CameraPosAfterAssemble");
+        GameObject focus = GameObject.Find("Focus");
+        ((SplineController)focus.GetComponent(typeof(SplineController))).SplineParent = GameObject.Find("FocusPosAfterAssemble");
         this.wallColliders.SetActiveRecursively(true);
         //mAudio.Play();
         //yield WaitForSeconds(mAudio.clip.length);
@@ -143,6 +147,8 @@ public partial class BubbleBlowerAssemble : MonoBehaviour
         this.mAudio.Play();
         ((SplineController) cam.GetComponent(typeof(SplineController))).Start();
         ((SplineController) cam.GetComponent(typeof(SplineController))).FollowSpline();
+        ((SplineController)focus.GetComponent(typeof(SplineController))).Start();
+        ((SplineController)focus.GetComponent(typeof(SplineController))).FollowSpline();
         this.transform.position = this.TargetPos.transform.position;
         yield return new WaitForSeconds(((SplineController) cam.GetComponent(typeof(SplineController))).Duration);
         this.mAudio.clip = this.agoraVouMostrar;

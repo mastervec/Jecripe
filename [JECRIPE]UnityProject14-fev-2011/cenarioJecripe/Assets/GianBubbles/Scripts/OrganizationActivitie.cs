@@ -40,6 +40,7 @@ public partial class OrganizationActivitie : MonoBehaviour
 
     public virtual Vector3 GetFallingPosition(int i)
     {
+        Debug.Log(GameObject.Find("FallingPosition1").transform.position);
         switch (i)
         {
             case 1:
@@ -139,6 +140,10 @@ public partial class OrganizationActivitie : MonoBehaviour
             ((SplineController) cam.GetComponent(typeof(SplineController))).SplineParent = GameObject.Find("CameraPosAfterOrganization");
             ((SplineController) cam.GetComponent(typeof(SplineController))).Start();
             ((SplineController) cam.GetComponent(typeof(SplineController))).FollowSpline();
+            GameObject focus = GameObject.Find("Focus");
+            ((SplineController)focus.GetComponent(typeof(SplineController))).SplineParent = GameObject.Find("FocusPosAfterOrganization");
+            ((SplineController)focus.GetComponent(typeof(SplineController))).Start();
+            ((SplineController)focus.GetComponent(typeof(SplineController))).FollowSpline();
             yield return new WaitForSeconds(1f);
             yield return new WaitForSeconds(((SplineController) cam.GetComponent(typeof(SplineController))).Duration);
             this.mAudio.clip = this.estourarBolhasFoiMuitoDivertido;

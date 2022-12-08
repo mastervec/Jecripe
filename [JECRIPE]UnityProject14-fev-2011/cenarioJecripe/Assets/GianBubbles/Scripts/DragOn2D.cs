@@ -44,8 +44,8 @@ public partial class DragOn2D : MonoBehaviour
             if ((((hit.transform.tag == "RedToy") || (hit.transform.tag == "YellowToy")) || (hit.transform.tag == "BlueToy")) || (hit.transform.tag == "GreenToy"))
             {
                 this.isDragging = true;
-                hit.transform.localPosition = ray.GetPoint(2f); //remover este e descomentar a linha abaixo
-                //hit.transform.position = hit.point + offset * Vector3.up;
+                //hit.transform.localPosition = ray.GetPoint(2f); //remover este e descomentar a linha abaixo
+                hit.transform.position = hit.point + offset * Vector3.up;
                 this.toy = hit.transform;
                 this.toy.gameObject.layer = 2;
                 int i = 0;
