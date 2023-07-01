@@ -7,6 +7,7 @@ public partial class GrabberBruno : MonoBehaviour
     public AtividadeCrecheController ac;
     public GameObject dummyOnChair;
     private Vector3 InitialPosition;
+    public Transform highlight;
     private bool grabberActive;
     public virtual void Start()
     {
@@ -82,6 +83,17 @@ public partial class GrabberBruno : MonoBehaviour
             {
                 this.ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 this.transform.localPosition = Camera.main.ScreenPointToRay(Input.mousePosition).GetPoint(3.8f);
+                if (highlight.gameObject.GetComponent<Outline>() != null)
+                {
+                    highlight.gameObject.GetComponent<Outline>().enabled = true;
+                }
+                else
+                {
+                    Outline outline = highlight.gameObject.AddComponent<Outline>();
+                    outline.enabled = true;
+                    highlight.gameObject.GetComponent<Outline>().OutlineColor = Color.magenta;
+                    highlight.gameObject.GetComponent<Outline>().OutlineWidth = 3.0f;
+                }
                 switch (this.name)
                 {
                     case "Mamadeira":
@@ -127,6 +139,7 @@ public partial class GrabberBruno : MonoBehaviour
 
     public virtual void OnMouseUp()
     {
+        highlight.gameObject.GetComponent<Outline>().enabled = false;
         RaycastHit hit = default(RaycastHit);
         if (this.grabberActive)
         {

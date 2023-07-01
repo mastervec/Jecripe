@@ -782,7 +782,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 78}
-  - component: {fileID: 154}
+  - component: {fileID: 135}
   m_Layer: 2
   m_Name: MouseCursorChanger
   m_TagString: Untagged
@@ -3357,6 +3357,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f156ea2322c90504ba2c6ad88488998e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTextureUp: {fileID: 2800000, guid: 3c1c577eabfaffe4da7b49f519449c35, type: 3}
+  cursorTextureDown: {fileID: 2800000, guid: 34b352da5d031914f8c27bd77c636c78, type: 3}
+  cursorMode: 1
+  hotSpot: {x: 0, y: 0}
 --- !u!111 &136
 Animation:
   m_ObjectHideFlags: 0
@@ -3710,27 +3726,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creditsTranform: {fileID: 71}
---- !u!114 &154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 41}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba356ac35251d8d419466df8fdf87c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalCursor: {fileID: 2800000, guid: 3c1c577eabfaffe4da7b49f519449c35, type: 3}
-  leftCursor: {fileID: 2800000, guid: 3c1c577eabfaffe4da7b49f519449c35, type: 3}
-  rightCursor: {fileID: 2800000, guid: 3c1c577eabfaffe4da7b49f519449c35, type: 3}
-  upCursor: {fileID: 2800000, guid: 3c1c577eabfaffe4da7b49f519449c35, type: 3}
-  downCursor: {fileID: 2800000, guid: 34b352da5d031914f8c27bd77c636c78, type: 3}
-  nativeRatio: 1.3333334
-  normalAlpha: 1
-  fadeTo: 0
-  fadeRate: 0
 --- !u!82 &155
 AudioSource:
   m_ObjectHideFlags: 0

@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 1513}
   - component: {fileID: 1378}
   - component: {fileID: 1524}
+  - component: {fileID: 320}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -236,6 +237,55 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2e04d192aac1a4d80627aa4b7c50f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedScale: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 0.5
+      inSlope: -1.5
+      outSlope: -1.5
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  startFadedOut: 0
+  fade: 0
 --- !u!1 &321
 GameObject:
   m_ObjectHideFlags: 0
@@ -5586,6 +5636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05c53402d2980c7408c5aa72a3e2a14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fader: {fileID: 320}
 --- !u!114 &1524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5604,6 +5655,8 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 1
+  rotate: 1
+  target: {fileID: 0}
 --- !u!114 &1526
 MonoBehaviour:
   m_ObjectHideFlags: 0

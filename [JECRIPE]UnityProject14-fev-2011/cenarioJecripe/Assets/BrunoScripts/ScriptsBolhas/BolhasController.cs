@@ -4,6 +4,7 @@ using System.Collections;
 [System.Serializable]
 public partial class BolhasController : MonoBehaviour
 {
+    public CameraFade fader;
     private GameObject gc;
     public virtual void Start()
     {
@@ -18,10 +19,9 @@ public partial class BolhasController : MonoBehaviour
     public virtual IEnumerator LoadInsideBolhas()
     {
         yield return new WaitForSeconds(5);
-        if (this.gc)
-        {
-            //this.gc.GetComponent("GUIFader").GUIFaderIn(0.2f, 1);
-        }
+       
+            fader.StartFade();
+        
         yield return new WaitForSeconds(1.1f);
         //Application.LoadLevel("CrecheInterna");
         Application.LoadLevel("BolhasInterna");
