@@ -19,6 +19,7 @@ TagManager:
   - BlueToy
   - BubbleBlowerLastPiece
   - Bubble
+  - Outlined
   layers:
   - Default
   - TransparentFX
