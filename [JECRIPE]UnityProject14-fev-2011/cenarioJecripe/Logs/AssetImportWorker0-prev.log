@@ -1,0 +1,3167 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.21f1 (a38c86f6690f) revision 10718342'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19045.6456; Version 2009; 64bit' Language: 'pt' Physical Memory: 16303 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Downloads/[JECRIPE]UnityProject2018 - C#2021/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+65001
+Successfully changed project path to: E:/Downloads/[JECRIPE]UnityProject2018 - C#2021/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe
+E:/Downloads/[JECRIPE]UnityProject2018 - C#2021/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 62.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.21f1 (a38c86f6690f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Downloads/[JECRIPE]UnityProject2018 - C#2021/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x2188)
+    Vendor:   
+    VRAM:     3937 MB
+    Driver:   32.0.15.8088
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001971 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 53.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.892 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1892ms)
+		BeginReloadAssembly (50ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (422ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (135ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (164ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (54ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (69ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004561 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.141 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1142ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (954ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (277ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (452ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (131ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/VertexLit': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Diffuse': fallback shader 'Legacy Shaders/Self-Illumin/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2278 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.6 MB.
+System memory in use after: 96.1 MB.
+
+Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 2691.
+Total: 9.268600 ms (FindLiveObjects: 0.304100 ms CreateObjectMapping: 0.132900 ms MarkObjects: 8.208600 ms  DeleteObjects: 0.621500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/skybox_novo/cartoon.mat
+  artifactKey: Guid(b836d198e25744447958998196b8017a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/skybox_novo/cartoon.mat using Guid(b836d198e25744447958998196b8017a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac71c4199dbeacb9114a7b5fd26ec3e') in 0.222490 seconds 
+  Import took 0.247670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/ToonShading/Toony-Basic.mat
+  artifactKey: Guid(c60f3b9e64f6a01498c4ca64ade8f960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonShading/Toony-Basic.mat using Guid(c60f3b9e64f6a01498c4ca64ade8f960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6010c361de26af7e468b797c90298f3d') in 0.035285 seconds 
+  Import took 0.038133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/skybox_novo/left.psd
+  artifactKey: Guid(7465093a38ab6794db4bc9c0f87cd7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/skybox_novo/left.psd using Guid(7465093a38ab6794db4bc9c0f87cd7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7a3994f29ae309247313490862b4c00') in 0.025012 seconds 
+  Import took 0.028018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/skybox_novo/right.psd
+  artifactKey: Guid(29750f712fee13f47bc0506a89384e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/skybox_novo/right.psd using Guid(29750f712fee13f47bc0506a89384e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa6c669746f29a34f5f8f59e52ec17a') in 0.014978 seconds 
+  Import took 0.018244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/ToonShading/Toony-Lighted.mat
+  artifactKey: Guid(f694a7c6de216594eb2f257bde8951c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ToonShading/Toony-Lighted.mat using Guid(f694a7c6de216594eb2f257bde8951c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11a81e72829ed0de5bbf70e73fb9d8b5') in 0.029167 seconds 
+  Import took 0.032033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/skybox_novo/top.psd
+  artifactKey: Guid(0127a7bc1f8953e4eb2425b715a825a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/skybox_novo/top.psd using Guid(0127a7bc1f8953e4eb2425b715a825a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9f7c7eb9c2f898fac0cc439830bcb6') in 0.014785 seconds 
+  Import took 0.018196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.541140 seconds.
+  path: Assets/Menu_Inicial/Materials/creditos_usina.mat
+  artifactKey: Guid(68de89ee982a11e4396b99c2e41c59d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Inicial/Materials/creditos_usina.mat using Guid(68de89ee982a11e4396b99c2e41c59d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '241a13ba387ab9202b73dde67a18c08e') in 0.021815 seconds 
+  Import took 0.025248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Menu_Inicial/Materials/papel_creditos_diffuse.mat
+  artifactKey: Guid(55872e8f1372d47438da87e8c65af624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Inicial/Materials/papel_creditos_diffuse.mat using Guid(55872e8f1372d47438da87e8c65af624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a45cc1531bbbbb2f92d7678da2731b') in 0.057871 seconds 
+  Import took 0.060647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Menu_Inicial/Materials/papel_jogar_diffuse.mat
+  artifactKey: Guid(0d33780789668254a9dc45e31ec64df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Inicial/Materials/papel_jogar_diffuse.mat using Guid(0d33780789668254a9dc45e31ec64df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '794d85b17c98438f410b5d97a0e3870f') in 0.021902 seconds 
+  Import took 0.024641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Menu_Inicial/Materials/menu_porta-porta.mat
+  artifactKey: Guid(505fec2f8ecbbe64c89549dcfa40d4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Inicial/Materials/menu_porta-porta.mat using Guid(505fec2f8ecbbe64c89549dcfa40d4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a001df267caf2e7d5e0c2a20cf771997') in 0.016606 seconds 
+  Import took 0.019416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Menu_Inicial/Materials/menu_mapa-no name.mat
+  artifactKey: Guid(3a0cead0f70505c4fb720c2573e30978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Inicial/Materials/menu_mapa-no name.mat using Guid(3a0cead0f70505c4fb720c2573e30978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d676be5fa51f900ef37606cca02c95') in 0.015886 seconds 
+  Import took 0.018835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Menu_Inicial/Materials/menu_creditos-no name.mat
+  artifactKey: Guid(fa9fa567715e9a84a8aaf863be628d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Inicial/Materials/menu_creditos-no name.mat using Guid(fa9fa567715e9a84a8aaf863be628d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aeb831392f6832bbb1eae6864680e6f') in 0.014393 seconds 
+  Import took 0.017736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.943171 seconds.
+  path: Assets/Menu_Inicial/Sons/menuect2grave 1.mp3
+  artifactKey: Guid(63e126a19f9db624ea88aea5fb46c5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Inicial/Sons/menuect2grave 1.mp3 using Guid(63e126a19f9db624ea88aea5fb46c5aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ec754f94c0c193a7b1d9bf132f1151') in 0.077411 seconds 
+  Import took 0.080691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Menu_Inicial/Sons/menuect2grave.mp3
+  artifactKey: Guid(2d8a6030cdc91d34bba5dd3916bd75ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu_Inicial/Sons/menuect2grave.mp3 using Guid(2d8a6030cdc91d34bba5dd3916bd75ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17909033535c69b720a88884a8986a6a') in 0.021307 seconds 
+  Import took 0.024094 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004775 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.011 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1011ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (856ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (251ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (403ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.4 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2736.
+Total: 6.056900 ms (FindLiveObjects: 0.208600 ms CreateObjectMapping: 0.101600 ms MarkObjects: 5.536600 ms  DeleteObjects: 0.209400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 205.256201 seconds.
+  path: Assets/GUI/20240223_143612_0002.png
+  artifactKey: Guid(fec1730517979474788df2f12eafb352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/20240223_143612_0002.png using Guid(fec1730517979474788df2f12eafb352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99fbb6572aa72572b2e73ad8feb5d22') in 0.038940 seconds 
+  Import took 0.041978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/GUI/20240223_143612_0001.png
+  artifactKey: Guid(13de8d5455a72794b89917f185c6a41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/20240223_143612_0001.png using Guid(13de8d5455a72794b89917f185c6a41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7c6535be7d43233445905fe6d8a5b6') in 0.014084 seconds 
+  Import took 0.017168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/GUI/20240223_143612_0000.png
+  artifactKey: Guid(ce08a09bf12f2a74caf7946c052a9c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/20240223_143612_0000.png using Guid(ce08a09bf12f2a74caf7946c052a9c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809c854f3eb38d6eec5e422bd966f3f0') in 0.014313 seconds 
+  Import took 0.018449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/GUI/20240223_143612_0003.png
+  artifactKey: Guid(8dbd029fe10c688448ea594d2028dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/20240223_143612_0003.png using Guid(8dbd029fe10c688448ea594d2028dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0dcdc355bfc8fe6f4eee15b7beef428') in 0.013045 seconds 
+  Import took 0.016339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.160346 seconds.
+  path: Assets/GUI/Square 1.png
+  artifactKey: Guid(876156f7baef1174d9e97595ddfbc73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/Square 1.png using Guid(876156f7baef1174d9e97595ddfbc73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa068fd7a095dee680da552e3370840') in 0.032539 seconds 
+  Import took 0.035719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.496491 seconds.
+  path: Assets/GUI/chageFaces.cs
+  artifactKey: Guid(744b7737c05fabe408ac1f7c5bad09ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/chageFaces.cs using Guid(744b7737c05fabe408ac1f7c5bad09ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b8dc9925d08240c3e54e8b12f5c68a3') in 0.021186 seconds 
+  Import took 0.024231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 162.034756 seconds.
+  path: Assets/GUI/20240223_143612_0003.png
+  artifactKey: Guid(8dbd029fe10c688448ea594d2028dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/20240223_143612_0003.png using Guid(8dbd029fe10c688448ea594d2028dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc47c574693ac03e85d4c13a09c9a7e') in 0.063114 seconds 
+  Import took 0.066264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.169731 seconds.
+  path: Assets/GUI/20240223_143612_0002.png
+  artifactKey: Guid(fec1730517979474788df2f12eafb352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/20240223_143612_0002.png using Guid(fec1730517979474788df2f12eafb352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb61fe50e035a8ec193b278537706b2b') in 0.021807 seconds 
+  Import took 0.024960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.510745 seconds.
+  path: Assets/GUI/20240223_143612_0001.png
+  artifactKey: Guid(13de8d5455a72794b89917f185c6a41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/20240223_143612_0001.png using Guid(13de8d5455a72794b89917f185c6a41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce17be05bcf2caa9ac55d17a51de8d7d') in 0.020428 seconds 
+  Import took 0.023565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.197534 seconds.
+  path: Assets/GUI/20240223_143612_0000.png
+  artifactKey: Guid(ce08a09bf12f2a74caf7946c052a9c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI/20240223_143612_0000.png using Guid(ce08a09bf12f2a74caf7946c052a9c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c534308f4c28704b0668d61d0cc4dd13') in 0.019220 seconds 
+  Import took 0.022381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.267277 seconds.
+  path: Assets/BrunoScripts/MapaAudioController.cs
+  artifactKey: Guid(5e32129101e67ea4fad94e8f4bffaa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/MapaAudioController.cs using Guid(5e32129101e67ea4fad94e8f4bffaa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27ae75db660f470c4f8bffa3dd0f710') in 0.011622 seconds 
+  Import took 0.015293 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004511 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.056 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1056ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (879ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (252ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (421ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (148ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.5 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2740.
+Total: 5.838200 ms (FindLiveObjects: 0.207000 ms CreateObjectMapping: 0.089400 ms MarkObjects: 5.314800 ms  DeleteObjects: 0.226000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 272.891253 seconds.
+  path: Assets/BrunoObjects/BackToMenu 1.prefab
+  artifactKey: Guid(80e61aa84b8c89a46b47b121c1151311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoObjects/BackToMenu 1.prefab using Guid(80e61aa84b8c89a46b47b121c1151311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b80b44af657f03c689b6ae97ed33861') in 0.059552 seconds 
+  Import took 0.063074 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004503 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.042 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1042ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (886ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (136ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.5 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2742.
+Total: 6.375500 ms (FindLiveObjects: 0.209900 ms CreateObjectMapping: 0.088500 ms MarkObjects: 5.838400 ms  DeleteObjects: 0.237600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004558 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.063 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1064ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (888ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (248ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (428ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (151ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2744.
+Total: 5.865800 ms (FindLiveObjects: 0.197000 ms CreateObjectMapping: 0.086500 ms MarkObjects: 5.337300 ms  DeleteObjects: 0.244100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004524 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.043 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1044ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (885ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (431ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (210ms)
+				ProcessInitializeOnLoadMethodAttributes (133ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.5 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2746.
+Total: 5.948500 ms (FindLiveObjects: 0.203400 ms CreateObjectMapping: 0.091900 ms MarkObjects: 5.407300 ms  DeleteObjects: 0.245100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 223.462699 seconds.
+  path: Assets/BrunoScripts/MenuAudioController.cs
+  artifactKey: Guid(de5ccd4d9f9e3754fbe643875b083c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/MenuAudioController.cs using Guid(de5ccd4d9f9e3754fbe643875b083c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef3048fad1bd3bef4a424f48d69b3f65') in 0.020115 seconds 
+  Import took 0.023401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 148.903450 seconds.
+  path: Assets/Scenes/Mapa.unity
+  artifactKey: Guid(c89bfdce52f6e0f43a0cc836049a4543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Mapa.unity using Guid(c89bfdce52f6e0f43a0cc836049a4543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab9f8304024028dd216a40adb96109e') in 0.028419 seconds 
+  Import took 0.031888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 365.230019 seconds.
+  path: Assets/Sounds/novos/j22-003.mp3
+  artifactKey: Guid(69822da70aecda24d82f792eadda64f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-003.mp3 using Guid(69822da70aecda24d82f792eadda64f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2248eaeeeb7d2f1297559c26027dc6f') in 0.043658 seconds 
+  Import took 0.046792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Sounds/novos/j22-014.mp3
+  artifactKey: Guid(e5f75c10b165c9c43812b206b2026d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-014.mp3 using Guid(e5f75c10b165c9c43812b206b2026d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2281e4d9fe4e32c20745f2fd9536fa0b') in 0.013829 seconds 
+  Import took 0.016639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Sounds/novos/j22-005.mp3
+  artifactKey: Guid(35a7e7fe7e137a245a8f5e2d5c6b9acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-005.mp3 using Guid(35a7e7fe7e137a245a8f5e2d5c6b9acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b45b33d8c8cad092e6feba9a5888ab21') in 0.012662 seconds 
+  Import took 0.015481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Sounds/novos/j22-015.mp3
+  artifactKey: Guid(e2d1526cb694e1e448223672b0613a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-015.mp3 using Guid(e2d1526cb694e1e448223672b0613a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5cd47ab776cdf7c41d3980131fed993') in 0.012735 seconds 
+  Import took 0.015665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Sounds/novos/j22-016.mp3
+  artifactKey: Guid(3f4a4cf072cc94346860293ad1bc430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-016.mp3 using Guid(3f4a4cf072cc94346860293ad1bc430a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2de346d18c5c028dd39bae3bb15dbc') in 0.014064 seconds 
+  Import took 0.016987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Sounds/novos/j22-007.mp3
+  artifactKey: Guid(ef7af4c2397b85746aef3f62f779bd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-007.mp3 using Guid(ef7af4c2397b85746aef3f62f779bd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283db983b967fba580a031b99c5dc17f') in 0.013847 seconds 
+  Import took 0.016670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Sounds/novos/j22-012.mp3
+  artifactKey: Guid(90d1f39b2c406de4a96805d6193e4c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-012.mp3 using Guid(90d1f39b2c406de4a96805d6193e4c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd77b5be8f9490dd05b9925267cf000a') in 0.015264 seconds 
+  Import took 0.018338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Sounds/novos/j22-010.mp3
+  artifactKey: Guid(d3ecae188b2156443a1cd726b13e8038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-010.mp3 using Guid(d3ecae188b2156443a1cd726b13e8038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084a31fb85abd82c2e2e5230a8f3da96') in 0.016512 seconds 
+  Import took 0.019600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.300959 seconds.
+  path: Assets/Sounds/novos/j22-011.mp3
+  artifactKey: Guid(4e2510af146c64342bc55ea58ea6fda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-011.mp3 using Guid(4e2510af146c64342bc55ea58ea6fda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a237480762061d01462acd229f51aaf') in 0.018541 seconds 
+  Import took 0.021651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Sounds/novos/j22-013.mp3
+  artifactKey: Guid(55dfe3c78a3e45544867a503d3aee29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/novos/j22-013.mp3 using Guid(55dfe3c78a3e45544867a503d3aee29e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53297e7b395a2b4d2013be4baa42c2c0') in 0.017063 seconds 
+  Import took 0.020087 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004495 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.048 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1049ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (884ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (276ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (398ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (124ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2749.
+Total: 6.283700 ms (FindLiveObjects: 0.200100 ms CreateObjectMapping: 0.079000 ms MarkObjects: 5.755800 ms  DeleteObjects: 0.248100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004630 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.094 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1094ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (920ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (454ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (132ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2751.
+Total: 6.347000 ms (FindLiveObjects: 0.221400 ms CreateObjectMapping: 0.090800 ms MarkObjects: 5.761700 ms  DeleteObjects: 0.271900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004593 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.051 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1051ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (901ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (451ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (139ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2753.
+Total: 10.763000 ms (FindLiveObjects: 0.235500 ms CreateObjectMapping: 0.090100 ms MarkObjects: 10.069200 ms  DeleteObjects: 0.366200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006548 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.056 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1056ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (896ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (439ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (136ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2755.
+Total: 6.116500 ms (FindLiveObjects: 0.229800 ms CreateObjectMapping: 0.094500 ms MarkObjects: 5.533400 ms  DeleteObjects: 0.257900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004580 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.054 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1054ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (881ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (135ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.5 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2757.
+Total: 6.091700 ms (FindLiveObjects: 0.211000 ms CreateObjectMapping: 0.089200 ms MarkObjects: 5.530300 ms  DeleteObjects: 0.260300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005246 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.099 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1099ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (928ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (270ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (445ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (216ms)
+				ProcessInitializeOnLoadMethodAttributes (137ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2759.
+Total: 6.247500 ms (FindLiveObjects: 0.207900 ms CreateObjectMapping: 0.091000 ms MarkObjects: 5.694600 ms  DeleteObjects: 0.253000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004519 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.067 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1067ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (893ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (248ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (442ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (158ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2761.
+Total: 6.011300 ms (FindLiveObjects: 0.214300 ms CreateObjectMapping: 0.086000 ms MarkObjects: 5.443300 ms  DeleteObjects: 0.266700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004388 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.042 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1042ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (880ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (270ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (407ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (127ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2763.
+Total: 6.250400 ms (FindLiveObjects: 0.217200 ms CreateObjectMapping: 0.085600 ms MarkObjects: 5.679300 ms  DeleteObjects: 0.267000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004990 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.184 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1184ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1008ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (312ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (456ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (126ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2765.
+Total: 5.942000 ms (FindLiveObjects: 0.207800 ms CreateObjectMapping: 0.089800 ms MarkObjects: 5.391700 ms  DeleteObjects: 0.251800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004546 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.036 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1036ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (878ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (425ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (143ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.5 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2767.
+Total: 6.241400 ms (FindLiveObjects: 0.220200 ms CreateObjectMapping: 0.091700 ms MarkObjects: 5.664000 ms  DeleteObjects: 0.264400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004641 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.031 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1031ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (867ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (417ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (208ms)
+				ProcessInitializeOnLoadMethodAttributes (124ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2769.
+Total: 6.191300 ms (FindLiveObjects: 0.215400 ms CreateObjectMapping: 0.101700 ms MarkObjects: 5.615100 ms  DeleteObjects: 0.258300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2776.465794 seconds.
+  path: Assets/BrunoScripts/ScripsMusica/JanelaButton.cs
+  artifactKey: Guid(03ee894b2211a064d9be78850b89ed9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/ScripsMusica/JanelaButton.cs using Guid(03ee894b2211a064d9be78850b89ed9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505b561688d7f9b37f2bca66bae1a56f') in 0.010934 seconds 
+  Import took 0.013958 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.231470 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.159 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1160ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (976ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (285ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (458ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (143ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2771.
+Total: 6.748200 ms (FindLiveObjects: 0.258900 ms CreateObjectMapping: 0.110500 ms MarkObjects: 6.101100 ms  DeleteObjects: 0.276500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 336.452929 seconds.
+  path: Assets/BrunoScripts/ScripsMusica/JanelaButton.cs
+  artifactKey: Guid(03ee894b2211a064d9be78850b89ed9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/ScripsMusica/JanelaButton.cs using Guid(03ee894b2211a064d9be78850b89ed9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0e8a1920339e46ab16556c9c478e78') in 0.005326 seconds 
+  Import took 0.009076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 199.028820 seconds.
+  path: Assets/Sounds/Encerramento/29 musica.wav
+  artifactKey: Guid(afb9f22fa07052a49900e2ed8d1d3155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Encerramento/29 musica.wav using Guid(afb9f22fa07052a49900e2ed8d1d3155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af737340aa08eb2d40bf22f517bd77e') in 0.111386 seconds 
+  Import took 0.115753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Sounds/Encerramento/33 musica e creche.wav
+  artifactKey: Guid(89200f5719d2a2e43b52f41bceb8ab4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Encerramento/33 musica e creche.wav using Guid(89200f5719d2a2e43b52f41bceb8ab4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6851377310e05710cd47a2dac5c89085') in 0.066010 seconds 
+  Import took 0.068934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Sounds/Encerramento/30 bolhas.wav
+  artifactKey: Guid(c3243fb4d8ec7b04da5ceb7f0f8ba902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Encerramento/30 bolhas.wav using Guid(c3243fb4d8ec7b04da5ceb7f0f8ba902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43aa8d77327fa21f63ed0c4e503e2031') in 0.037037 seconds 
+  Import took 0.039962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Sounds/Encerramento/35 bolhas e musica e creche.wav
+  artifactKey: Guid(d9dc264736543284cbbf7de61c006f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Encerramento/35 bolhas e musica e creche.wav using Guid(d9dc264736543284cbbf7de61c006f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c01b960fd786b91e647eb494be5a6e0') in 0.033982 seconds 
+  Import took 0.036856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Sounds/Encerramento/32 musica e bolhas.wav
+  artifactKey: Guid(6d77a586a36011c48b369e199de15d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Encerramento/32 musica e bolhas.wav using Guid(6d77a586a36011c48b369e199de15d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e29e91a1392372bfc2fd916501ea92') in 0.024447 seconds 
+  Import took 0.027921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Sounds/Encerramento/36 volte mais vezes.wav
+  artifactKey: Guid(ab3ca4b32f90c304dbb53f046556a8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Encerramento/36 volte mais vezes.wav using Guid(ab3ca4b32f90c304dbb53f046556a8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458fa336ca95b6e906fa70de89540969') in 0.026071 seconds 
+  Import took 0.028918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Sounds/Encerramento/31 creche.wav
+  artifactKey: Guid(cbafb3138bd75f547be3f85768c21a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Encerramento/31 creche.wav using Guid(cbafb3138bd75f547be3f85768c21a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34614d8344249e7beee8ded12845367a') in 0.032638 seconds 
+  Import took 0.035561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Sounds/Encerramento/34 bolhas e creche.wav
+  artifactKey: Guid(88367538633534a46bb38d235dd15fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Encerramento/34 bolhas e creche.wav using Guid(88367538633534a46bb38d235dd15fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b0cf782edd553d683e6bbced44c159') in 0.031891 seconds 
+  Import took 0.035282 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004623 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.041 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1041ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (885ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (407ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (126ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2774.
+Total: 6.116200 ms (FindLiveObjects: 0.220000 ms CreateObjectMapping: 0.088200 ms MarkObjects: 5.549000 ms  DeleteObjects: 0.258000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004490 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.063 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1064ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (898ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (252ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (424ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (129ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2776.
+Total: 6.250100 ms (FindLiveObjects: 0.234600 ms CreateObjectMapping: 0.096200 ms MarkObjects: 5.643200 ms  DeleteObjects: 0.274700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004665 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.034 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1034ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (855ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (402ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2778.
+Total: 6.019300 ms (FindLiveObjects: 0.221900 ms CreateObjectMapping: 0.088200 ms MarkObjects: 5.446300 ms  DeleteObjects: 0.262000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004457 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.042 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1042ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (875ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (427ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (149ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2780.
+Total: 5.926300 ms (FindLiveObjects: 0.210000 ms CreateObjectMapping: 0.083300 ms MarkObjects: 5.375200 ms  DeleteObjects: 0.257200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004539 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.062 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1063ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (901ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (147ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2782.
+Total: 6.404200 ms (FindLiveObjects: 0.236300 ms CreateObjectMapping: 0.102200 ms MarkObjects: 5.786300 ms  DeleteObjects: 0.278300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004913 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.060 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1061ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (890ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2784.
+Total: 6.728200 ms (FindLiveObjects: 0.219600 ms CreateObjectMapping: 0.085300 ms MarkObjects: 6.144100 ms  DeleteObjects: 0.278000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006757 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.053 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1053ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (892ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (251ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (429ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (213ms)
+				ProcessInitializeOnLoadMethodAttributes (131ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2786.
+Total: 6.077600 ms (FindLiveObjects: 0.209300 ms CreateObjectMapping: 0.087400 ms MarkObjects: 5.526100 ms  DeleteObjects: 0.253900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004413 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.045 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1046ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (884ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (252ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (128ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2788.
+Total: 6.617100 ms (FindLiveObjects: 0.222900 ms CreateObjectMapping: 0.095900 ms MarkObjects: 5.940900 ms  DeleteObjects: 0.356100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004550 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.030 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1031ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (864ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (403ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2790.
+Total: 6.206800 ms (FindLiveObjects: 0.218500 ms CreateObjectMapping: 0.081200 ms MarkObjects: 5.626600 ms  DeleteObjects: 0.279300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004532 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1029ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (876ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (251ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (422ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (143ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2792.
+Total: 6.122600 ms (FindLiveObjects: 0.240700 ms CreateObjectMapping: 0.101100 ms MarkObjects: 5.505700 ms  DeleteObjects: 0.274400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004625 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.060 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1060ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (896ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (276ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (405ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (128ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2794.
+Total: 5.942600 ms (FindLiveObjects: 0.208400 ms CreateObjectMapping: 0.076700 ms MarkObjects: 5.398600 ms  DeleteObjects: 0.258000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004451 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1029ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (872ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (408ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2796.
+Total: 5.941600 ms (FindLiveObjects: 0.208500 ms CreateObjectMapping: 0.082400 ms MarkObjects: 5.388800 ms  DeleteObjects: 0.261300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2635.618121 seconds.
+  path: Assets/BrunoScripts/GameController.cs
+  artifactKey: Guid(a3a6c0f0f4669b64390bf14c3145867e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/GameController.cs using Guid(a3a6c0f0f4669b64390bf14c3145867e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a3e9826acbbb4030e92b5aee410d407') in 0.016519 seconds 
+  Import took 0.019582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.330675 seconds.
+  path: Assets/Scenes/MusicaInterna.unity
+  artifactKey: Guid(89df7e01982412f49a9f0b8564bbb2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MusicaInterna.unity using Guid(89df7e01982412f49a9f0b8564bbb2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5183f4095125c7bbfe03731c52d2ac2') in 0.057883 seconds 
+  Import took 0.060960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.657437 seconds.
+  path: Assets/BrunoScripts/ScriptsCreche/InsideCrecheController.cs
+  artifactKey: Guid(363a21ecd2e770b42a1a49a9a24f78e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/ScriptsCreche/InsideCrecheController.cs using Guid(363a21ecd2e770b42a1a49a9a24f78e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cef747aa12d6e4b2c85f915589d9143') in 0.011245 seconds 
+  Import took 0.014425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.571169 seconds.
+  path: Assets/BrunoScripts/ScriptsCreche/AtividadeCrecheController.cs
+  artifactKey: Guid(8ddd5a04f1f4a4f47aa4aa243ba9da69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/ScriptsCreche/AtividadeCrecheController.cs using Guid(8ddd5a04f1f4a4f47aa4aa243ba9da69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88bd2efc7e992a29d53d57d7aef72fb') in 0.010217 seconds 
+  Import took 0.014025 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006374 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.064 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1064ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (896ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (269ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (411ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (127ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2798.
+Total: 6.216600 ms (FindLiveObjects: 0.211800 ms CreateObjectMapping: 0.089200 ms MarkObjects: 5.655600 ms  DeleteObjects: 0.259200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 80.266325 seconds.
+  path: Assets/BrunoScripts/ScriptsCreche/AtividadeCrecheController.cs
+  artifactKey: Guid(8ddd5a04f1f4a4f47aa4aa243ba9da69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/ScriptsCreche/AtividadeCrecheController.cs using Guid(8ddd5a04f1f4a4f47aa4aa243ba9da69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530e5137e278dc867b604811be171d7a') in 0.004342 seconds 
+  Import took 0.007276 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004475 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1078ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (910ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (252ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (430ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (127ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.8 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2800.
+Total: 5.990900 ms (FindLiveObjects: 0.212800 ms CreateObjectMapping: 0.094200 ms MarkObjects: 5.410300 ms  DeleteObjects: 0.272700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 296.051142 seconds.
+  path: Assets/GianBubbles/Scripts/OrganizationActivitie.cs
+  artifactKey: Guid(fb0756cd6bf89bc49875c3d4db015bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GianBubbles/Scripts/OrganizationActivitie.cs using Guid(fb0756cd6bf89bc49875c3d4db015bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0f4f365459b05d616e75a650fb4906') in 0.013616 seconds 
+  Import took 0.016911 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004496 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.023 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1023ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (870ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (420ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (143ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2802.
+Total: 6.822500 ms (FindLiveObjects: 0.200400 ms CreateObjectMapping: 0.076500 ms MarkObjects: 6.268000 ms  DeleteObjects: 0.276400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004475 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.055 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1056ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (888ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (431ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (151ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2804.
+Total: 6.585100 ms (FindLiveObjects: 0.231800 ms CreateObjectMapping: 0.095800 ms MarkObjects: 5.984000 ms  DeleteObjects: 0.272100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 168.152464 seconds.
+  path: Assets/BrunoScripts/MenuAudioController.cs
+  artifactKey: Guid(de5ccd4d9f9e3754fbe643875b083c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/MenuAudioController.cs using Guid(de5ccd4d9f9e3754fbe643875b083c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a963080b7f484a6cdf06120dc284b97b') in 0.013814 seconds 
+  Import took 0.017033 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006313 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.026 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1026ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (857ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (409ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (130ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2806.
+Total: 6.797400 ms (FindLiveObjects: 0.217500 ms CreateObjectMapping: 0.094900 ms MarkObjects: 6.220400 ms  DeleteObjects: 0.263400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005325 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.045 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1045ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (882ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (435ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (131ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2808.
+Total: 6.286000 ms (FindLiveObjects: 0.207300 ms CreateObjectMapping: 0.092000 ms MarkObjects: 5.712400 ms  DeleteObjects: 0.273400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004656 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.017 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1017ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (857ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (402ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (126ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2810.
+Total: 6.234500 ms (FindLiveObjects: 0.200000 ms CreateObjectMapping: 0.073200 ms MarkObjects: 5.703700 ms  DeleteObjects: 0.256700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 302.810424 seconds.
+  path: Assets/Scripts/BBPiecesController.cs
+  artifactKey: Guid(a52239b7e38cb6942a053d7e63f9d15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BBPiecesController.cs using Guid(a52239b7e38cb6942a053d7e63f9d15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3625ab003b342d18d7c89ab3e8a2edc7') in 0.056864 seconds 
+  Import took 0.060156 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004491 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.043 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1043ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (870ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (417ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (141ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2812.
+Total: 6.651900 ms (FindLiveObjects: 0.223100 ms CreateObjectMapping: 0.092600 ms MarkObjects: 6.055500 ms  DeleteObjects: 0.279500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 18.887255 seconds.
+  path: Assets/Scripts/BBPiecesController.cs
+  artifactKey: Guid(a52239b7e38cb6942a053d7e63f9d15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BBPiecesController.cs using Guid(a52239b7e38cb6942a053d7e63f9d15c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72fafc05b47d124309d3a3c49da6e82e') in 0.004447 seconds 
+  Import took 0.007659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 94.076090 seconds.
+  path: Assets/Scenes/Mapa.unity
+  artifactKey: Guid(c89bfdce52f6e0f43a0cc836049a4543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Mapa.unity using Guid(c89bfdce52f6e0f43a0cc836049a4543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa437c0e8ca1dbba860c66cff9b6b8c4') in 0.032944 seconds 
+  Import took 0.036254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.501413 seconds.
+  path: Assets/BrunoScripts/MapaAudioController.cs
+  artifactKey: Guid(5e32129101e67ea4fad94e8f4bffaa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/MapaAudioController.cs using Guid(5e32129101e67ea4fad94e8f4bffaa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11137dddd8f196506e024ace574e6190') in 0.009529 seconds 
+  Import took 0.012626 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004589 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.063 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1063ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (887ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (405ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (126ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2814.
+Total: 6.196300 ms (FindLiveObjects: 0.203700 ms CreateObjectMapping: 0.077800 ms MarkObjects: 5.643200 ms  DeleteObjects: 0.270800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 257.537275 seconds.
+  path: Assets/BrunoScripts/MapaAudioController.cs
+  artifactKey: Guid(5e32129101e67ea4fad94e8f4bffaa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrunoScripts/MapaAudioController.cs using Guid(5e32129101e67ea4fad94e8f4bffaa57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702ffa6f29996f565057547a24eff2ec') in 0.004351 seconds 
+  Import took 0.007311 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004461 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.084 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1085ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (906ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (248ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (442ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2816.
+Total: 6.170100 ms (FindLiveObjects: 0.212400 ms CreateObjectMapping: 0.088200 ms MarkObjects: 5.611600 ms  DeleteObjects: 0.257100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 206.830591 seconds.
+  path: Assets/Arquivos creche_interna/Sons/SonsBebe/contrariedade.wav
+  artifactKey: Guid(742db1a945b72844cb672ae433fd9faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arquivos creche_interna/Sons/SonsBebe/contrariedade.wav using Guid(742db1a945b72844cb672ae433fd9faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ca12c66dad2558ae298d7b61245c82') in 0.057869 seconds 
+  Import took 0.061958 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004484 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.026 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1027ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (868ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (258ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (125ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.7 MB.
+System memory in use after: 97.6 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2819.
+Total: 6.684800 ms (FindLiveObjects: 0.203800 ms CreateObjectMapping: 0.079700 ms MarkObjects: 6.130000 ms  DeleteObjects: 0.270500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 301.266311 seconds.
+  path: Assets/Scenes/Mapa.unity
+  artifactKey: Guid(c89bfdce52f6e0f43a0cc836049a4543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Mapa.unity using Guid(c89bfdce52f6e0f43a0cc836049a4543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5886eb4ffcb8d12187e214f87582aca0') in 0.014419 seconds 
+  Import took 0.018078 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004474 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.022 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1022ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (870ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (241ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (423ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (145ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Legacy Shaders/Transparent/Cutout/Diffuse': fallback shader 'Legacy Shaders/Transparent/Cutout/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse': fallback shader 'Legacy Shaders/VertexLit' not found
+Shader 'Legacy Shaders/Diffuse Detail': fallback shader 'Legacy Shaders/Diffuse' not found
+Shader 'Legacy Shaders/Self-Illumin/Specular': fallback shader 'Legacy Shaders/Self-Illumin/Diffuse' not found
+Shader 'Legacy Shaders/Specular': fallback shader 'Legacy Shaders/VertexLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.8 MB.
+System memory in use after: 97.7 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2821.
+Total: 6.158700 ms (FindLiveObjects: 0.230300 ms CreateObjectMapping: 0.095300 ms MarkObjects: 5.550700 ms  DeleteObjects: 0.281700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

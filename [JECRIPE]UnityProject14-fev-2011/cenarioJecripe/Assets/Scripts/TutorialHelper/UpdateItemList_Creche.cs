@@ -6,16 +6,23 @@ public class UpdateItemList_Creche : MonoBehaviour
 {
     private string objetoDaVez;
     private SpawnTutorialHelper script;
+    private int objetos_count;
 
     // Start is called before the first frame update
     void Start()
     {
         script = gameObject.GetComponent<SpawnTutorialHelper>();
+        objetos_count = GameObject.Find("ObjetosPegaveis").transform.childCount;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(objetos_count > GameObject.Find("ObjetosPegaveis").transform.childCount)
+        {
+            objetos_count = GameObject.Find("ObjetosPegaveis").transform.childCount;
+            script.waypoints.Clear();
+        }
         if (objetoDaVez != AtividadeCrecheController.ObjetoDaVez)
         {
             objetoDaVez = AtividadeCrecheController.ObjetoDaVez;
