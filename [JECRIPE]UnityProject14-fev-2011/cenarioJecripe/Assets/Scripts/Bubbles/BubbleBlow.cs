@@ -41,11 +41,16 @@ public partial class BubbleBlow : MonoBehaviour
     {
         //speed = Random.Range(minSpeed, maxSpeed);	
         this.ResizeScale(Random.Range(this.minScale, this.maxScale));
+        this.bubbleBlowerScript = GameObject.Find("BubbleBlowerDevice").GetComponent<BubbleBlowerBehaviour>();
+        this.explosionSound = bubbleBlowerScript.getPopSounds();
+        source.clip = explosionSound[Random.Range(0, explosionSound.Count)];
+        Debug.Log(source.clip.name);
+
         /*	print("Current Scene: "+EditorApplication.currentScene);
 //	var path : String [] = EditorApplication.currentScene.Split(char.Parse("/"));
 //    print("path[path.Length -1] = "+path[path.Length -1]);
 /    if (path[path.Length -1] == "BolhasInterna.unity") Retirado para gerar o BUILD */
-       // this.bubbleBlowerScript = (BubbleBlowerBehaviour) GameObject.Find("BubbleBlowerDevice").GetComponent("BubbleBlowerBehaviour");
+        // this.bubbleBlowerScript = (BubbleBlowerBehaviour) GameObject.Find("BubbleBlowerDevice").GetComponent("BubbleBlowerBehaviour");
     }
 
     public virtual void FixedUpdate()
@@ -87,8 +92,8 @@ public partial class BubbleBlow : MonoBehaviour
                 }
             //    ParticleEmitter t = UnityEngine.Object.Instantiate(this.explosionParticles, this.transform.position, this.transform.rotation);
             //t.Emit();
-            source.clip = explosionSound[Random.Range(0, explosionSound.Count)];
-                source.Play();
+
+            AudioSource.PlayClipAtPoint(source.clip, this.transform.position,1);
                 this.gameObject.BroadcastMessage("SetRigidbody", true, SendMessageOptions.DontRequireReceiver);
                 this.transform.DetachChildren();
                 UnityEngine.Object.Destroy(this.gameObject);

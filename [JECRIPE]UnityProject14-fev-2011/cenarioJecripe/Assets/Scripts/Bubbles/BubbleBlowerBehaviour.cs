@@ -9,6 +9,7 @@ public partial class BubbleBlowerBehaviour : MonoBehaviour
     public GameObject wallColliders;
     //var toy: GameObject;
     public Transform[] toys;
+    public List<AudioClip> explosionSound;
     public int maxNumOfBubbles;
     public float intervalTime;
     public int minVelocity;
@@ -94,6 +95,11 @@ public partial class BubbleBlowerBehaviour : MonoBehaviour
         this.BlowAllRemainingBubbles();
         this.StartCoroutine(this.StartOrganizationActivitie());
         BubbleBlowerBehaviour.bubblesWithToyPopped = 0;
+    }
+
+    public List<AudioClip> getPopSounds()
+    {
+        return explosionSound;
     }
 
     /** ************** DEBUG ************* */

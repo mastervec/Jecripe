@@ -10905,6 +10905,13 @@ MonoBehaviour:
   - {fileID: 354679021}
   - {fileID: 843403597}
   - {fileID: 137}
+  explosionSound:
+  - {fileID: 8300000, guid: 2affd9ba7d083d349a85552af705b545, type: 3}
+  - {fileID: 8300000, guid: f24768d8723ca054cb991bd9fb4cb60c, type: 3}
+  - {fileID: 8300000, guid: c3e55b764bed5254aa88078ba12d4eb5, type: 3}
+  - {fileID: 8300000, guid: e82e14147eef69d44b9cf7f6f6795d6c, type: 3}
+  - {fileID: 8300000, guid: 11e0828164914f3448d4de5bbde4c63a, type: 3}
+  - {fileID: 8300000, guid: fcf59bc176263234d9a5d5172b2e00f3, type: 3}
   maxNumOfBubbles: 79
   intervalTime: 1
   minVelocity: 100
