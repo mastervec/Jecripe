@@ -1015,8 +1015,6 @@ MonoBehaviour:
   HideOnExecute: 1
   rotate: 1
   target: {fileID: 0}
-  rotate: 1
-  target: {fileID: 0}
 --- !u!4 &712
 Transform:
   m_ObjectHideFlags: 0
@@ -2836,7 +2834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mc: {fileID: 2765}
   mac: {fileID: 2763}
-  highlight: {fileID: 1939466044}
+  highlight: {fileID: 908934089}
   highlight2: {fileID: 178704112}
 --- !u!114 &2763
 MonoBehaviour:
@@ -2927,8 +2925,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mc: {fileID: 2765}
   mac: {fileID: 2763}
-  highlight: {fileID: 1440031198}
-  highlight2: {fileID: 1834935941}
+  highlight: {fileID: 908934091}
+  highlight2: {fileID: 908934090}
 --- !u!114 &2767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2943,7 +2941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mc: {fileID: 2765}
   mac: {fileID: 2763}
-  highlight: {fileID: 1515313243}
+  highlight: {fileID: 908934092}
   highlight2: {fileID: 33860356}
 --- !u!114 &2768
 MonoBehaviour:
@@ -2960,7 +2958,7 @@ MonoBehaviour:
   mc: {fileID: 2765}
   mac: {fileID: 2763}
   highlight: {fileID: 26300363}
-  highlight2: {fileID: 1170475589}
+  highlight2: {fileID: 908934093}
 --- !u!114 &2769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2975,8 +2973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mc: {fileID: 2765}
   mac: {fileID: 2763}
-  highlight: {fileID: 288220827}
-  highlight2: {fileID: 2039309260}
+  highlight: {fileID: 908934094}
+  highlight2: {fileID: 908934095}
 --- !u!114 &2770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2991,8 +2989,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mc: {fileID: 2765}
   mac: {fileID: 2763}
-  highlight: {fileID: 1166909788}
-  highlight2: {fileID: 1775845507}
+  highlight: {fileID: 908934097}
+  highlight2: {fileID: 908934096}
 --- !u!114 &2771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3558,6 +3556,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6752ee9fa4658a14d9a331dc4235200d, type: 3}
+--- !u!4 &908934089 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4940003575782338, guid: 6752ee9fa4658a14d9a331dc4235200d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908934088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &908934090 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4612771690425540, guid: 6752ee9fa4658a14d9a331dc4235200d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908934088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &908934091 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4904054987794116, guid: 6752ee9fa4658a14d9a331dc4235200d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908934088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &908934092 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4292982357498662, guid: 6752ee9fa4658a14d9a331dc4235200d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908934088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &908934093 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4780149375704700, guid: 6752ee9fa4658a14d9a331dc4235200d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908934088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &908934094 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4249974460482026, guid: 6752ee9fa4658a14d9a331dc4235200d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908934088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &908934095 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4916869855345752, guid: 6752ee9fa4658a14d9a331dc4235200d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908934088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &908934096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4066603015650102, guid: 6752ee9fa4658a14d9a331dc4235200d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908934088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &908934097 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4411615427400964, guid: 6752ee9fa4658a14d9a331dc4235200d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908934088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &976288620
 PrefabInstance:
   m_ObjectHideFlags: 0

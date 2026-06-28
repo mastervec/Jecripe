@@ -67,6 +67,7 @@
      <Compile Include="Assets\BrunoScripts\ScriptsCreche\AtividadeCrecheController.cs" />
      <Compile Include="Assets\Scripts\TutorialHelper\TutorialHelper.cs" />
      <Compile Include="Assets\Scripts\DestroyWhenHit.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\MoveCredits.cs" />
      <Compile Include="Assets\Scripts\BBPiecesController.cs" />
      <Compile Include="Assets\BrunoScripts\ScripsMusica\BetinhoAnimationController.cs" />
      <Compile Include="Assets\Scripts\MouseCursor.cs" />
@@ -148,7 +149,6 @@
      <Compile Include="Assets\Scripts\TutorialHelper\HandyCreator_Path_Deleter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\Scripts\CursorChanger.cs" />
-     <Compile Include="Assets\Scripts\TutorialHelper\HandyCreator_Toys_Deleter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\BrunoScripts\CreditsButtonHelper.cs" />
      <Compile Include="Assets\BrunoScripts\PlayGameButton.cs" />
