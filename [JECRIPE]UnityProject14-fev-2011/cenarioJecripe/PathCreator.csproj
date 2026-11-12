@@ -288,28 +288,28 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="log4netPlastic">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.analytics@3.6.11/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.analytics@3.6.11/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.analytics@3.6.11/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.analytics@3.6.11/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.analytics@3.6.11/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/PackageCache/com.unity.analytics@3.6.11/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -657,10 +657,10 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Pichau/Desktop/hd externo/Jecripe-main/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Pichau/Documents/GitHub/Jecripe/[JECRIPE]UnityProject14-fev-2011/cenarioJecripe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,7 @@ public partial class EncerramentoController : MonoBehaviour
     private GameController gc;
     public virtual IEnumerator Start()
     {
-        //this.gc = (GameController) GameObject.Find("GameController").GetComponent("GameController");
+        this.gc = (GameController) GameObject.Find("GameController").GetComponent("GameController");
         if (this.gc)
         {
             this.Musica = this.gc.CasaMusicaCompleta;
@@ -16,6 +16,7 @@ public partial class EncerramentoController : MonoBehaviour
             this.Bolhas = this.gc.CasaBolhasCompleta;
         }
         this.endAnimation["Take 001"].speed = 0.36f;
+        yield return this.StartCoroutine(this.CheckSoundToPlay());
         yield return this.StartCoroutine(this.ExitApplication());
     }
 
@@ -26,9 +27,9 @@ public partial class EncerramentoController : MonoBehaviour
         yield return new WaitForSeconds(8);
     }
 
-    private bool Musica;
-    private bool Creche;
-    private bool Bolhas;
+    public bool Musica;
+    public bool Creche;
+    public bool Bolhas;
     public AudioClip MA;
     public AudioClip BA;
     public AudioClip CA;
@@ -40,6 +41,9 @@ public partial class EncerramentoController : MonoBehaviour
     public AudioClip Obrigado;
     public virtual IEnumerator CheckSoundToPlay()
     {
+        Debug.Log(Musica);
+        Debug.Log(Creche);
+        Debug.Log(Bolhas);
         if ((this.Musica && this.Creche) && this.Bolhas)
         {
             this.GetComponent<AudioSource>().clip = this.MBCA;
